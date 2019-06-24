@@ -20,7 +20,7 @@ struct linkedFlights
 struct air
 {
     char Id[5];
-    struct linkedFlights linkedVoos;    
+    struct linkedFlights *linkedVoos;
     char IdPrecessor[5];
     short tempoTotalDiskt;
 };
