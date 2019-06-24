@@ -1,9 +1,11 @@
 /* Sudhanshu Patel sudhanshuptl13@gmail.com */
+// Implementação adaptada de  https://gist.github.com/sudhanshuptl/d86da25da46aa3d060e7be876bbdb343
 /*
 Min Heap implementation in c
 */
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include "bHeap.h"
 /*
  Array Implementation of MinHeap data Structure
@@ -11,65 +13,59 @@ Min Heap implementation in c
 
 
 
-int main(){
-    int i;
-    Heap *heap = CreateHeap(); //Min Heap
-    struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir->Id,"LIS");
-    novoAir->tempoTotalDiskt=10;
-    struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir2->Id,"MASD");
-    novoAir2->tempoTotalDiskt=5;
-    struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir3->Id,"ABCD");
-    novoAir3->tempoTotalDiskt=2;
-    if( heap == NULL ){
-        printf("__Memory Issue____\n");
-        return -1;
-    }
+// int main(){
+//     int i;
+//     CreateHeap(); //Min Heap
+//     struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir->Id,"LIS");
+//     novoAir->tempoTotalDiskt=1;
+//     struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir2->Id,"MASD");
+//     novoAir2->tempoTotalDiskt=8;
+//     struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir3->Id,"ABCD");
+//     novoAir3->tempoTotalDiskt=3;
+//     if( h == NULL ){
+//         printf("__Memory Issue____\n");
+//         return -1;
+//     }
 
 
-    insert(heap, *novoAir);
-    insert(heap, *novoAir2);
-    insert(heap, *novoAir3);
+//     insert(*novoAir);
+//     insert(*novoAir2);
+//     insert(*novoAir3);
 
-    print(heap);
+//     print();
 
-    for(i=9;i>=0;i--){
-        printf(" Pop Minima : %d\n", PopMin(heap));
-        print(heap);
-    }
-    return 0;
-}
+//     for(i=0;i<4;i++){
+//         if (popCheck())
+//         {
+//             struct air min = PopMin();
+//             printf(" Pop Minima : %s\n", min.Id);
+//         }
+        
+//         print();
+//     }
 
-Heap *CreateHeap(){
-    Heap *h = (Heap * ) malloc(sizeof(Heap)); //one is number of heap
+    
+//     return 0;
+// }
 
-    //check if memory allocation is fails
-    if(h == NULL){
-        printf("Memory Error!");
-        return NULL;
-    }
+void CreateHeap(){
+    h = (struct Heap * ) malloc(sizeof(struct Heap)); //one is number of heap
     h->count=0;   
-    h->arr = (struct air *) malloc(HEAP_SIZE*sizeof(struct air)); //size in bytes
-
-    //check if allocation succeed
-    if ( h->arr == NULL){
-        printf("Memory Error!");
-        return NULL;
-    }
-    return h;
+    h->arr = (struct air *) malloc(HEAP_SIZE*sizeof(struct air)); //size in bytes    
 }
 
-void insert(Heap *h, struct air air){
+void insert(struct air air){
     if( h->count < HEAP_SIZE){
         h->arr[h->count] = air;
-        heapify_bottom_top(h, h->count);
+        heapify_bottom_top(h->count);
         h->count++;
     }
 }
 
-void heapify_bottom_top(Heap *h,int index){
+void heapify_bottom_top(int index){
     struct air temp;
     int parent_node = (index-1)/2;
 
@@ -78,22 +74,22 @@ void heapify_bottom_top(Heap *h,int index){
         temp = h->arr[parent_node];
         h->arr[parent_node] = h->arr[index];
         h->arr[index] = temp;
-        heapify_bottom_top(h,parent_node);
+        heapify_bottom_top(parent_node);
     }
 }
 
-void heapify_top_bottom(Heap *h, int parent_node){
+void heapify_top_bottom(int parent_node){
     int left = parent_node*2+1;
     int right = parent_node*2+2;
     int min;
     struct air temp;
-
     if(left >= h->count || left <0)
         left = -1;
     if(right >= h->count || right <0)
         right = -1;
 
     if(left != -1 && h->arr[left].tempoTotalDiskt < h->arr[parent_node].tempoTotalDiskt)
+        
         min=left;
     else
         min =parent_node;
@@ -106,28 +102,41 @@ void heapify_top_bottom(Heap *h, int parent_node){
         h->arr[parent_node] = temp;
 
         // recursive  call
-        heapify_top_bottom(h, min);
+        heapify_top_bottom(min);
     }
 }
-
-struct air* PopMin(Heap *h){
-    struct air* pop;
-    if(h->count==0){
+bool  popCheck()
+{
+    if(h->count!=0)
+    {
+       return true;
+        
+    }else
+    {
         printf("\n__Heap is Empty__\n");
-        return NULL;
+        return false;
     }
+    
+    
+}
+
+struct air PopMin(){
+    struct air pop;
+    
     // replace first node by last and delete last
     pop = h->arr[0];
     h->arr[0] = h->arr[h->count-1];
     h->count--;
-    heapify_top_bottom(h, 0);
+    
+    heapify_top_bottom(0);
     return pop;
+
 }
-void print(Heap *h){
+void print(){
     int i;
     printf("____________Print Heap_____________\n");
     for(i=0;i< h->count;i++){
-        printf("-> %d ",h->arr[i]);
+        printf("-> %s ",h->arr[i].Id);
     }
-    printf("->__/\\__\n");
+    printf("\n");
 }
