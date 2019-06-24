@@ -1,27 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "aeroportoVoo.h"
+#include "linkedList.h"
 
 /*
  * todo:
  * Baseado na implemetação do MOCHILA
  * */
-
-
-
-void init(struct linkedFlights *head,
-          char IdAirChegada[5],
-          short hourPartida,
-          short minutePartida,
-          short tempTotal) {
-    strcpy(head->data.IdAirChegada, IdAirChegada);
-    head->data.hourPartida = hourPartida;
-    head->data.minutePartida = minutePartida;
-    head->data.tempTotal = tempTotal;
-    head->son = NULL;
-}
-
 
 void print_list(struct linkedFlights *head) {
     struct linkedFlights *temp;
@@ -51,7 +36,10 @@ struct linkedFlights *add(struct linkedFlights *linkedFlights,
     tempHEAD->data.hourPartida = hourPartida;
     tempHEAD->data.minutePartida = minutePartida;
     tempHEAD->data.tempTotal = tempTotal;
-    tempHEAD->son = linkedFlights;
+    if (linkedFlights->data.tempTotal != 0)
+        tempHEAD->son = linkedFlights;
+    else
+        tempHEAD->son = NULL;
     return tempHEAD;
 }
 
@@ -79,12 +67,12 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
     }
 
 }
-
-int main (){
-    struct linkedFlights *testeDOStestes=malloc(sizeof(struct linkedFlights));
-    init(testeDOStestes,"helo",1,1,1);
-    testeDOStestes=add(testeDOStestes,"helo2",2,2,2);
-    printf("%d",searchList(testeDOStestes,"helo2")->data.hourPartida);
+/*
+int main() {
+    struct linkedFlights *testeDOStestes = malloc(sizeof(struct linkedFlights));
+    testeDOStestes = add(testeDOStestes, "helo", 1, 1, 1);
+    testeDOStestes = add(testeDOStestes, "helo2", 2, 2, 2);
+    testeDOStestes = add(testeDOStestes, "helo3", 3, 3, 3);
+    printf("%d", searchList(testeDOStestes, "helo2")->data.hourPartida);
 }
-
-
+*/

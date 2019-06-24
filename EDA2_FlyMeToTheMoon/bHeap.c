@@ -1,4 +1,5 @@
 /* Sudhanshu Patel sudhanshuptl13@gmail.com */
+// Implementação adaptada de  https://gist.github.com/sudhanshuptl/d86da25da46aa3d060e7be876bbdb343
 /*
 Min Heap implementation in c
 */
