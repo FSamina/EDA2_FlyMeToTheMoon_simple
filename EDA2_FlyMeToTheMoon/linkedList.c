@@ -22,6 +22,7 @@ struct linkedFlights *searchList(struct linkedFlights *head, char IdAirChegada_s
         if (strcmp(temp->data.IdAirChegada, IdAirChegada_search) == 0) {
             return temp;
         }
+        temp=temp->son;
     }
     return NULL;
 }
