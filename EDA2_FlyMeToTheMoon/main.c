@@ -5,7 +5,7 @@
 
 #include "hashtable.h"
 #include "linkedList.c"
-#include "queueP.h"
+#include "bHeap.h"
 
 
 #define ID_AIR_SIZE 5
@@ -19,6 +19,14 @@
 
 void initializeSource(struct air *aeroportoPartida) {
     aeroportoPartida->tempoTotalDiskt = 0;
+    for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
+    {
+        if (hashArray[i]!=NULL)
+        {
+            hashArray[i]->tempoTotalDiskt=1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
+            strcpy(hashArray[i]->IdPrecessor, "NIL");
+        }
+    }
 }
 
 void relax(struct air *u, struct air *v) {
@@ -34,16 +42,26 @@ void relax(struct air *u, struct air *v) {
 //    1 if u.d + w(u,v) < v.d then
 //    2     v.d <- u.d + w(u,v)
 // 3 v.p <- u
-void dijkstra(struct air *aeroportoPartida) {
+void dijkstra(struct air *aeroportoPartida)
+{
+    struct air *tempAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
+
     initializeSource(aeroportoPartida);
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
         if (hashArray[i]!=NULL)
         {
-            insert_by_priority(hashArray[i]);
+            insert(hashArray[i])
         }
-        
     }
+    while (h->count!=0)
+    {
+        
+            tempAir = PopMin();
+            printf(" Pop Minima : %s\n", min.Id);
+
+    }
+    
     
     //temos de ter uma queue com prioridade
 }
