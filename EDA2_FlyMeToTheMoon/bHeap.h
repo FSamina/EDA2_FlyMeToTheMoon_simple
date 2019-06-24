@@ -12,7 +12,7 @@ struct Heap *h;
 
 void CreateHeap();
 bool  popCheck();
-void insert(struct air key);
+void insertHeap(struct air key);
 void print();
 void heapify_bottom_top(int index);
 void heapify_top_bottom(int parent_node);

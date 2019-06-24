@@ -57,7 +57,7 @@ void CreateHeap(){
     h->arr = (struct air *) malloc(HEAP_SIZE*sizeof(struct air)); //size in bytes    
 }
 
-void insert(struct air air){
+void insertHeap(struct air air){
     if( h->count < HEAP_SIZE){
         h->arr[h->count] = air;
         heapify_bottom_top(h->count);

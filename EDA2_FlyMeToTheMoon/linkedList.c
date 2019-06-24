@@ -27,11 +27,7 @@ struct linkedFlights *searchList(struct linkedFlights *head, char IdAirChegada_s
     return NULL;
 }
 
-struct linkedFlights *add(struct linkedFlights *linkedFlights,
-                          char IdAirChegada[5],
-                          short hourPartida,
-                          short minutePartida,
-                          short tempTotal) {
+struct linkedFlights *add(struct linkedFlights *linkedFlights,char IdAirChegada[5],short hourPartida,short minutePartida,short tempTotal) {
     struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
     strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
     tempHEAD->data.hourPartida = hourPartida;
@@ -66,7 +62,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
         }
         temp_pai = temp;
     }
-
+    return NULL;
 }
 /*
 int main() {

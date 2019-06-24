@@ -2,9 +2,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
-
-#include "hashtable.h"
-#include "linkedList.c"
 #include "bHeap.h"
 
 
@@ -34,8 +31,6 @@ void relax(struct air *u, struct air *v) {
         v->tempoTotalDiskt = u->tempoTotalDiskt /* + Tempo do caminho(u ,v) */;
         strcpy(v->IdPrecessor, u->IdPrecessor);
     }
-
-
 }
 
 // RELAX(u, v, w)
@@ -44,21 +39,26 @@ void relax(struct air *u, struct air *v) {
 // 3 v.p <- u
 void dijkstra(struct air *aeroportoPartida)
 {
-    struct air *tempAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
+    struct air tempAir;//criamos o novo aeroporto
 
     initializeSource(aeroportoPartida);
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
         if (hashArray[i]!=NULL)
         {
-            insert(hashArray[i])
+            insert(hashArray[i]);
         }
     }
     while (h->count!=0)
     {
         
             tempAir = PopMin();
-            printf(" Pop Minima : %s\n", min.Id);
+            for (int i = 0; i < 150; i++)//ver os voos todos do aeroporto
+            {
+                //relax();
+            }
+            
+            //printf(" Pop Minima : %s\n", min.Id);
 
     }
     
@@ -80,12 +80,10 @@ void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short
 }
 
 //FI <c´odigo> <aeroporto-partida> <aeroporto-destino> <hora-partida> <dura¸c~ao>
-void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short mPartida,
-               short tempoDeVoo)//temos de addicionar aerporto de partida
+void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short mPartida,short tempoDeVoo)//temos de addicionar aerporto de partida
 {
     int hashIndex = search(IdAirPartida);
-    hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirChegada, hPartida, mPartida,
-                                           tempoDeVoo);
+    hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirChegada, hPartida, mPartida,tempoDeVoo);
 
     //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
     //strcpy(novoVoo->IdAirChegada,IdAirChegada);

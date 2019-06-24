@@ -4,7 +4,8 @@
 #include "disk.h"
 
 
-void exit(){
+void exit()//Alterar o nome
+{
     for (int i = 0; i < SIZE; ++i) {
         if(strcmp(hashArray[1]->Id,"\000")!=0) {
             fprintf(file, "%s\n", hashArray[i]->Id);
