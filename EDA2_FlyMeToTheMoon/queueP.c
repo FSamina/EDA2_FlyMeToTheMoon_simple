@@ -1,169 +1,123 @@
+/* 
+ * C Program to Implement Priority Queue to Add and Delete Elements
+ * From:
+ * https://www.sanfoundry.com/c-program-priority-queue/
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "aeroportoVoo.h"//alterar depois para compliar
+#include "queueP.h"
 
  
-#define MAX 200000
- 
-typedef struct pqueue
-{
-    struct air* data[MAX];
-    int rear,front;
-}pqueue;
- 
-void initialize(pqueue *p);
-int empty(pqueue *p);
-int full(pqueue *p);
-void enqueue(pqueue *p, struct air* x);
-struct air* dequeue(pqueue *p);
-void print(pqueue *p);
- 
-int main(void)
-{
-    
-    struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir->Id,"LISB");
-    novoAir->hour=4;
-    novoAir->minute=2;
-    novoAir->tempoTotalDiskt=5;
-    struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir->Id,"ASH");
-    novoAir->hour=2;
-    novoAir->minute=1;
-    novoAir->tempoTotalDiskt=10;
-    pqueue q;
-    initialize(&q);
- 
 
-    if(full(&q))
+ 
+// int  main(void)
+// {
+//     struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir->Id,"LIS");
+//     novoAir->tempoTotalDiskt=10;
+//     struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir2->Id,"MASD");
+//     novoAir2->tempoTotalDiskt=5;
+//     struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir3->Id,"ABCD");
+//     novoAir3->tempoTotalDiskt=2;
+   
+ 
+//     create();
+
+//     insert_by_priority(novoAir);
+//     insert_by_priority(novoAir2);
+//     insert_by_priority(novoAir3);
+//     display_pqueue();
+
+//     delete_element();
+//     puts("________\n");
+
+//     display_pqueue();
+
+//     return -1;
+// }
+
+
+/* Function to create an empty priority queue */
+void create()
+{
+    front = rear = -1;
+}
+ 
+/* Function to insert value into priority queue */
+void insert_by_priority(struct air* data)
+{
+
+  
+    if (rear >= MAX - 1)
     {
-        printf("\nQueue is Full..");
-        exit(0);
+        printf("\nQueue overflow no more elements can be inserted");
+        return;
     }
-    enqueue(&q,novoAir);
-    
-    if(full(&q))
+    if ((front == -1) && (rear == -1))
     {
-        printf("\nQueue is Full");
-        exit(0);
-    }
-    enqueue(&q,novoAir2);
-    
-
-    
-
-    //dequeue(&q);
-    
-
-    print(&q);
-
-        
-
-    return -1;
-}
- 
-void initialize(pqueue *p)
-{
-    p->rear=-1;
-    p->front=-1;
-}
- 
-int empty(pqueue *p)
-{
-    if(p->rear==-1)
-        return(1);
- 
-    return(0);
-}
- 
-int full(pqueue *p)
-{
-    if((p->rear+1)%MAX==p->front)
-        return(1);
- 
-    return(0);
-}
- 
-void enqueue(pqueue *p,struct air*  x)
-{
-    int i;
-    if(full(p))
-        printf("\nOverflow");
+        front++;
+        rear++;
+        pri_que[rear] = data;
+        return;
+    }    
     else
-    {
-        if(empty(p))
-        {
-            p->rear=p->front=0;
-            p->data[0]=x;
-        }
-        else
-        {
-            i=p->rear;
+        check(data);
+    rear++;
+}
  
-            while(x->tempoTotalDiskt > p->data[i]->tempoTotalDiskt)
+/* Function to check priority and place element */
+void check(struct air* data)
+{
+    int i,j;
+    
+ 
+    for (i = 0; i <= rear; i++)
+    {
+        if (data->tempoTotalDiskt <= pri_que[i]->tempoTotalDiskt)
+        {
+            for (j = rear + 1; j > i; j--)
             {
-                p->data[(i+1)%MAX]=p->data[i];
-                i=(i-1+MAX)%MAX; //anticlockwise movement inside the queue
-                if((i+1)%MAX==p->front)
-                    break;
+                pri_que[j] = pri_que[j - 1];
             }
- 
-            //insert x
-            i=(i+1)%MAX;
-            p->data[i]=x;
- 
-            //re-adjust rear
-            p->rear=(p->rear+1)%MAX;
+
+            pri_que[i] = data;
+            return;
         }
     }
-}
- 
-struct air* dequeue(pqueue *p)
-{
     
-    struct air *deletedAir = (struct air*) malloc(sizeof(struct air));
- 
-    if(empty(p))
-    {
-        printf("\nUnderflow..");
-    }
-    else
-    {
-        deletedAir=p->data[p->front];
-        if(p->rear==p->front)   //delete the last element
-            initialize(p);
-        else
-            p->front=(p->front +1)%MAX;
-    }
- 
-    return(deletedAir);
+    pri_que[i] = data;
 }
  
-void print(pqueue *p)
+/* Function to delete an element from queue */
+struct air* delete_element()
 {
-    int i;
-    struct air * x = (struct air*) malloc(sizeof(struct air));
-
-
- 
-    if(empty(p))
+    int n=-1;
+    if ((front==-1) && (rear==-1))
     {
-        printf("\nQueue is empty..");
+        printf("\nQueue is empty no elements to delete");
+        return NULL;
     }
-    else
+    n=front;
+    front++;
+    return pri_que[n];
+}
+ 
+/* Function to display queue elements */
+void display_pqueue()
+{
+    if ((front == -1) && (rear == -1))
     {
-        i=p->front;
- 
-        while(i!=p->rear)
-        {
-            x=p->data[i];
-            printf("\nAQUI %s",x->Id);
-            i=(i+1)%MAX;
-        }
- 
-        //prints the last element
-        x=p->data[i];
-        printf("\nUltimo %s\n",x->Id);
+        printf("\nQueue is empty");
+        return;
     }
+ 
+    for (; front <= rear; front++)
+    {
+        printf("I=%d %s \n",front, pri_que[front]->Id);
+    }
+ 
+    front = 0;
 }

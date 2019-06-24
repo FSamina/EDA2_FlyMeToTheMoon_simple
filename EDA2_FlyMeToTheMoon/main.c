@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "hashtable.h"
+#include "queueP.h"
 
 #define ID_AIR_SIZE 5
 #define ID_VOO_SIZE 7
@@ -36,6 +36,15 @@ void relax(struct air*  u,struct air*  v)
 void dijkstra(struct air*  aeroportoPartida)
 {
     initializeSource(aeroportoPartida);
+    for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
+    {
+        if (hashArray[i]!=NULL)
+        {
+            insert_by_priority(hashArray[i]);
+        }
+        
+    }
+    
     //temos de ter uma queue com prioridade
 }
 
