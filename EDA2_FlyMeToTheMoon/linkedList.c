@@ -46,8 +46,11 @@ bool search_fligths(struct linkedFlights *head,
 
 struct linkedFlights *add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada[5], short hourPartida,
     short minutePartida,
-    short tempTotal) {
-    if (!search_fligths(linkedFlights, IdAirChegada, hourPartida, minutePartida)) {
+    short tempTotal) 
+{
+    if (!search_fligths(linkedFlights, IdAirChegada, hourPartida, minutePartida)) 
+    {
+        printf("+ novo voo %s %s %.2hd:%.2hd\n",IdAirPartida,IdAirChegada,hourPartida,minutePartida);
 
         struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
         strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
@@ -77,20 +80,29 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
     struct linkedFlights *temp_pai;
     temp = head;
     while (temp != NULL) {
-        if (strcmp(temp->data.IdAirChegada, IdAirChegada_remove) == 0) {
+        if (strcmp(temp->data.IdAirChegada, IdAirChegada_remove) == 0) 
+        {
             if (temp->data.hourPartida == hourPartida)
-                if (temp->data.minutePartida == minutePartida) {
+            {
+                if (temp->data.minutePartida == minutePartida) 
+                {
                     printf("+ voo %s %s %.2hd:%.2hd removido\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida,
                            minutePartida);
-                    if (temp_pai != NULL) {
+                    if (temp_pai != NULL) 
+                    {
                         temp_pai->son = temp->son;
                         return head;
                     } else
+                    {
                         return temp->son;
+                    }
                 }
-
+            }
+               
         }
+        
         temp_pai = temp;
+        temp=temp->son;
     }
     printf("+ voo %s %s %.2hd:%.2hd inexistente\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida, minutePartida);
     return NULL;

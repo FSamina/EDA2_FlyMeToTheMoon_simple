@@ -167,8 +167,8 @@ int main(void) {
             //TR LIS PDL 00:00
             //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
-            calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
-            printf("%s %s %hd:%hd\n", idAirPartida, idAirDestino, hLocal, mLocal);
+            //calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
+            //printf("%s %s %hd:%hd\n", idAirPartida, idAirDestino, hLocal, mLocal);
         }
 
     }
