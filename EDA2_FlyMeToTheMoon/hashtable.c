@@ -16,6 +16,7 @@ int hashCode(char key[5])
             res=res + (int) key[i];
         }
     }
+    res=res *HASH;
 
     return res % SIZE;
 }
