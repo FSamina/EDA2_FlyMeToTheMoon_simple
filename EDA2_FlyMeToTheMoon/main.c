@@ -72,8 +72,13 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, s
 //FD <aeroporto-partida> <aeroporto-destino> <hora-partida>
 void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {
     int hashIndex = search(IdAirPartida);
-    hashArray[hashIndex]->linkedVoos = remove_linkedFlights(hashArray[hashIndex]->linkedVoos, IdAirPartida, IdAirChegada, hourPartida,
-                                                            minutePartida);
+    int hashIndex_chegada = search(IdAirChegada);
+    if (hashIndex != -1 && hashIndex_chegada != -1)
+        hashArray[hashIndex]->linkedVoos = remove_linkedFlights(hashArray[hashIndex]->linkedVoos, IdAirPartida,
+                                                                IdAirChegada, hourPartida,
+                                                                minutePartida);
+    else
+        printf("+ voo %s %s inexistente\n", IdAirPartida,IdAirChegada);
 }
 
 //FI <c´odigo> <aeroporto-partida> <aeroporto-destino> <hora-partida> <dura¸c~ao>
@@ -83,7 +88,8 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
     int hashIndex = search(IdAirPartida);
     int hashIndex_chegada = search(IdAirChegada);
     if (hashIndex != -1 && hashIndex_chegada != -1)
-        hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirPartida,IdAirChegada, hPartida, mPartida,
+        hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirPartida, IdAirChegada, hPartida,
+                                               mPartida,
                                                tempoDeVoo);
     else if (hashIndex == -1)
         printf("+ aeroporto %s desconhecido\n", IdAirPartida);
