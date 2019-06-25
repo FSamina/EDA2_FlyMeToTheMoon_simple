@@ -4,7 +4,7 @@
 #include "disk.h"
 
 
-void exit()//Alterar o nome
+void exit_FMTTM()//Alterar o nome
 {
     for (int i = 0; i < SIZE; ++i) {
         if(strcmp(hashArray[1]->Id,"\000")!=0) {
@@ -22,7 +22,7 @@ void exit()//Alterar o nome
 
 }
 
-void enter(){
+void enter_FMTTM(){
     char id_temp[5];
     char IdAirChegada_t[5];
     short hourPartida_t;
