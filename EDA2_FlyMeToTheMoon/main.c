@@ -81,14 +81,14 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
                short tempoDeVoo)//temos de addicionar aerporto de partida
 {
     int hashIndex = search(IdAirPartida);
-    int hashIndex_chegada = search(IdAirPartida);
+    int hashIndex_chegada = search(IdAirChegada);
     if (hashIndex != -1 && hashIndex_chegada != -1)
         hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirPartida,IdAirChegada, hPartida, mPartida,
                                                tempoDeVoo);
     else if (hashIndex == -1)
-        printf("+ aeroporto %s desconhecido", IdAirPartida);
+        printf("+ aeroporto %s desconhecido\n", IdAirPartida);
     else
-        printf("+ aeroporto %s desconhecido", IdAirChegada);
+        printf("+ aeroporto %s desconhecido\n", IdAirChegada);
     //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
     //strcpy(novoVoo->IdAirChegada,IdAirChegada);
     //novoVoo->hourPartida =hPartida;
