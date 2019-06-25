@@ -81,7 +81,7 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
                short tempoDeVoo)//temos de addicionar aerporto de partida
 {
     int hashIndex = search(IdAirPartida);
-    int hashIndex_chegada = search(IdAirPartida);
+    int hashIndex_chegada = search(IdAirChegada);
     if (hashIndex != -1 && hashIndex_chegada != -1)
         hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirPartida,IdAirChegada, hPartida, mPartida,
                                                tempoDeVoo);
