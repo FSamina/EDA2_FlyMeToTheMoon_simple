@@ -64,7 +64,7 @@ add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada
             tempHEAD->son = NULL;
         return tempHEAD;
     } else
-        printf("+ voo %s %s %hd:%hd existe\n", IdAirPartida, IdAirChegada, hourPartida, minutePartida);
+        printf("+ voo %s %s %.2hd:%.2hd existe\n", IdAirPartida, IdAirChegada, hourPartida, minutePartida);
     return linkedFlights;
 }
 
@@ -81,7 +81,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
         if (strcmp(temp->data.IdAirChegada, IdAirChegada_remove) == 0) {
             if (temp->data.hourPartida == hourPartida)
                 if (temp->data.minutePartida == minutePartida) {
-                    printf("+ voo %s %s %hd:%hd removido\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida,
+                    printf("+ voo %s %s %.2hd:%.2hd removido\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida,
                            minutePartida);
                     if (temp_pai != NULL) {
                         temp_pai->son = temp->son;
@@ -93,7 +93,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
         }
         temp_pai = temp;
     }
-    printf("+ voo %s %s %hd:%hd inexistente\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida, minutePartida);
+    printf("+ voo %s %s %.2hd:%.2hd inexistente\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida, minutePartida);
     return NULL;
 }
 /*
