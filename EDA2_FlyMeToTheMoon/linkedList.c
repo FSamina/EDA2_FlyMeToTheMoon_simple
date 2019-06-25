@@ -44,8 +44,7 @@ bool search_fligths(struct linkedFlights *head,
     return false;
 }
 
-struct linkedFlights *
-add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada[5], short hourPartida,
+struct linkedFlights *add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada[5], short hourPartida,
     short minutePartida,
     short tempTotal) {
     if (!search_fligths(linkedFlights, IdAirChegada, hourPartida, minutePartida)) {
