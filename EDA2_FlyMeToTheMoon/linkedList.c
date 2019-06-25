@@ -49,6 +49,7 @@ add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada
     short minutePartida,
     short tempTotal) {
     if (!search_fligths(linkedFlights, IdAirChegada, hourPartida, minutePartida)) {
+
         struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
         strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
         tempHEAD->data.hourPartida = hourPartida;
