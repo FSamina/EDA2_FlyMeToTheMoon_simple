@@ -18,9 +18,8 @@ void initializeSource(struct air *aeroportoPartida) {
     aeroportoPartida->tempoTotalDiskt = 0;
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
-        if (hashArray[i]!=NULL)
-        {
-            hashArray[i]->tempoTotalDiskt=1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
+        if (hashArray[i] != NULL) {
+            hashArray[i]->tempoTotalDiskt = 1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
             strcpy(hashArray[i]->IdPrecessor, "NIL");
         }
     }
@@ -37,32 +36,29 @@ void relax(struct air *u, struct air *v) {
 //    1 if u.d + w(u,v) < v.d then
 //    2     v.d <- u.d + w(u,v)
 // 3 v.p <- u
-void dijkstra(struct air *aeroportoPartida)
-{
+void dijkstra(struct air *aeroportoPartida) {
     struct air tempAir;//criamos o novo aeroporto
 
     initializeSource(aeroportoPartida);
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
-        if (hashArray[i]!=NULL)
-        {
+        if (hashArray[i] != NULL) {
             insert(hashArray[i]);
         }
     }
-    while (h->count!=0)
-    {
-        
-            tempAir = PopMin();
-            for (int i = 0; i < 150; i++)//ver os voos todos do aeroporto
-            {
-                //relax();
-            }
-            
-            //printf(" Pop Minima : %s\n", min.Id);
+    while (h->count != 0) {
+
+        tempAir = PopMin();
+        for (int i = 0; i < 150; i++)//ver os voos todos do aeroporto
+        {
+            //relax();
+        }
+
+        //printf(" Pop Minima : %s\n", min.Id);
 
     }
-    
-    
+
+
     //temos de ter uma queue com prioridade
 }
 
@@ -76,15 +72,23 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, s
 //FD <aeroporto-partida> <aeroporto-destino> <hora-partida>
 void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {
     int hashIndex = search(IdAirPartida);
-    hashArray[hashIndex]->linkedVoos = remove_linkedFlights(hashArray[hashIndex]->linkedVoos, IdAirChegada,hourPartida, minutePartida);
+    hashArray[hashIndex]->linkedVoos = remove_linkedFlights(hashArray[hashIndex]->linkedVoos, IdAirPartida, IdAirChegada, hourPartida,
+                                                            minutePartida);
 }
 
 //FI <c´odigo> <aeroporto-partida> <aeroporto-destino> <hora-partida> <dura¸c~ao>
-void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short mPartida,short tempoDeVoo)//temos de addicionar aerporto de partida
+void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short mPartida,
+               short tempoDeVoo)//temos de addicionar aerporto de partida
 {
     int hashIndex = search(IdAirPartida);
-    hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirChegada, hPartida, mPartida,tempoDeVoo);
-
+    int hashIndex_chegada = search(IdAirPartida);
+    if (hashIndex != -1 && hashIndex_chegada != -1)
+        hashArray[hashIndex]->linkedVoos = add(hashArray[hashIndex]->linkedVoos, IdAirPartida,IdAirChegada, hPartida, mPartida,
+                                               tempoDeVoo);
+    else if (hashIndex == -1)
+        printf("+ aeroporto %s desconhecido", IdAirPartida);
+    else
+        printf("+ aeroporto %s desconhecido", IdAirChegada);
     //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
     //strcpy(novoVoo->IdAirChegada,IdAirChegada);
     //novoVoo->hourPartida =hPartida;

@@ -41,7 +41,7 @@ void enter_FMTTM(){
             if(!check)
                 exit(15);
             while(fscanf(file,"%s %hd %hd %hd\n",IdAirChegada_t,&hourPartida_t,&minutePartida_t,&tempTotal_t)){
-                hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos, IdAirChegada_t, hourPartida_t, minutePartida_t,
+                hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos,id_temp,IdAirChegada_t, hourPartida_t, minutePartida_t,
                                                        tempTotal_t);
             }
         }

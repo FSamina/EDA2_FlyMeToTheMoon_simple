@@ -3,6 +3,6 @@
 
 FILE *file;
 
-void exit();
-void enter();
-void openTable();
+void exit_FMTTM();
+void enter_FMTTM();
+void openTable_FMTTM();
