@@ -51,6 +51,16 @@ void somaMinutosAHoras(unsigned short *h,unsigned short *m,short minutosSoma)
 
 void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
 {
+    unsigned int index= search(aeroportoPartida->Id);
+    puts("initializeSource");
+
+    printf("%s\n",hashArray[index]->Id);
+    if (index ==-1)
+    {
+        puts("Endereço incorreto no inicialize Source\n");
+        return;
+    }
+    
     for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
         if (hashArray[i] != NULL)
@@ -61,14 +71,18 @@ void initializeSource(struct air *aeroportoPartida,short horaChegada,short minut
             //hashArray[i]->minProntoParaPartir=(short)-1;
         }
     }
-    aeroportoPartida->tempoTotalDiskt = 0;
-    aeroportoPartida->hourProntoParaPartir=(short)horaChegada;
-    aeroportoPartida->minProntoParaPartir=(short)minutoChegada;
-    
+    hashArray[index]->tempoTotalDiskt = 0;
+    hashArray[index]->hourProntoParaPartir=(short)horaChegada;
+    hashArray[index]->minProntoParaPartir=(short)minutoChegada;
 }
 
 void relax(struct air u, struct air *v,struct voos voo) 
 {
+    if (v ==NULL)
+    {
+        puts("no relax ha erro\n");
+        return;
+    }
     unsigned short diffTempos=getMinutosDeHoras(voo.hourPartida,voo.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
     diffTempos=diffTempos+30+ voo.tempTotal + u.tempoTotalDiskt;
     if (diffTempos < v->tempoTotalDiskt)
@@ -101,20 +115,29 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights* tempLista;//instancia das linked list para a percorrer
     initializeSource(aeroportoPartida,horaChegada,minutoChegada);//inicializa os aeroportos para a pesquisa
-    h->firstpop=true;
+    
+    //h->firstpop=true; //Fabio tenta ver o proque desta linha dar erro por favor
+    
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
         if (hashArray[i] != NULL) {
+                            
+            puts("CHEGA AQUI 0\n");
+
             insert_Heap(*hashArray[i]);
+            puts("CHEGA AQUI 1\n");
+
         }
     }
+ 
+    
     while (h->count != 0) 
     {
         tempAir = PopMin();
         tempLista = tempAir.linkedVoos;
         while (tempLista!=NULL)//ver todos os voos de tempAir
         {
-
+            
 
             if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) > getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
             {
@@ -137,6 +160,11 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
 void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida)
 {
     struct air* airFinal=searchAir(IdAirChegada);
+    if (airFinal == NULL)
+    {
+        puts("Endereço incorreto no calcViagem\n");
+        return;
+    }
     dijkstra(airFinal,hourChegadaAoAir,minuteChegadaAoAirPartida);
         // De   Para Parte Chega
 // ==== ==== ===== =====
@@ -243,8 +271,8 @@ int main(void) {
             //TR LIS PDL 00:00
             //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
-            //calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
-            //printf("%s %s %hd:%hd\n", idAirPartida, idAirDestino, hLocal, mLocal);
+            printf("TR %s %s %hd:%hd\n",idAirPartida, idAirDestino, hLocal, mLocal);
+            calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
         }
 
     }

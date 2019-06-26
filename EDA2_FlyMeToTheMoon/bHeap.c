@@ -106,6 +106,7 @@ int indexfinder(struct air* air)
             return i;
         }
     }
+    puts("NÃO ENCONTREI O INDEX\n");
     return -1;
 }
 int parent(int i) 
