@@ -7,30 +7,32 @@
 void exit_FMTTM()//Alterar o nome
 {
     for (int i = 0; i < SIZE; ++i) {
-        if(strcmp(hashArray[1]->Id,"\000")!=0) {
+        if (hashArray[i] != NULL) {
             fprintf(file, "%s\n", hashArray[i]->Id);
-            struct linkedFlights *temp=hashArray[i]->linkedVoos;
+            struct linkedFlights *temp = hashArray[i]->linkedVoos;
             while (temp != NULL) {
-                fprintf(file,"%s %hd %hd %hd\n",temp->data.IdAirChegada,temp->data.hourPartida,temp->data.minutePartida,temp->data.tempTotal);
-                temp=temp->son;
+                fprintf(file, "%s %hd %hd %hd\n", temp->data.IdAirChegada, temp->data.hourPartida,
+                        temp->data.minutePartida, temp->data.tempTotal);
+                temp = temp->son;
             }
         } else
-            fprintf(file,"0");
-        fprintf(file,"\n");
+            fprintf(file, "0");
+        fprintf(file, "\n");
     }
 
 
 }
 
-void enter_FMTTM(){
+void enter_FMTTM() {
     char id_temp[5];
     char IdAirChegada_t[5];
     short hourPartida_t;
     short minutePartida_t;
     short tempTotal_t;
     for (int i = 0; i < SIZE; ++i) {
-        fscanf(file, "%s",id_temp);
-        if(strcmp(id_temp,"0")!=0){
+        if (fscanf(file, "%s", id_temp) == EOF)
+            i = SIZE;
+        else if (strcmp(id_temp, "0") != 0) {
             bool check;
             struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
             strcpy(novoAir->Id, id_temp);
@@ -38,11 +40,12 @@ void enter_FMTTM(){
             novoAir->linkedVoos = NULL;
             strcpy(novoAir->IdPrecessor, "NULL");
             check = insert(novoAir);
-            if(!check)
+            if (!check)
                 exit(15);
-            while(fscanf(file,"%s %hd %hd %hd\n",IdAirChegada_t,&hourPartida_t,&minutePartida_t,&tempTotal_t)){
-                hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos,id_temp,IdAirChegada_t, hourPartida_t, minutePartida_t,
-                                                       tempTotal_t);
+            while (fscanf(file, "%s %hd %hd %hd\n", IdAirChegada_t, &hourPartida_t, &minutePartida_t, &tempTotal_t)) {
+                hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos, id_temp, IdAirChegada_t, hourPartida_t,
+                                               minutePartida_t,
+                                               tempTotal_t);
             }
         }
 
@@ -50,11 +53,12 @@ void enter_FMTTM(){
 
 }
 
-void openTable() {
+void openTable_FMTTM() {
     file = fopen(FNAMET, "r+");
     if (file == NULL) {
         file = fopen(FNAMET, "w+");
-    }if (file == NULL) {
+    }
+    if (file == NULL) {
         exit(6);
     }
 }

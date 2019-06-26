@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "hashtable.h"
 //Esta hashtabkle foi implementada com base neste site :
-// https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.htm
+// https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.html
 
 int hashCode(char key[5])
 {

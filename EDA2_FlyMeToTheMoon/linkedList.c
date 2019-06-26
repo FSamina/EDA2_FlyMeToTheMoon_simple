@@ -3,11 +3,6 @@
 #include <string.h>
 #include "linkedList.h"
 
-/*
- * todo:
- * Baseado na implemetação do MOCHILA
- * */
-
 void print_list(struct linkedFlights *head) {
     struct linkedFlights *temp;
     for (temp = head; temp; temp = temp->son)
