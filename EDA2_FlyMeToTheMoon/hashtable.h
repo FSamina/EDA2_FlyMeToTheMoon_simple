@@ -8,6 +8,8 @@ struct air* item;
 
 int hashCode(char key[5]);
 
+struct air* searchAir(char key[5]);
+
 int  search(char key[5]);
 
 bool insert(struct air* novoAir);

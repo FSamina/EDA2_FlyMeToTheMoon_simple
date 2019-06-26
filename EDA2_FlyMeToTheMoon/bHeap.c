@@ -120,9 +120,10 @@ bool  popCheck()
     
 }
 
-struct air PopMin(){
+struct air PopMin()
+{
     struct air pop;
-    
+    heapify_bottom_top(h->count);
     // replace first node by last and delete last
     pop = h->arr[0];
     h->arr[0] = h->arr[h->count-1];

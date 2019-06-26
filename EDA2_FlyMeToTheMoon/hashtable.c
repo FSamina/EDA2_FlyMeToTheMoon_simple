@@ -21,6 +21,27 @@ int hashCode(char key[5])
     return res % SIZE;
 }
 
+struct air* searchAir(char key[5]) {
+    //get the hash
+    int hashIndex = hashCode(key);
+
+    //move in array until an empty
+    while(hashArray[hashIndex] != NULL) {
+
+        if(strcmp (hashArray[hashIndex]->Id,key)==0)
+        {
+            return hashArray[hashIndex];
+        }
+
+        //go to next cell
+        ++hashIndex;
+
+        //wrap around the table
+        hashIndex %= SIZE;
+    }
+
+    return NULL;
+}
 
 
 int search(char key[5]) {
