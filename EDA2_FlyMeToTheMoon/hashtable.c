@@ -6,9 +6,9 @@
 //Esta hashtabkle foi implementada com base neste site :
 // https://www.tutorialspoint.com/data_structures_algorithms/hash_table_program_in_c.htm
 
-int hashCode(char key[5])
+unsigned int hashCode(char key[5])
 {
-    int res=0;
+    unsigned int res=0;
     for (int i = 0; i < 5; i++)
     {
         if(key[i]!='\0')
@@ -23,7 +23,7 @@ int hashCode(char key[5])
 
 struct air* searchAir(char key[5]) {
     //get the hash
-    int hashIndex = hashCode(key);
+    unsigned int hashIndex = hashCode(key);
 
     //move in array until an empty
     while(hashArray[hashIndex] != NULL) {
@@ -44,9 +44,9 @@ struct air* searchAir(char key[5]) {
 }
 
 
-int search(char key[5]) {
+unsigned int search(char key[5]) {
     //get the hash
-    int hashIndex = hashCode(key);
+    unsigned int hashIndex = hashCode(key);
 
     //move in array until an empty
     while(hashArray[hashIndex] != NULL) {
@@ -72,7 +72,7 @@ bool insert(struct air* novoAir) {
     char key[5];
     strcpy(key,novoAir->Id);
     //get the hash
-    int hashIndex = hashCode(key);
+    unsigned int hashIndex = hashCode(key);
 
     //move in array until an empty or deleted cel
     while(hashArray[hashIndex] != NULL)
@@ -101,7 +101,7 @@ struct air* delete(struct air* item) {
     strcpy(key,item->Id);
 
     //get the hash
-    int hashIndex = hashCode(key);
+    unsigned int hashIndex = hashCode(key);
 
     //move in array until an empty
     while(hashArray[hashIndex] != NULL) {
@@ -125,7 +125,7 @@ struct air* delete(struct air* item) {
 }
 
 void display() {
-    int i = 0;
+    unsigned int i = 0;
 
     for(i = 0; i<SIZE; i++)
     {

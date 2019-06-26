@@ -2,11 +2,13 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 #include "bHeap.h"
 
 
 #define ID_AIR_SIZE 5
 #define ID_VOO_SIZE 7
+#define INFINITO 65535
 
 // INITIALIZE-SINGLE-SOURCE(G, s)
 //    1 for each vertex v in G.V do
@@ -16,9 +18,31 @@
 
 short* somaMinutosAHoras(short h,short m,short minutosSoma)
 {
-    short minutosDeHoras = 60*h;
-    
+    short arrayH[1];
+    short totalMinutos = 60*h+m+minutosSoma;
+    float horaMatematica= totalMinutos/60;
+    short horaMatematicaSemFloat= (short)horaMatematica;//Horas completas
+    horaMatematica= horaMatematica-horaMatematicaSemFloat;//Minutos restantes
+    float novosMinutos= horaMatematica*60;
+    short novosMinutosShort = roundf(novosMinutos);
+   
 
+    if (horaMatematicaSemFloat>=24)
+    {
+        horaMatematicaSemFloat= horaMatematicaSemFloat-24;
+    }
+    if(novosMinutos == 60)
+    {
+        novosMinutos=0;
+        horaMatematicaSemFloat++;
+        if (horaMatematicaSemFloat==24)
+        {
+            horaMatematicaSemFloat==0;
+        }  
+    }
+    arrayH[0]=horaMatematicaSemFloat;
+    arrayH[1]=novosMinutosShort;
+    return arrayH;
 } 
 
 void initializeSource(struct air *aeroportoPartida)
@@ -28,17 +52,17 @@ void initializeSource(struct air *aeroportoPartida)
     {
         if (hashArray[i] != NULL) {
             hashArray[i]->tempoTotalDiskt = 1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
-            strcpy(hashArray[i]->IdPrecessor, "NIL");
+            strcpy(hashArray[i]->vooP, "NIL");
         }
     }
 }
 
-void relax(struct air u, struct air *v,int vooDuração) {
-    if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
-        v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
-        strcpy(v->IdPrecessor, u.IdPrecessor);
-    }
-}
+// void relax(struct air u, struct air *v,int vooDuração) {
+//     if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
+//         v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
+//         strcpy(v->IdPrecessor, u.IdPrecessor);
+//     }
+// }
 
 // RELAX(u, v, w)
 //    1 if u.d + w(u,v) < v.d then
@@ -157,9 +181,7 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     bool check;
     struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
     strcpy(novoAir->Id, key);
-    novoAir->tempoTotalDiskt = -1;
     novoAir->linkedVoos = NULL;
-    strcpy(novoAir->IdPrecessor, "");
     check = insert(novoAir);
     if (check) {
         printf("+ novo aeroporto %s\n", novoAir->Id);
