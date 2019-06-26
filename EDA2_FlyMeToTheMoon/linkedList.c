@@ -48,6 +48,7 @@ struct linkedFlights *add(struct linkedFlights *linkedFlights, char IdAirPartida
         printf("+ novo voo %s %s %.2hd:%.2hd\n",IdAirPartida,IdAirChegada,hourPartida,minutePartida);
 
         struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
+        strcpy(tempHEAD->data.IdAirPartida, IdAirPartida);
         strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
         tempHEAD->data.hourPartida = hourPartida;
         tempHEAD->data.minutePartida = minutePartida;

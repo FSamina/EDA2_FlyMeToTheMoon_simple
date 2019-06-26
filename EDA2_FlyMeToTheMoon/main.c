@@ -13,13 +13,14 @@
 // 2 v.d <- INFINITY // peso do caminho mais curto de s a v
 // 3 v.p <- NIL // predecessor de v nesse caminho
 // 4 s.d <- 0
+/*
 
 short* somaMinutosAHoras(short h,short m,short minutosSoma)
 {
     short minutosDeHoras = 60*h;
-    
 
-} 
+
+}
 
 void initializeSource(struct air *aeroportoPartida)
 {
@@ -34,8 +35,12 @@ void initializeSource(struct air *aeroportoPartida)
 }
 
 void relax(struct air u, struct air *v,int vooDuração) {
-    if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
-        v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
+    if (u.tempoTotalDiskt + vooDuração*/
+/* + Tempo do caminho(u ,v) *//*
+ < v->tempoTotalDiskt) {
+        v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração */
+/* + Tempo do caminho(u ,v) *//*
+;
         strcpy(v->IdPrecessor, u.IdPrecessor);
     }
 }
@@ -70,20 +75,20 @@ void dijkstra(struct air *aeroportoPartida) {
                 possivelIndexHash++;
                 //wrap around the table
                 possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
-                
+
             }
-            
+
             relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
             tempLista=tempLista->son;
         }
     }
-    
+
 }
 
 
 
 //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
-void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida) 
+void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida)
 {
     struct air data;
     struct air peek;
@@ -97,10 +102,10 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
                 possivelIndexHash++;
                 //wrap around the table
                 possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
-                
+
             }
-    dijkstra(hashArray[possivelIndexHash]);    
-  
+    dijkstra(hashArray[possivelIndexHash]);
+
 // De   Para Parte Chega
 // ==== ==== ===== =====
 // CSOH VYN  00:40 19:38
@@ -112,6 +117,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
 // Tempo de viagem: 6228 minutos
 
 }
+*/
 
 //FD <aeroporto-partida> <aeroporto-destino> <hora-partida>
 void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {
@@ -157,7 +163,6 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     bool check;
     struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
     strcpy(novoAir->Id, key);
-    novoAir->tempoTotalDiskt = -1;
     novoAir->linkedVoos = NULL;
     check = insert(novoAir);
     if (check) {
@@ -210,7 +215,7 @@ int main(void) {
             //TR LIS PDL 00:00
             //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
-            calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
+            //calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
             //printf("%s %s %hd:%hd\n", idAirPartida, idAirDestino, hLocal, mLocal);
         }
 
