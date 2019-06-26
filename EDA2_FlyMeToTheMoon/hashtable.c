@@ -79,8 +79,6 @@ bool insert(struct air* novoAir) {
     {
         if (strcmp(hashArray[hashIndex]->Id, novoAir->Id)==0)//Para não deixar que haja dois aeroportos iguais na hastable
         {
-
-
             return false;
         }
 
