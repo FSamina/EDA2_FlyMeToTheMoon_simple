@@ -8,13 +8,14 @@
 
 unsigned int hashCode(char key[5])
 {
+    puts("NOVA CHAMADA \n");
     unsigned int res=0;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < strlen(key); i++)
     {
-        if(key[i]!='\0')
-        {
-            res=res + (int) key[i];
-        }
+        printf("%s %lu\n",key,strlen(key));
+        
+        res=res + (int) key[i];
+        
     }
     res=res *HASH;
 
@@ -39,7 +40,7 @@ struct air* searchAir(char key[5]) {
         //wrap around the table
         hashIndex %= SIZE;
     }
-
+    puts("NÃO ENCONTREI O  AIR NO SERACH AIR\n");
     return NULL;
 }
 
@@ -62,7 +63,7 @@ unsigned int search(char key[5]) {
         //wrap around the table
         hashIndex %= SIZE;
     }
-
+    puts("NÃO ENCONTREI O INDEX NA hash\n");
     return -1;
 }
 
