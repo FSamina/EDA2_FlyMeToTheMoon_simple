@@ -14,9 +14,17 @@
 // 3 v.p <- NIL // predecessor de v nesse caminho
 // 4 s.d <- 0
 
-void initializeSource(struct air *aeroportoPartida) {
+short* somaMinutosAHoras(short h,short m,short minutosSoma)
+{
+    short minutosDeHoras = 60*h;
+    
+
+} 
+
+void initializeSource(struct air *aeroportoPartida)
+{
     aeroportoPartida->tempoTotalDiskt = 0;
-    for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
+    for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
         if (hashArray[i] != NULL) {
             hashArray[i]->tempoTotalDiskt = 1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
@@ -25,10 +33,10 @@ void initializeSource(struct air *aeroportoPartida) {
     }
 }
 
-void relax(struct air *u, struct air *v) {
-    if (u->tempoTotalDiskt /* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
-        v->tempoTotalDiskt = u->tempoTotalDiskt /* + Tempo do caminho(u ,v) */;
-        strcpy(v->IdPrecessor, u->IdPrecessor);
+void relax(struct air u, struct air *v,int vooDuração) {
+    if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
+        v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
+        strcpy(v->IdPrecessor, u.IdPrecessor);
     }
 }
 
@@ -38,7 +46,8 @@ void relax(struct air *u, struct air *v) {
 // 3 v.p <- u
 void dijkstra(struct air *aeroportoPartida) {
     struct air tempAir;//criamos o novo aeroporto
-
+    struct linkedFlights* tempLista;//instancia das linked list para a percorrer
+    unsigned int possivelIndexHash=1;
     initializeSource(aeroportoPartida);
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
@@ -49,23 +58,58 @@ void dijkstra(struct air *aeroportoPartida) {
     while (h->count != 0) {
 
         tempAir = PopMin();
-        for (int i = 0; i < 150; i++)//ver os voos todos do aeroporto
+        push_Stack(tempAir);
+        tempLista = tempAir.linkedVoos;
+        //ver todos os voos de cada aeroporto
+        while (tempLista!=NULL)
         {
-            //relax();
+            //pocura a posição do aeroporto do voo em questão
+            possivelIndexHash= search(tempLista->data.IdAirChegada);
+            while (strcpy(hashArray[possivelIndexHash]->Id,tempLista->data.IdAirChegada)!=0)//confirma que encontramos o aeroporto de chegada
+            {
+                possivelIndexHash++;
+                //wrap around the table
+                possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
+                
+            }
+            
+            relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
+            tempLista=tempLista->son;
         }
-
-        //printf(" Pop Minima : %s\n", min.Id);
-
     }
-
-
-    //temos de ter uma queue com prioridade
+    
 }
 
 
+
 //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
-void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {
-    //Podes começar a pensar sobre isto caralho!
+void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida) 
+{
+    struct air data;
+    struct air peek;
+    short novaHora=-1;
+    short novaMin=-1;
+
+    int possivelIndexHash=-1;
+    possivelIndexHash= search(IdAirPartida);
+            while (strcpy(hashArray[possivelIndexHash]->Id,IdAirPartida)!=0)//confirma que encontramos o aeroporto de chegada
+            {
+                possivelIndexHash++;
+                //wrap around the table
+                possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
+                
+            }
+    dijkstra(hashArray[possivelIndexHash]);    
+  
+// De   Para Parte Chega
+// ==== ==== ===== =====
+// CSOH VYN  00:40 19:38
+// VYN  EVX  21:44 02:56
+// EVX  HATP 06:16 19:02
+// HATP JKPF 22:16 23:40
+// JKPF NHAX 11:08 11:55
+// NHAX DWG  08:10 05:18
+// Tempo de viagem: 6228 minutos
 
 }
 
@@ -78,7 +122,8 @@ void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short
                                                                 IdAirChegada, hourPartida,
                                                                 minutePartida);
     else
-        printf("+ voo %s %s inexistente\n", IdAirPartida,IdAirChegada);
+        printf("+ voo %s %s %.2hd:%.2hd inexistente\n", IdAirPartida, IdAirChegada, hourPartida, minutePartida);
+
 }
 
 //FI <c´odigo> <aeroporto-partida> <aeroporto-destino> <hora-partida> <dura¸c~ao>
@@ -114,7 +159,7 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     strcpy(novoAir->Id, key);
     novoAir->tempoTotalDiskt = -1;
     novoAir->linkedVoos = NULL;
-    strcpy(novoAir->IdPrecessor, "NULL");
+    strcpy(novoAir->IdPrecessor, "");
     check = insert(novoAir);
     if (check) {
         printf("+ novo aeroporto %s\n", novoAir->Id);
@@ -133,7 +178,6 @@ int main(void) {
     char cod[5] = "";
 
     char idAir[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
-    char idVoo[ID_VOO_SIZE] = "";//Declara e inicializa o array de chars a 0
     char idAirPartida[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
     char idAirDestino[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
     short hLocal = 0;
@@ -162,12 +206,11 @@ int main(void) {
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
 
             delVoo(idAirPartida, idAirDestino, hLocal, mLocal);
-            printf("%s\n", idVoo);
         } else if (strcmp(cod, "TR") == 0) {
             //TR LIS PDL 00:00
             //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
-            //calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
+            calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
             //printf("%s %s %hd:%hd\n", idAirPartida, idAirDestino, hLocal, mLocal);
         }
 

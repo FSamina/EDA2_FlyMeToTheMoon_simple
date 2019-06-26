@@ -106,7 +106,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
         temp=temp->son;
     }
     printf("+ voo %s %s %.2hd:%.2hd inexistente\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida, minutePartida);
-    return NULL;
+    return head;
 }
 /*
 int main() {
