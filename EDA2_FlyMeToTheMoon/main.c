@@ -9,18 +9,21 @@
 #define ID_AIR_SIZE 5
 #define ID_VOO_SIZE 7
 #define INFINITO 65535
+#define MINUTOS_DIA 1440
 
 // INITIALIZE-SINGLE-SOURCE(G, s)
 //    1 for each vertex v in G.V do
 // 2 v.d <- INFINITY // peso do caminho mais curto de s a v
 // 3 v.p <- NIL // predecessor de v nesse caminho
 // 4 s.d <- 0
-
-
-short* somaMinutosAHoras(short h,short m,short minutosSoma)
+short getMinutosDeHoras(short h,short m)
 {
-    short arrayH[1];
-    short totalMinutos = 60*h+m+minutosSoma;
+    return h*60+m;
+}
+
+void somaMinutosAHoras(unsigned short *h,unsigned short *m,short minutosSoma)
+{
+    short totalMinutos = 60* *h+*m+minutosSoma;
     float horaMatematica= totalMinutos/60;
     short horaMatematicaSemFloat= (short)horaMatematica;//Horas completas
     horaMatematica= horaMatematica-horaMatematicaSemFloat;//Minutos restantes
@@ -41,9 +44,9 @@ short* somaMinutosAHoras(short h,short m,short minutosSoma)
             horaMatematicaSemFloat=0;
         }  
     }
-    arrayH[0]=horaMatematicaSemFloat;
-    arrayH[1]=novosMinutosShort;
-    return arrayH;
+    
+    *h=horaMatematicaSemFloat;
+    *m=novosMinutosShort;
 }
 
 void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
@@ -53,22 +56,42 @@ void initializeSource(struct air *aeroportoPartida,short horaChegada,short minut
         if (hashArray[i] != NULL)
         {
             hashArray[i]->tempoTotalDiskt = INFINITO;//Iniciliaza  tempoTotalDisk ao "+infinito"
-            hashArray[i]->vooP=NULL;
-            hashArray[i]->hourProntoParaPartir=(short)-1;
-            hashArray[i]->minProntoParaPartir=(short)-1;
+            strcpy(hashArray[i]->vooP.IdAirPartida,"NIL");//marca um dummy
+            //hashArray[i]->hourProntoParaPartir=(short)-1;
+            //hashArray[i]->minProntoParaPartir=(short)-1;
         }
     }
     aeroportoPartida->tempoTotalDiskt = 0;
     aeroportoPartida->hourProntoParaPartir=(short)horaChegada;
     aeroportoPartida->minProntoParaPartir=(short)minutoChegada;
+    
 }
 
-// void relax(struct air u, struct air *v,int vooDuração) {
-//     if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
-//         v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
-//         strcpy(v->IdPrecessor, u.IdPrecessor);
-//     }
-// }
+void relax(struct air u, struct air *v,struct voos voo) 
+{
+    unsigned short diffTempos=getMinutosDeHoras(voo.hourPartida,voo.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
+    diffTempos=diffTempos+30+ voo.tempTotal + u.tempoTotalDiskt;
+    if (diffTempos < v->tempoTotalDiskt)
+    {
+        v->tempoTotalDiskt=diffTempos;
+        v->vooP=voo;
+        somaMinutosAHoras(&voo.hourPartida,&voo.minutePartida,voo.tempTotal+30);
+        v->hourProntoParaPartir=voo.hourPartida;
+        v->minProntoParaPartir=voo.minutePartida;
+    }  
+}
+
+void printVoos(struct air* airFinal)
+{
+    if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
+    {
+        printVoos(searchAir(airFinal->vooP.IdAirPartida));
+        
+    }
+   
+    somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
+    printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+}
 
 // RELAX(u, v, w)
 //    1 if u.d + w(u,v) < v.d then
@@ -77,7 +100,6 @@ void initializeSource(struct air *aeroportoPartida,short horaChegada,short minut
 void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights* tempLista;//instancia das linked list para a percorrer
-    unsigned int possivelIndexHash=1;
     initializeSource(aeroportoPartida,horaChegada,minutoChegada);//inicializa os aeroportos para a pesquisa
     h->firstpop=true;
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
@@ -92,16 +114,17 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
         tempLista = tempAir.linkedVoos;
         while (tempLista!=NULL)//ver todos os voos de tempAir
         {
-            //pocura a posição do aeroporto do voo em questão
-            possivelIndexHash= search(tempLista->data.IdAirChegada);
-            while (strcpy(hashArray[possivelIndexHash]->Id,tempLista->data.IdAirChegada)!=0)//confirma que encontramos o aeroporto de chegada
-            {
-                possivelIndexHash++;
-                //wrap around the table
-                possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
 
+
+            if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) > getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
+            {
+                relax(tempAir,searchAir(tempLista->data.IdAirChegada),tempLista->data);
+            }else
+            {
+                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt+MINUTOS_DIA;
+                relax(tempAir,searchAir(tempLista->data.IdAirChegada),tempLista->data);
+                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
             }
-            //relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
             tempLista=tempLista->son;
         }
     }
@@ -113,20 +136,13 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
 //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
 void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida)
 {
-    struct air data;
-    struct air peek;
-    short novaHora=-1;
-    short novaMin=-1;           
-    dijkstra(searchAir(IdAirPartida),hourChegadaAoAir,minuteChegadaAoAirPartida);
-// De   Para Parte Chega
+    struct air* airFinal=searchAir(IdAirChegada);
+    dijkstra(airFinal,hourChegadaAoAir,minuteChegadaAoAirPartida);
+        // De   Para Parte Chega
 // ==== ==== ===== =====
-// CSOH VYN  00:40 19:38
-// VYN  EVX  21:44 02:56
-// EVX  HATP 06:16 19:02
-// HATP JKPF 22:16 23:40
-// JKPF NHAX 11:08 11:55
-// NHAX DWG  08:10 05:18
-// Tempo de viagem: 6228 minutos
+    printf("De   Para Parte Chega\n==== ==== ===== =====\n");
+    printVoos(airFinal);
+    printf("Tempo de viagem: %hu minutos",airFinal->tempoTotalDiskt);
 
 }
 
