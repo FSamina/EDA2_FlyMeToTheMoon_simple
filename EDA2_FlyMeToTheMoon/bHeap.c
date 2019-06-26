@@ -15,60 +15,60 @@ Min Heap implementation in c
 
 
 
-int main(){
-    int i;
-    CreateHeap(); //Min Heap
-    struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir->Id,"LIS");
-    novoAir->tempoTotalDiskt=7;
-    struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir2->Id,"MASD");
-    novoAir2->tempoTotalDiskt=8;
-    struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir3->Id,"ABCD");
-    novoAir3->tempoTotalDiskt=3;
-    struct air *novoAir4 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-    strcpy(novoAir4->Id,"OPO");
-    novoAir4->tempoTotalDiskt=1;
-    if( h == NULL ){
-        printf("__Memory Issue____\n");
-        return -1;
-    }
+// int main(){
+//     int i;
+//     CreateHeap(); //Min Heap
+//     struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir->Id,"LIS");
+//     novoAir->tempoTotalDiskt=7;
+//     struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir2->Id,"MASD");
+//     novoAir2->tempoTotalDiskt=8;
+//     struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir3->Id,"ABCD");
+//     novoAir3->tempoTotalDiskt=3;
+//     struct air *novoAir4 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
+//     strcpy(novoAir4->Id,"OPOA");
+//     novoAir4->tempoTotalDiskt=1;
+//     if( h == NULL ){
+//         printf("__Memory Issue____\n");
+//         return -1;
+//     }
 
 
-    insert(*novoAir);
-    insert(*novoAir2);
-    insert(*novoAir3);
-    insert(*novoAir4);
+//     insert(*novoAir);
+//     insert(*novoAir2);
+//     insert(*novoAir3);
+//     insert(*novoAir4);
 
-    print();
-    bool flag = false;
-    for(i=0;i<4;i++){
+//     print();
+//     bool flag = false;
+//     for(i=0;i<4;i++){
         
-        if (popCheck())
-        {
+//         if (popCheck())
+//         {
             
-            struct air min = PopMin();
-            printf(" Pop Minima : %s\n", min.Id);
-            if (!flag)
-            {
-                decreaseKey(indexfinder(novoAir2),1);
-                printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
+//             struct air min = PopMin();
+//             printf(" Pop Minima : %s\n", min.Id);
+//             if (!flag)
+//             {
+//                 decreaseKey(indexfinder(novoAir2),1);
+//                 printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
                 
 
-                flag=true;
-            }
+//                 flag=true;
+//             }
             
         
-        }
+//         }
         
-        print();
-    }
-    printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
+//         print();
+//     }
+//     printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
 
 
-    return 0;
-}
+//     return 0;
+// }
 
 void CreateHeap(){
     h = (struct Heap * ) malloc(sizeof(struct Heap)); //one is number of heap
@@ -76,7 +76,7 @@ void CreateHeap(){
     h->arr = (struct air *) malloc(HEAP_SIZE*sizeof(struct air)); //size in bytes    
 }
 
-void insert(struct air air){
+void insert_Heap(struct air air){
     if( h->count < HEAP_SIZE){
         h->arr[h->count] = air;
         heapify_bottom_top(h->count);
@@ -112,18 +112,19 @@ int parent(int i)
 { 
     return (i-1)/2; 
 } 
-void swap(struct air x,struct air y) 
+void swap(struct air x,int i,struct air y, int parent) 
 { 
     struct air temp = x; 
-    x = y; 
-    y = temp; 
+    x = y;
+    h->arr[i]=y; 
+    h->arr[parent] = temp; 
 } 
 void decreaseKey(int i, int new_val) 
 { 
     h->arr[i].tempoTotalDiskt = new_val; 
     while (i != 0 && h->arr[parent(i)].tempoTotalDiskt > h->arr[i].tempoTotalDiskt) 
     { 
-       swap(h->arr[i], h->arr[parent(i)]); 
+       swap(h->arr[i],i, h->arr[parent(i)],parent(i)); 
        i = parent(i); 
     }
    

@@ -27,7 +27,7 @@ short* somaMinutosAHoras(short h,short m,short minutosSoma)
     short novosMinutosShort = roundf(novosMinutos);
    
 
-    if (horaMatematicaSemFloat>=24)
+    if (horaMatematicaSemFloat>=(short)24)
     {
         horaMatematicaSemFloat= horaMatematicaSemFloat-24;
     }
@@ -35,9 +35,9 @@ short* somaMinutosAHoras(short h,short m,short minutosSoma)
     {
         novosMinutos=0;
         horaMatematicaSemFloat++;
-        if (horaMatematicaSemFloat==24)
+        if (horaMatematicaSemFloat==(short)24)
         {
-            horaMatematicaSemFloat==0;
+            horaMatematicaSemFloat=0;
         }  
     }
     arrayH[0]=horaMatematicaSemFloat;
@@ -45,16 +45,21 @@ short* somaMinutosAHoras(short h,short m,short minutosSoma)
     return arrayH;
 } 
 
-void initializeSource(struct air *aeroportoPartida)
+void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
 {
-    aeroportoPartida->tempoTotalDiskt = 0;
     for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
-        if (hashArray[i] != NULL) {
-            hashArray[i]->tempoTotalDiskt = 1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
-            strcpy(hashArray[i]->vooP, "NIL");
+        if (hashArray[i] != NULL)
+        {
+            hashArray[i]->tempoTotalDiskt = INFINITO;//Iniciliaza  tempoTotalDisk ao "+infinito"
+            hashArray[i]->vooP=NULL;
+            hashArray[i]->hourProntoParaPartir=(short)-1;
+            hashArray[i]->minProntoParaPartir=(short)-1;
         }
     }
+    aeroportoPartida->tempoTotalDiskt = 0;
+    aeroportoPartida->hourProntoParaPartir=(short)horaChegada;
+    aeroportoPartida->minProntoParaPartir=(short)minutoChegada;
 }
 
 // void relax(struct air u, struct air *v,int vooDuração) {
@@ -68,24 +73,23 @@ void initializeSource(struct air *aeroportoPartida)
 //    1 if u.d + w(u,v) < v.d then
 //    2     v.d <- u.d + w(u,v)
 // 3 v.p <- u
-void dijkstra(struct air *aeroportoPartida) {
+void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights* tempLista;//instancia das linked list para a percorrer
     unsigned int possivelIndexHash=1;
-    initializeSource(aeroportoPartida);
+    initializeSource(aeroportoPartida,horaChegada,minutoChegada);//inicializa os aeroportos para a pesquisa
+    h->firstpop=true;
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
         if (hashArray[i] != NULL) {
-            insert(hashArray[i]);
+            insert_Heap(*hashArray[i]);
         }
     }
-    while (h->count != 0) {
-
+    while (h->count != 0) 
+    {
         tempAir = PopMin();
-        push_Stack(tempAir);
         tempLista = tempAir.linkedVoos;
-        //ver todos os voos de cada aeroporto
-        while (tempLista!=NULL)
+        while (tempLista!=NULL)//ver todos os voos de tempAir
         {
             //pocura a posição do aeroporto do voo em questão
             possivelIndexHash= search(tempLista->data.IdAirChegada);
@@ -97,7 +101,7 @@ void dijkstra(struct air *aeroportoPartida) {
                 
             }
             
-            relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
+            //relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
             tempLista=tempLista->son;
         }
     }
@@ -112,18 +116,8 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
     struct air data;
     struct air peek;
     short novaHora=-1;
-    short novaMin=-1;
-
-    int possivelIndexHash=-1;
-    possivelIndexHash= search(IdAirPartida);
-            while (strcpy(hashArray[possivelIndexHash]->Id,IdAirPartida)!=0)//confirma que encontramos o aeroporto de chegada
-            {
-                possivelIndexHash++;
-                //wrap around the table
-                possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
-                
-            }
-    dijkstra(hashArray[possivelIndexHash]);    
+    short novaMin=-1;           
+    dijkstra(searchAir(IdAirPartida),hourChegadaAoAir,minuteChegadaAoAirPartida);    
   
 // De   Para Parte Chega
 // ==== ==== ===== =====

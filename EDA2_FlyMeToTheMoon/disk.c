@@ -38,7 +38,7 @@ void enter_FMTTM() {
             strcpy(novoAir->Id, id_temp);
             novoAir->tempoTotalDiskt = -1;
             novoAir->linkedVoos = NULL;
-            strcpy(novoAir->IdPrecessor, "NULL");
+            novoAir->vooP=NULL;
             check = insert(novoAir);
             if (!check)
                 exit(15);
