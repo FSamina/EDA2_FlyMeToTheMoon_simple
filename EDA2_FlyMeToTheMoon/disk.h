@@ -1,5 +1,5 @@
 #include "linkedList.h"
-#define FNAMET "disk.bin"
+#define FNAMET "disk.txt"
 
 FILE *file;
 

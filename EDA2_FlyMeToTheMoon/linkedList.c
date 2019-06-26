@@ -3,11 +3,6 @@
 #include <string.h>
 #include "linkedList.h"
 
-/*
- * todo:
- * Baseado na implemetação do MOCHILA
- * */
-
 void print_list(struct linkedFlights *head) {
     struct linkedFlights *temp;
     for (temp = head; temp; temp = temp->son)
@@ -44,8 +39,7 @@ bool search_fligths(struct linkedFlights *head,
     return false;
 }
 
-struct linkedFlights *
-add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada[5], short hourPartida,
+struct linkedFlights *add(struct linkedFlights *linkedFlights, char IdAirPartida[5], char IdAirChegada[5], short hourPartida,
     short minutePartida,
     short tempTotal) 
 {
@@ -101,7 +95,6 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
             }
                
         }
-        
         temp_pai = temp;
         temp=temp->son;
     }

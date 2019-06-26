@@ -198,7 +198,8 @@ int main(void) {
     //testar hastable
 
     char cod[5] = "";
-
+    openTable_FMTTM();
+    enter_FMTTM();
     char idAir[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
     char idAirPartida[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
     char idAirDestino[ID_AIR_SIZE] = "";//Declara e inicializa o array de chars a 0
@@ -211,7 +212,7 @@ int main(void) {
     {
         if (strcmp(cod, "X") == 0) {
             //exitTable(file,hashArray);
-
+            exit_FMTTM();
             //Termina o programa
             return -1;
         } else if (strcmp(cod, "AI") == 0) {
