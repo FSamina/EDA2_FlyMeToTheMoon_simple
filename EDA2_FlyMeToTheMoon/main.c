@@ -2,71 +2,95 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 #include "bHeap.h"
 
 
 #define ID_AIR_SIZE 5
 #define ID_VOO_SIZE 7
+#define INFINITO 65535
 
 // INITIALIZE-SINGLE-SOURCE(G, s)
 //    1 for each vertex v in G.V do
 // 2 v.d <- INFINITY // peso do caminho mais curto de s a v
 // 3 v.p <- NIL // predecessor de v nesse caminho
 // 4 s.d <- 0
-/*
+
 
 short* somaMinutosAHoras(short h,short m,short minutosSoma)
 {
-    short minutosDeHoras = 60*h;
+    short arrayH[1];
+    short totalMinutos = 60*h+m+minutosSoma;
+    float horaMatematica= totalMinutos/60;
+    short horaMatematicaSemFloat= (short)horaMatematica;//Horas completas
+    horaMatematica= horaMatematica-horaMatematicaSemFloat;//Minutos restantes
+    float novosMinutos= horaMatematica*60;
+    short novosMinutosShort = roundf(novosMinutos);
+   
 
-
+    if (horaMatematicaSemFloat>=(short)24)
+    {
+        horaMatematicaSemFloat= horaMatematicaSemFloat-24;
+    }
+    if(novosMinutos == 60)
+    {
+        novosMinutos=0;
+        horaMatematicaSemFloat++;
+        if (horaMatematicaSemFloat==(short)24)
+        {
+            horaMatematicaSemFloat=0;
+        }  
+    }
+    arrayH[0]=horaMatematicaSemFloat;
+    arrayH[1]=novosMinutosShort;
+    return arrayH;
 }
 
-void initializeSource(struct air *aeroportoPartida)
+void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
 {
-    aeroportoPartida->tempoTotalDiskt = 0;
     for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
-        if (hashArray[i] != NULL) {
-            hashArray[i]->tempoTotalDiskt = 1450;//Iniciliaza  tempoTotalDisk ao "+infinito"
-            strcpy(hashArray[i]->IdPrecessor, "NIL");
+        if (hashArray[i] != NULL)
+        {
+            hashArray[i]->tempoTotalDiskt = INFINITO;//Iniciliaza  tempoTotalDisk ao "+infinito"
+            hashArray[i]->vooP=NULL;
+            hashArray[i]->hourProntoParaPartir=(short)-1;
+            hashArray[i]->minProntoParaPartir=(short)-1;
         }
     }
+    aeroportoPartida->tempoTotalDiskt = 0;
+    aeroportoPartida->hourProntoParaPartir=(short)horaChegada;
+    aeroportoPartida->minProntoParaPartir=(short)minutoChegada;
 }
 
-void relax(struct air u, struct air *v,int vooDuração) {
-    if (u.tempoTotalDiskt + vooDuração*/
-/* + Tempo do caminho(u ,v) *//*
- < v->tempoTotalDiskt) {
-        v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração */
-/* + Tempo do caminho(u ,v) *//*
-;
-        strcpy(v->IdPrecessor, u.IdPrecessor);
-    }
-}
+// void relax(struct air u, struct air *v,int vooDuração) {
+//     if (u.tempoTotalDiskt + vooDuração/* + Tempo do caminho(u ,v) */ < v->tempoTotalDiskt) {
+//         v->tempoTotalDiskt = u.tempoTotalDiskt+ vooDuração /* + Tempo do caminho(u ,v) */;
+//         strcpy(v->IdPrecessor, u.IdPrecessor);
+//     }
+// }
 
 // RELAX(u, v, w)
 //    1 if u.d + w(u,v) < v.d then
 //    2     v.d <- u.d + w(u,v)
 // 3 v.p <- u
-void dijkstra(struct air *aeroportoPartida) {
+void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights* tempLista;//instancia das linked list para a percorrer
     unsigned int possivelIndexHash=1;
-    initializeSource(aeroportoPartida);
+    initializeSource(aeroportoPartida,horaChegada,minutoChegada);//inicializa os aeroportos para a pesquisa
+    h->firstpop=true;
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
         if (hashArray[i] != NULL) {
-            insert(hashArray[i]);
+            insert_Heap(*hashArray[i]);
         }
     }
-    while (h->count != 0) {
-
+    while (h->count != 0) 
+    {
         tempAir = PopMin();
-        push_Stack(tempAir);
         tempLista = tempAir.linkedVoos;
-        //ver todos os voos de cada aeroporto
-        while (tempLista!=NULL)
+        while (tempLista!=NULL)//ver todos os voos de tempAir
         {
             //pocura a posição do aeroporto do voo em questão
             possivelIndexHash= search(tempLista->data.IdAirChegada);
@@ -77,8 +101,7 @@ void dijkstra(struct air *aeroportoPartida) {
                 possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
 
             }
-
-            relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
+            //relax(tempAir,hashArray[possivelIndexHash],tempLista->data.tempTotal);
             tempLista=tempLista->son;
         }
     }
@@ -93,19 +116,8 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
     struct air data;
     struct air peek;
     short novaHora=-1;
-    short novaMin=-1;
-
-    int possivelIndexHash=-1;
-    possivelIndexHash= search(IdAirPartida);
-            while (strcpy(hashArray[possivelIndexHash]->Id,IdAirPartida)!=0)//confirma que encontramos o aeroporto de chegada
-            {
-                possivelIndexHash++;
-                //wrap around the table
-                possivelIndexHash %= SIZE;//casu haja loop experimenta tirar isto
-
-            }
-    dijkstra(hashArray[possivelIndexHash]);
-
+    short novaMin=-1;           
+    dijkstra(searchAir(IdAirPartida),hourChegadaAoAir,minuteChegadaAoAirPartida);
 // De   Para Parte Chega
 // ==== ==== ===== =====
 // CSOH VYN  00:40 19:38
@@ -117,7 +129,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
 // Tempo de viagem: 6228 minutos
 
 }
-*/
+
 
 //FD <aeroporto-partida> <aeroporto-destino> <hora-partida>
 void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {

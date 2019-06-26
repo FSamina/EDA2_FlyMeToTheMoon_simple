@@ -6,11 +6,11 @@ struct air * hashArray[SIZE];
 struct air* dummyItem;
 struct air* item;
 
-int hashCode(char key[5]);
+unsigned int hashCode(char key[5]);
 
 struct air* searchAir(char key[5]);
 
-int  search(char key[5]);
+unsigned int  search(char key[5]);
 
 bool insert(struct air* novoAir);
 

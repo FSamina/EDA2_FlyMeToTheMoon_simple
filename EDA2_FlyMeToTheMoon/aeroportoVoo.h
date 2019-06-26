@@ -7,9 +7,9 @@ struct voos
 {
     char IdAirPartida[5];
     char IdAirChegada[5];
-    short hourPartida;
-    short minutePartida;
-    short tempTotal;//Duração do voo
+    unsigned short hourPartida;
+    unsigned short minutePartida;
+    unsigned short tempTotal;//Duração do voo
 };
 
 struct linkedFlights
@@ -25,5 +25,5 @@ struct air
     struct voos * vooP;//P
     short hourProntoParaPartir;//Tempo
     short minProntoParaPartir;//Tempo
-    short tempoTotalDiskt; //NOSSO D
+    unsigned short tempoTotalDiskt; //NOSSO D//Pode estar 287998560 minutes  a voar 
 };
