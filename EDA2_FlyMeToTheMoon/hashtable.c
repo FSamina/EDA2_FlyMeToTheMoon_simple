@@ -8,11 +8,9 @@
 
 unsigned int hashCode(char key[5])
 {
-    puts("NOVA CHAMADA \n");
     unsigned int res=0;
     for (int i = 0; i < strlen(key); i++)
     {
-        printf("%s %lu\n",key,strlen(key));
         
         res=res + (int) key[i];
         
