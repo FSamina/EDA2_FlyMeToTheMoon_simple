@@ -92,7 +92,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
 {
     if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
     {
-        if (printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
+        if (!printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
         {
             return false;
         }
@@ -145,7 +145,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
         tempLista = tempAir.linkedVoos;
         while (tempLista != NULL)//ver todos os voos de tempAir
         {
-            if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) > getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
+            if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
             {
                 relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
             }else
