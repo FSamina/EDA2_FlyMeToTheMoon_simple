@@ -1,7 +1,9 @@
 #include "linkedList.h"
-#define FNAMET "disk.txt"
+#define FNAMEHT "disk.txt"
+#define FNAMELL "llist.txt"
 
-FILE *file;
+FILE *file_ht;
+FILE *file_ll;
 
 void exit_FMTTM();
 void enter_FMTTM();

@@ -71,7 +71,7 @@ bool insert(struct air* novoAir) {
     strcpy(key,novoAir->Id);
     //get the hash
     unsigned int hashIndex = hashCode(key);
-
+    printf("%s:%d",key,hashIndex);
     //move in array until an empty or deleted cel
     while(hashArray[hashIndex] != NULL)
     {

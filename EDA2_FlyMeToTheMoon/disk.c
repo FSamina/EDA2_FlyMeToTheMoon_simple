@@ -6,17 +6,22 @@
 
 void exit_FMTTM()//Alterar o nome
 {
+    fseek(file_ht,0,SEEK_SET);
+    fseek(file_ll,0,SEEK_SET);
     for (int i = 0; i < SIZE; ++i) {
         if (hashArray[i] != NULL) {
-            fprintf(file, "%s\n", hashArray[i]->Id);
+            puts("AQUI NO EXIT\n");
+            fprintf(file_ht, "%s\n", hashArray[i]->Id);
+            printf("i_exit:%i",i);
             struct linkedFlights *temp = hashArray[i]->linkedVoos;
             while (temp != NULL) {
-                fprintf(file, "%s %hd %hd %hd\n", temp->data.IdAirChegada, temp->data.hourPartida,
+                fprintf(file_ll, "%s %hd %hd %hd\n", temp->data.IdAirChegada, temp->data.hourPartida,
                         temp->data.minutePartida, temp->data.tempTotal);
                 temp = temp->son;
             }
+            fprintf(file_ll, "- 0 0 0\n");
         } else
-            fprintf(file, "- 0 0 0\n");
+            fprintf(file_ht, "0\n");
     }
 
 
@@ -28,30 +33,22 @@ void enter_FMTTM() {
     short hourPartida_t;
     short minutePartida_t;
     short tempTotal_t;
-    int i = 0;
-    int i_temp;
-    while (i < SIZE) {
-        i++;
-        if (fscanf(file, "%s", id_temp) == EOF)
+    for (int i = 0; i < SIZE; ++i) {
+        if (fscanf(file_ht, "%s", id_temp) == EOF)
             i = SIZE;
         else if (strcmp(id_temp, "0") != 0) {
             struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
             strcpy(novoAir->Id, id_temp);
             novoAir->linkedVoos = NULL;
             hashArray[i] = novoAir;
-            i_temp = 0;
-            while (fscanf(file, "%s %hd %hd %hd", IdAirChegada_t, &hourPartida_t, &minutePartida_t, &tempTotal_t) !=
+            printf("i_enter:%i",i);
+            while (fscanf(file_ll, "%s %hd %hd %hd", IdAirChegada_t, &hourPartida_t, &minutePartida_t, &tempTotal_t) !=
                    0) {
-                i_temp++;
                 if (strcmp(IdAirChegada_t, "-") != 0)
                     hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos, id_temp, IdAirChegada_t, hourPartida_t,
                                                    minutePartida_t,
                                                    tempTotal_t);
-                else {
-                    i += i_temp;
-                    break;
-
-                }
+                else break;
             }
         }
 
@@ -60,11 +57,21 @@ void enter_FMTTM() {
 }
 
 void openTable_FMTTM() {
-    file = fopen(FNAMET, "r+");
-    if (file == NULL) {
-        file = fopen(FNAMET, "w+");
+
+    file_ht = fopen(FNAMEHT, "r+");
+    if (file_ht == NULL) {
+        file_ht = fopen(FNAMEHT, "w+");
     }
-    if (file == NULL) {
+    if (file_ht == NULL) {
         exit(6);
     }
+
+    file_ll = fopen(FNAMELL, "r+");
+    if (file_ll == NULL) {
+        file_ll = fopen(FNAMELL, "w+");
+    }
+    if (file_ll == NULL) {
+        exit(6);
+    }
+    
 }
