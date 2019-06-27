@@ -16,8 +16,7 @@ void exit_FMTTM()//Alterar o nome
                 temp = temp->son;
             }
         } else
-            fprintf(file, "0");
-        fprintf(file, "- 0 0 0\n");
+            fprintf(file, "- 0 0 0\n");
     }
 
 
