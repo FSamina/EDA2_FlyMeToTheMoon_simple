@@ -10,9 +10,9 @@ void exit_FMTTM()//Alterar o nome
     fseek(file_ll,0,SEEK_SET);
     for (int i = 0; i < SIZE; ++i) {
         if (hashArray[i] != NULL) {
-            puts("AQUI NO EXIT\n");
+            //puts("AQUI NO EXIT\n");
             fprintf(file_ht, "%s\n", hashArray[i]->Id);
-            printf("i_exit:%i",i);
+            //printf("i_exit:%i",i);
             struct linkedFlights *temp = hashArray[i]->linkedVoos;
             while (temp != NULL) {
                 fprintf(file_ll, "%s %hd %hd %hd\n", temp->data.IdAirChegada, temp->data.hourPartida,
@@ -41,7 +41,7 @@ void enter_FMTTM() {
             strcpy(novoAir->Id, id_temp);
             novoAir->linkedVoos = NULL;
             hashArray[i] = novoAir;
-            printf("i_enter:%i",i);
+            //printf("i_enter:%i",i);
             while (fscanf(file_ll, "%s %hd %hd %hd", IdAirChegada_t, &hourPartida_t, &minutePartida_t, &tempTotal_t) !=
                    0) {
                 if (strcmp(IdAirChegada_t, "-") != 0)

@@ -9,7 +9,8 @@
 unsigned int hashCode(char key[5])
 {
     unsigned int res=0;
-    for (int i = 0; i < strlen(key); i++)
+
+    for (int i = 0;key[i]!='\0'; i++)
     {
         
         res=res + (int) key[i];
@@ -71,7 +72,7 @@ bool insert(struct air* novoAir) {
     strcpy(key,novoAir->Id);
     //get the hash
     unsigned int hashIndex = hashCode(key);
-    printf("%s:%d",key,hashIndex);
+    //printf("%s:%d",key,hashIndex);
     //move in array until an empty or deleted cel
     while(hashArray[hashIndex] != NULL)
     {

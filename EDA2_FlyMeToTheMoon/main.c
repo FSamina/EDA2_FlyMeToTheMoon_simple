@@ -7,7 +7,7 @@
 
 #define ID_AIR_SIZE 5
 #define ID_VOO_SIZE 7
-#define INFINITO 65535
+#define INFINITO 287998561
 #define MINUTOS_DIA 1440
 
 // INITIALIZE-SINGLE-SOURCE(G, s)
@@ -180,7 +180,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
 
     if (printVoos(airFinal,IdAirPartida))
     {
-        printf("Tempo de viagem: %hu minutos\n",airFinal->tempoTotalDiskt);
+        printf("Tempo de viagem: %u minutos\n",airFinal->tempoTotalDiskt);
     }else
     {
         printf("+ sem voos de %s para %s\n",IdAirPartida,IdAirChegada);
@@ -261,7 +261,6 @@ int main(void) {
     while (scanf("%s", cod) != EOF)// enquanto houver mais linhas // le strings
     {
         if (strcmp(cod, "X") == 0) {
-            //exitTable(file,hashArray);
             exit_FMTTM();
             //Termina o programa
             return -1;

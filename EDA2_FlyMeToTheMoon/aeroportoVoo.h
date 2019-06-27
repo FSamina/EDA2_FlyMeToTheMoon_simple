@@ -25,5 +25,5 @@ struct air
     struct voos vooP;//P
     short hourProntoParaPartir;//Tempo
     short minProntoParaPartir;//Tempo
-    unsigned short tempoTotalDiskt; //NOSSO D//Pode estar 287998560 minutes  a voar 
+    unsigned int tempoTotalDiskt; //NOSSO D//Pode estar 287998560 minutes  a voar 
 };
