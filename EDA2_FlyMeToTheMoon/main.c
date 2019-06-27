@@ -24,29 +24,25 @@ short getMinutosDeHoras(short h,short m)
 void somaMinutosAHoras(unsigned short *h,unsigned short *m,short minutosSoma)
 {
     short totalMinutos = 60* *h+*m+minutosSoma;
-    float horaMatematica= totalMinutos/60;
-    short horaMatematicaSemFloat= (short)horaMatematica;//Horas completas
-    horaMatematica= horaMatematica-horaMatematicaSemFloat;//Minutos restantes
-    float novosMinutos= horaMatematica*60;
-    short novosMinutosShort = roundf(novosMinutos);
-   
-
-    if (horaMatematicaSemFloat>=(short)24)
+    short horaMatematica= totalMinutos/60;
+    short novosMinutos= totalMinutos%60;
+     
+    if (horaMatematica>=(short)24)
     {
-        horaMatematicaSemFloat= horaMatematicaSemFloat-24;
+        horaMatematica= horaMatematica-24;
     }
     if(novosMinutos == 60)
     {
         novosMinutos=0;
-        horaMatematicaSemFloat++;
-        if (horaMatematicaSemFloat==(short)24)
+        horaMatematica++;
+        if (horaMatematica==(short)24)
         {
-            horaMatematicaSemFloat=0;
+            horaMatematica=0;
         }  
     }
     
-    *h=horaMatematicaSemFloat;
-    *m=novosMinutosShort;
+    *h=horaMatematica;
+    *m=novosMinutos;
 }
 
 void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
