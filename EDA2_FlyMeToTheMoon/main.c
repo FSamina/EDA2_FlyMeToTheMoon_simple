@@ -49,7 +49,7 @@ void initializeSource(struct air *aeroportoPartida,short horaChegada,short minut
 {
     unsigned int index= search(aeroportoPartida->Id);
 
-    printf("%s\n",hashArray[index]->Id);
+    //printf("%s\n",hashArray[index]->Id);
     if (index ==-1)
     {
         puts("Endereço incorreto no inicialize Source\n");
@@ -92,23 +92,36 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
         noDaLinkedList.data.hourPartida=htemp;
         noDaLinkedList.data.minutePartida=mtemp;
-        printf("HORA %hd MINUTO %hd  \n",noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida);
     }  
 }
 
-void printVoos(struct air* airFinal)
+bool printVoos(struct air* airFinal,char IdAirPartida[5])
 {
     if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
     {
-        printVoos(searchAir(airFinal->vooP.IdAirPartida));
+        if (printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
+        {
+            return false;
+        }
         
+    }else if (strcmp(airFinal->vooP.IdAirPartida,"NIL")==0 && strcmp(airFinal->Id,IdAirPartida)!=0)
+    {
+        return false;
     }
+    
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
         struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
         printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->linkedVoos->data.hourPartida,temp->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        return true;
+    }else
+    {
+        printf("De   Para Parte Chega\n==== ==== ===== =====\n");
+        return true;
     }
+    return false;
+    
 
 }
 
@@ -164,17 +177,32 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
 {
     struct air* airFinal=searchAir(IdAirChegada);
     struct air* airPartida=searchAir(IdAirPartida);
-    if (airFinal == NULL)
+    if (airPartida == NULL)
     {
-        puts("Endereço incorreto no calcViagem\n");
+        printf("+ aeroporto %s desconhecido\n",IdAirPartida);
         return;
     }
+    if (airFinal == NULL)
+    {
+        printf("+ aeroporto %s desconhecido\n",IdAirChegada);
+        return;
+    }
+    
     dijkstra(airPartida,hourChegadaAoAir,minuteChegadaAoAirPartida);
         // De   Para Parte Chega
 // ==== ==== ===== =====
-    printf("De   Para Parte Chega\n==== ==== ===== =====\n");
-    printVoos(airFinal);
-    printf("Tempo de viagem: %hu minutos",airFinal->tempoTotalDiskt);
+    //printf("De   Para Parte Chega\n==== ==== ===== =====\n");
+    if (printVoos(airFinal,IdAirPartida))
+    {
+        printf("Tempo de viagem: %hu minutos\n",airFinal->tempoTotalDiskt);
+    }else
+    {
+        printf("+ sem voos de %s para %s\n",IdAirPartida,IdAirChegada);
+    }
+    
+    
+    
+    
 
 }
 
@@ -269,7 +297,6 @@ int main(void) {
             //TR LIS PDL 00:00
             //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
-            printf("TR %s %s %hd:%hd\n",idAirPartida, idAirDestino, hLocal, mLocal);
             calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
         }
 

@@ -38,7 +38,6 @@ struct air* searchAir(char key[5]) {
         //wrap around the table
         hashIndex %= SIZE;
     }
-    puts("NÃO ENCONTREI O  AIR NO SERACH AIR\n");
     return NULL;
 }
 
@@ -61,7 +60,7 @@ unsigned int search(char key[5]) {
         //wrap around the table
         hashIndex %= SIZE;
     }
-    puts("NÃO ENCONTREI O INDEX NA hash\n");
+    //puts("NÃO ENCONTREI O INDEX NA hash\n");
     return -1;
 }
 
