@@ -52,7 +52,6 @@ void somaMinutosAHoras(unsigned short *h,unsigned short *m,short minutosSoma)
 void initializeSource(struct air *aeroportoPartida,short horaChegada,short minutoChegada)
 {
     unsigned int index= search(aeroportoPartida->Id);
-    puts("initializeSource");
 
     printf("%s\n",hashArray[index]->Id);
     if (index ==-1)
@@ -122,10 +121,8 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
     {
         if (hashArray[i] != NULL) {
                             
-            puts("CHEGA AQUI 0\n");
 
             insert_Heap(*hashArray[i]);
-            puts("CHEGA AQUI 1\n");
 
         }
     }
@@ -160,12 +157,13 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
 void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida)
 {
     struct air* airFinal=searchAir(IdAirChegada);
+    struct air* airPartida=searchAir(IdAirPartida);
     if (airFinal == NULL)
     {
         puts("Endereço incorreto no calcViagem\n");
         return;
     }
-    dijkstra(airFinal,hourChegadaAoAir,minuteChegadaAoAirPartida);
+    dijkstra(airPartida,hourChegadaAoAir,minuteChegadaAoAirPartida);
         // De   Para Parte Chega
 // ==== ==== ===== =====
     printf("De   Para Parte Chega\n==== ==== ===== =====\n");
