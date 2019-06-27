@@ -98,8 +98,10 @@ void printVoos(struct air* airFinal)
         
     }
    
+    struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
+
     somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
-    printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+    printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->hourProntoParaPartir,temp->minProntoParaPartir,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
 }
 
 // RELAX(u, v, w)
