@@ -186,7 +186,7 @@ struct air PopMin(){
     
 
     heapify_top_bottom(0);
-    return pop;
+    return *hashArray[search(pop.Id)];
 
 }
 void print(){

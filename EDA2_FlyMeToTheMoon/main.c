@@ -73,13 +73,13 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         puts("no relax ha erro\n");
         return;
     }
-    unsigned short diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
+    short diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
     diffTempos=diffTempos+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
     if (diffTempos < v->tempoTotalDiskt)
     {
         v->tempoTotalDiskt=diffTempos;
         v->vooP=noDaLinkedList.data;
-        somaMinutosAHoras(&noDaLinkedList.data.hourPartida,&noDaLinkedList.data.minutePartida,noDaLinkedList.data.tempTotal+30);
+        somaMinutosAHoras(&noDaLinkedList.data.hourPartida,&noDaLinkedList.data.minutePartida,noDaLinkedList.data.tempTotal);
         v->hourProntoParaPartir=noDaLinkedList.data.hourPartida;
         v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
         noDaLinkedList.data.hourPartida=htemp;
@@ -137,7 +137,9 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
     }
 
 
-    while (h->count != 0) {
+    while (h->count != 0) 
+    {
+        
         tempAir = PopMin();
         tempLista = tempAir.linkedVoos;
         while (tempLista != NULL)//ver todos os voos de tempAir
