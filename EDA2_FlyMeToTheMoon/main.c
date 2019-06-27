@@ -2,7 +2,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
-#include <math.h>
 #include "bHeap.h"
 
 
@@ -55,8 +54,8 @@ void initializeSource(struct air *aeroportoPartida, short horaChegada, short min
         if (hashArray[i] != NULL) {
             hashArray[i]->tempoTotalDiskt = INFINITO;//Iniciliaza  tempoTotalDisk ao "+infinito"
             strcpy(hashArray[i]->vooP.IdAirPartida, "NIL");//marca um dummy
-            //hashArray[i]->hourProntoParaPartir=(short)-1;
-            //hashArray[i]->minProntoParaPartir=(short)-1;
+            hashArray[i]->hourProntoParaPartir=(short)0;
+            hashArray[i]->minProntoParaPartir=(short)0;
         }
     }
     hashArray[index]->tempoTotalDiskt = 0;
@@ -75,7 +74,7 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         return;
     }
     unsigned short diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
-    diffTempos=diffTempos+30+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
+    diffTempos=diffTempos+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
     if (diffTempos < v->tempoTotalDiskt)
     {
         v->tempoTotalDiskt=diffTempos;
@@ -106,7 +105,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     {
         struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
-        printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->linkedVoos->data.hourPartida,temp->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        printf("%s  %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->linkedVoos->data.hourPartida,temp->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
         return true;
     }else
     {
@@ -114,8 +113,6 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
         return true;
     }
     return false;
-    
-
 }
 
 // RELAX(u, v, w)
@@ -157,7 +154,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
             tempLista = tempLista->son;
         }
     }
-
+    free(h);
 }
 
 
@@ -178,9 +175,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
     }
     
     dijkstra(airPartida,hourChegadaAoAir,minuteChegadaAoAirPartida);
-        // De   Para Parte Chega
-// ==== ==== ===== =====
-    //printf("De   Para Parte Chega\n==== ==== ===== =====\n");
+
     if (printVoos(airFinal,IdAirPartida))
     {
         printf("Tempo de viagem: %hu minutos\n",airFinal->tempoTotalDiskt);
