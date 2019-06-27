@@ -115,8 +115,8 @@ void dijkstra(struct air *aeroportoPartida,short horaChegada,short minutoChegada
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights* tempLista;//instancia das linked list para a percorrer
     initializeSource(aeroportoPartida,horaChegada,minutoChegada);//inicializa os aeroportos para a pesquisa
-    
-    //h->firstpop=true; //Fabio tenta ver o proque desta linha dar erro por favor
+    CreateHeap();
+    h->firstpop=true;
     
     for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
     {
