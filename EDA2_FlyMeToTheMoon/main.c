@@ -63,20 +63,28 @@ void initializeSource(struct air *aeroportoPartida, short horaChegada, short min
     hashArray[index]->minProntoParaPartir = (short) minutoChegada;
 }
 
-void relax(struct air u, struct air *v, struct voos voo) {
-    if (v == NULL) {
+void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList) 
+{
+    short htemp= noDaLinkedList.data.hourPartida;
+    short mtemp= noDaLinkedList.data.minutePartida;
+    
+    if (v ==NULL)
+    {
         puts("no relax ha erro\n");
         return;
     }
-    unsigned short diffTempos = getMinutosDeHoras(voo.hourPartida, voo.minutePartida) -
-                                getMinutosDeHoras(u.hourProntoParaPartir, u.minProntoParaPartir);
-    diffTempos = diffTempos + 30 + voo.tempTotal + u.tempoTotalDiskt;
-    if (diffTempos < v->tempoTotalDiskt) {
-        v->tempoTotalDiskt = diffTempos;
-        v->vooP = voo;
-        somaMinutosAHoras(&voo.hourPartida, &voo.minutePartida, voo.tempTotal + 30);
-        v->hourProntoParaPartir = voo.hourPartida;
-        v->minProntoParaPartir = voo.minutePartida;
+    unsigned short diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
+    diffTempos=diffTempos+30+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
+    if (diffTempos < v->tempoTotalDiskt)
+    {
+        v->tempoTotalDiskt=diffTempos;
+        v->vooP=noDaLinkedList.data;
+        somaMinutosAHoras(&noDaLinkedList.data.hourPartida,&noDaLinkedList.data.minutePartida,noDaLinkedList.data.tempTotal+30);
+        v->hourProntoParaPartir=noDaLinkedList.data.hourPartida;
+        v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
+        noDaLinkedList.data.hourPartida=htemp;
+        noDaLinkedList.data.minutePartida=mtemp;
+        printf("HORA %hd MINUTO %hd  \n",noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida);
     }
 }
 
@@ -84,14 +92,12 @@ void printVoos(struct air *airFinal) {
     if (strcmp(airFinal->vooP.IdAirPartida, "NIL") != 0)//chegamos ao aeroporto inicial
     {
         printVoos(searchAir(airFinal->vooP.IdAirPartida));
-
     }
-    if (strcmp(airFinal->vooP.IdAirPartida, "NIL") != 0) {
-        struct air *temp = searchAir(airFinal->vooP.IdAirPartida);
-        somaMinutosAHoras(&airFinal->vooP.hourPartida, &airFinal->vooP.minutePartida, airFinal->vooP.tempTotal);
-        printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n", airFinal->vooP.IdAirPartida, airFinal->vooP.IdAirChegada,
-               temp->vooP.hourPartida, temp->vooP.minutePartida, airFinal->vooP.hourPartida,
-               airFinal->vooP.minutePartida);
+    if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
+    {
+        struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
+        somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
+        printf("%s %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->linkedVoos->data.hourPartida,temp->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
     }
 }
 
@@ -122,16 +128,14 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
         tempLista = tempAir.linkedVoos;
         while (tempLista != NULL)//ver todos os voos de tempAir
         {
-
-
-            if (getMinutosDeHoras(tempLista->data.hourPartida, tempLista->data.minutePartida) >
-                getMinutosDeHoras(tempAir.hourProntoParaPartir, tempAir.minProntoParaPartir)) {
-                relax(tempAir, searchAir(tempLista->data.IdAirChegada), tempLista->data);
-            } else {
-                tempAir.tempoTotalDiskt = tempAir.tempoTotalDiskt + MINUTOS_DIA;
-                relax(tempAir, searchAir(tempLista->data.IdAirChegada), tempLista->data);
-                tempAir.tempoTotalDiskt = tempAir.tempoTotalDiskt -
-                                          MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
+            if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) > getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
+            {
+                relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
+            }else
+            {
+                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt+MINUTOS_DIA;
+                relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
+                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
             }
             tempLista = tempLista->son;
         }
