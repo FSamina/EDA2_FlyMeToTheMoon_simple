@@ -1,2 +1,7 @@
+
++ novo aeroporto NHAX
+ (NHAX)
 + novo aeroporto VOT
+ (NHAX) (VOT)
 + aeroporto NHAX existe
+ (NHAX) (NHAX)
