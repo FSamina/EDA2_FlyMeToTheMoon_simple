@@ -33,11 +33,16 @@ struct air* searchAir(char key[5]) {
             return hashArray[hashIndex];
         }
 
-        //go to next cell
-        ++hashIndex;
-
-        //wrap around the table
-        hashIndex %= SIZE;
+       //wrap around the table
+        if (hashIndex==SIZE-1)
+        {
+            hashIndex=0;
+        }else
+        {
+            //go to next cell
+            ++hashIndex;
+        }
+        
     }
     return NULL;
 }
@@ -55,11 +60,16 @@ unsigned int search(char key[5]) {
             return hashIndex;
         }
 
-        //go to next cell
-        ++hashIndex;
-
         //wrap around the table
-        hashIndex %= SIZE;
+        if (hashIndex==SIZE-1)
+        {
+            hashIndex=0;
+        }else
+        {
+            //go to next cell
+            ++hashIndex;
+        }
+        
     }
     //puts("NÃO ENCONTREI O INDEX NA hash\n");
     return -1;
@@ -81,11 +91,21 @@ bool insert(struct air* novoAir) {
             return false;
         }
 
-        //go to next cell
-        ++hashIndex;
+        
 
         //wrap around the table
-        hashIndex %= SIZE;
+        if (hashIndex==SIZE-1)
+        {
+            hashIndex=0;
+        }else
+        {
+            //go to next cell
+            ++hashIndex;
+        }
+        
+        
+        
+        //hashIndex %= SIZE;
     }
 
     hashArray[hashIndex] = novoAir;

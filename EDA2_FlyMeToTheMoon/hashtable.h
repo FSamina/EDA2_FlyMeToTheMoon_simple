@@ -1,7 +1,7 @@
 #include "aeroportoVoo.h"
 
 #define SIZE 400009 
-#define HASH 8721
+#define HASH 8721123
 struct air * hashArray[SIZE];
 struct air* dummyItem;
 struct air* item;
