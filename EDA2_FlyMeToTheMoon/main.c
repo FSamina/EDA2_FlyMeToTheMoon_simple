@@ -230,7 +230,15 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
         printf("+ aeroporto %s desconhecido\n", IdAirPartida);
     else
         printf("+ aeroporto %s desconhecido\n", IdAirChegada);
+    //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
+    //strcpy(novoVoo->IdAirChegada,IdAirChegada);
+    //novoVoo->hourPartida =hPartida;
+    //novoVoo->minutePartida=mPartida;
+    //novoVoo->tempTotal=tempoDeVoo;
+    //enviar para  linked list
 
+
+    //write(fileVoo,hashIndex,pos,novoVoo);
 }
 
 //AI <código> <fuso-hor´ario>
@@ -246,7 +254,6 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     } else {
         printf("+ aeroporto %s existe\n", novoAir->Id);
     }
-    free(novoAir);
 }
 
 int main(void) {
@@ -265,9 +272,7 @@ int main(void) {
     {
         if (strcmp(cod, "X") == 0) {
             exit_FMTTM();
-            //free(hashArray);
             //Termina o programa
-            scanf("%hd  ",&duracaoVoo);
             return 0;
         } else if (strcmp(cod, "AI") == 0) {
 
