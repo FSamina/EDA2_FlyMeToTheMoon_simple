@@ -103,9 +103,10 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
-        struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
+        //struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
+        int tempIndex= search(airFinal->vooP.IdAirPartida);
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
-        printf("%s  %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,temp->linkedVoos->data.hourPartida,temp->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        printf("%s  %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,hashArray[tempIndex]->linkedVoos->data.hourPartida,hashArray[tempIndex]->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
         return true;
     }else
     {
