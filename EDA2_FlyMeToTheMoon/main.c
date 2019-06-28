@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
 #include "bHeap.h"
 
 
@@ -89,6 +90,7 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
 
 bool printVoos(struct air* airFinal,char IdAirPartida[5])
 {
+    printf("RESUSIVA AIR %s\n\n",airFinal->Id);
     if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
     {
         if (!printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
@@ -104,9 +106,10 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
         //struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
-        int tempIndex= search(airFinal->vooP.IdAirPartida);
+        printf("%.5s  %.5s  %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
-        printf("%s  %s  %.2hd:%.2hd %.2hd:%.2hd\n",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,hashArray[tempIndex]->linkedVoos->data.hourPartida,hashArray[tempIndex]->linkedVoos->data.minutePartida,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        printf(" %.2hd:%.2hd\n",airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
         return true;
     }else
     {
@@ -154,6 +157,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
                 relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
                 tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
             }
+
             tempLista = tempLista->son;
         }
     }
@@ -178,7 +182,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
     }
     
     dijkstra(airPartida,hourChegadaAoAir,minuteChegadaAoAirPartida);
-
+    
     if (printVoos(airFinal,IdAirPartida))
     {
         printf("Tempo de viagem: %u minutos\n",airFinal->tempoTotalDiskt);
@@ -264,7 +268,7 @@ int main(void) {
         if (strcmp(cod, "X") == 0) {
             exit_FMTTM();
             //Termina o programa
-            return -1;
+            return 0;
         } else if (strcmp(cod, "AI") == 0) {
 
             scanf("%s", idAir);
@@ -341,5 +345,5 @@ int main(void) {
 
 
 
-    return -1;
+    return 0;
 }

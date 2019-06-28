@@ -5,7 +5,7 @@
 
 void print_list(struct linkedFlights *head) {
     struct linkedFlights *temp;
-    for (temp = head; temp; temp = temp->son)
+    for (temp = head; temp==NULL; temp = temp->son)
         printf("%s ->", temp->son->data.IdAirChegada);
     puts("");
 }
