@@ -85,12 +85,13 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
         noDaLinkedList.data.hourPartida=htemp;
         noDaLinkedList.data.minutePartida=mtemp;
+        decreaseKey(indexfinder(v),diffTempos);
     }  
 }
 
 bool printVoos(struct air* airFinal,char IdAirPartida[5])
 {
-    printf("RESUSIVA AIR %s\n\n",airFinal->Id);
+    //printf("RESUSIVA AIR %s\n\n",airFinal->Id);
     if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
     {
         if (!printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
@@ -126,6 +127,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
 void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights *tempLista;//instancia das linked list para a percorrer
+    
     initializeSource(aeroportoPartida, horaChegada, minutoChegada);//inicializa os aeroportos para a pesquisa
     CreateHeap();
     h->firstpop = true;
@@ -144,7 +146,10 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
     while (h->count != 0) 
     {
         
+        
         tempAir = PopMin();
+        
+        //printf("POP %s %d \n",tempAir.Id,tempAir.tempoTotalDiskt);
         tempLista = tempAir.linkedVoos;
         while (tempLista != NULL)//ver todos os voos de tempAir
         {
@@ -225,15 +230,7 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
         printf("+ aeroporto %s desconhecido\n", IdAirPartida);
     else
         printf("+ aeroporto %s desconhecido\n", IdAirChegada);
-    //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
-    //strcpy(novoVoo->IdAirChegada,IdAirChegada);
-    //novoVoo->hourPartida =hPartida;
-    //novoVoo->minutePartida=mPartida;
-    //novoVoo->tempTotal=tempoDeVoo;
-    //enviar para  linked list
 
-
-    //write(fileVoo,hashIndex,pos,novoVoo);
 }
 
 //AI <código> <fuso-hor´ario>
@@ -249,6 +246,7 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     } else {
         printf("+ aeroporto %s existe\n", novoAir->Id);
     }
+    free(novoAir);
 }
 
 int main(void) {
@@ -267,7 +265,9 @@ int main(void) {
     {
         if (strcmp(cod, "X") == 0) {
             exit_FMTTM();
+            //free(hashArray);
             //Termina o programa
+            scanf("%hd  ",&duracaoVoo);
             return 0;
         } else if (strcmp(cod, "AI") == 0) {
 

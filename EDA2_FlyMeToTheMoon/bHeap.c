@@ -193,7 +193,7 @@ void print(){
     int i;
     printf("____________Print Heap_____________\n");
     for(i=0;i< h->count;i++){
-        printf("-> %s ",h->arr[i].Id);
+        printf("-> %s D= %d ",h->arr[i].Id,h->arr[i].tempoTotalDiskt);
     }
     printf("\n");
 }
