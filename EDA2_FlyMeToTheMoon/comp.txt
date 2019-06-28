@@ -644,11 +644,10 @@ PUF  HXFA  07:05 01:31
 Tempo de viagem: 3210 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-CMND  NZCC  06:01 15:33
-NZCC  NIP  15:57 17:17
-NIP  JFEV  04:26 08:04
-JFEV  PJL  02:43 22:29
-Tempo de viagem: 3879 minutos
+CMND  DBC  08:14 19:53
+DBC  XHL  04:29 02:28
+XHL  PJL  16:31 05:31
+Tempo de viagem: 4301 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 LWK  VYN  06:43 11:43
@@ -670,11 +669,12 @@ NHAX  DWG  08:10 05:18
 Tempo de viagem: 5378 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-MWUV  QXT  19:30 20:05
-QXT  QULR  20:15 00:43
-QULR  CSOH  03:28 23:03
-CSOH  LWK  00:34 13:18
-Tempo de viagem: 2760 minutos
+MWUV  ZJQ  23:48 04:05
+ZJQ  JDMB  19:10 22:41
+JDMB  RNC  23:12 03:34
+RNC  IGWB  10:11 18:41
+IGWB  LWK  00:03 10:25
+Tempo de viagem: 4027 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 XHL  BAG  21:04 07:13
@@ -697,10 +697,9 @@ RGOJ  EVX  08:58 10:31
 Tempo de viagem: 6308 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-AAFD  ZJQ  12:13 05:06
-ZJQ  MHRU  09:26 16:07
-MHRU  BAG  16:18 22:40
-BAG  XHL  06:22 06:51
+AAFD  NHAX  19:28 09:32
+NHAX  VOT  11:07 19:29
+VOT  XHL  05:17 11:15
 XHL  HXA  16:46 19:26
 Tempo de viagem: 3382 minutos
 De   Para Parte Chega
@@ -708,7 +707,7 @@ De   Para Parte Chega
 KIS  DBC  21:22 13:09
 DBC  NZCC  04:35 05:10
 NZCC  NIP  15:57 17:17
-Tempo de viagem: 2635 minutos
+Tempo de viagem: 4075 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 PJL  VOT  11:42 19:06
@@ -725,12 +724,10 @@ GLH  NNG  15:35 02:57
 Tempo de viagem: 2617 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-EVX  MWUV  16:23 12:01
-MWUV  ZJQ  23:48 04:05
-ZJQ  MHRU  09:26 16:07
-MHRU  BAG  16:18 22:40
-BAG  XHL  06:22 06:51
-Tempo de viagem: 3853 minutos
+EVX  HATP  06:16 19:02
+HATP  XRI  11:27 18:57
+XRI  XHL  02:24 15:28
+Tempo de viagem: 4370 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 FZVI  MGNJ  20:29 14:28
@@ -774,17 +771,20 @@ YAD  FBRS  21:57 00:21
 Tempo de viagem: 2616 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ZWF  AOCT  18:17 15:37
-AOCT  BYWN  01:09 08:35
+ZWF  VOT  05:11 18:17
+VOT  EKQ  05:25 21:35
+EKQ  BYWN  22:33 23:30
 BYWN  DTOD  16:32 17:12
-Tempo de viagem: 2823 minutos
+Tempo de viagem: 4263 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-AIID  BAG  22:21 02:07
-BAG  MHRU  15:07 19:18
-MHRU  BYWN  19:23 06:14
-BYWN  DTOD  16:32 17:12
-Tempo de viagem: 2872 minutos
+AIID  YLMU  19:56 20:49
+YLMU  AXB  00:17 04:58
+AXB  GLH  07:55 18:32
+GLH  FBRS  19:45 01:00
+FBRS  QXT  06:12 11:43
+QXT  DTOD  15:29 20:04
+Tempo de viagem: 3044 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 QXT  QULR  20:15 00:43
@@ -912,7 +912,7 @@ MWUV  QXT  19:30 20:05
 QXT  JDVX  21:47 07:06
 JDVX  AQZN  08:42 14:18
 AQZN  EHI  01:28 02:40
-Tempo de viagem: 3540 minutos
+Tempo de viagem: 4980 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
 VYN  LWK  01:22 09:56
@@ -935,10 +935,9 @@ Tempo de viagem: 3640 minutos
 + voo XHL HXA 16:46 existe
 De   Para Parte Chega
 ==== ==== ===== =====
-AAFD  ZJQ  12:13 05:06
-ZJQ  MHRU  09:26 16:07
-MHRU  BAG  16:18 22:40
-BAG  XHL  06:22 06:51
+AAFD  NHAX  19:28 09:32
+NHAX  VOT  11:07 19:29
+VOT  XHL  05:17 11:15
 XHL  HXA  16:46 19:26
 Tempo de viagem: 3382 minutos
 + sem voos de NQU para AIID
