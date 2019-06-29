@@ -11,6 +11,14 @@ struct linkedFlights *add(struct linkedFlights *linkedFlights,
                           short minutePartida,
                           short tempTotal);
 
+struct linkedFlights *add_from_disk(struct linkedFlights *linkedFlights,
+                          char IdAirPartida[5],
+                          char IdAirChegada[5],
+                          short hourPartida,
+                          short minutePartida,
+                          short tempTotal);
+
+
 
 struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
                                            char IdAirPartida_remove[5],
