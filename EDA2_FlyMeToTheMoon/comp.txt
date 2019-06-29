@@ -1,576 +1,2199 @@
-+ novo aeroporto RSN
-+ novo aeroporto RDQ
-+ novo aeroporto LTD
-+ novo aeroporto ITLO
-+ novo aeroporto QTV
-+ novo aeroporto TRQY
-+ novo aeroporto EBLA
-+ novo aeroporto EUP
-+ novo aeroporto LTL
-+ novo aeroporto GGJF
-+ novo aeroporto ERFS
-+ novo aeroporto YPER
-+ novo aeroporto VSWB
-+ novo aeroporto JDXQ
-+ novo aeroporto PIL
-+ novo aeroporto VRQ
-+ novo aeroporto AWR
-+ novo aeroporto PYY
-+ novo aeroporto WQD
-+ novo aeroporto ZAJX
-+ novo aeroporto FIGC
-+ novo aeroporto ERJ
-+ novo aeroporto BEJ
-+ novo aeroporto GLS
-+ novo aeroporto RHZR
-+ novo aeroporto VHIN
-+ novo aeroporto KWH
-+ novo aeroporto BQSG
-+ novo aeroporto YZZ
-+ novo aeroporto DGB
-+ novo aeroporto OMRO
-+ novo aeroporto YPXD
-+ novo aeroporto GOAR
-+ novo aeroporto WYM
-+ novo aeroporto QGI
-+ novo aeroporto EHIX
-+ novo aeroporto OYL
-+ novo aeroporto NCTS
-+ novo aeroporto IPG
-+ novo aeroporto WWXN
-+ novo aeroporto WNI
-+ novo aeroporto EQG
-+ novo aeroporto XPVU
-+ novo aeroporto MUP
-+ novo aeroporto HSKA
-+ novo aeroporto UPC
-+ novo aeroporto NYP
-+ novo aeroporto XLQ
-+ novo aeroporto JWYR
-+ novo aeroporto VHGP
-+ novo aeroporto SJAJ
-+ novo aeroporto UVTP
-+ novo aeroporto KRI
-+ novo aeroporto SZA
-+ novo aeroporto NSWY
-+ novo aeroporto UQZ
-+ novo aeroporto ZGIM
-+ novo aeroporto UOK
-+ novo aeroporto JFGA
-+ novo aeroporto QRFQ
-+ novo aeroporto HTAU
-+ novo aeroporto ZSCV
-+ novo aeroporto BNL
-+ novo aeroporto XXKR
-+ novo aeroporto WEX
-+ novo aeroporto MXZF
-+ novo aeroporto GVC
-+ novo aeroporto OEJC
-+ novo aeroporto CGBO
-+ novo aeroporto QATN
-+ novo aeroporto FFLB
-+ novo aeroporto IEYH
-+ novo aeroporto DYMA
-+ novo aeroporto BPG
-+ novo aeroporto TOPB
-+ novo aeroporto FKHF
-+ novo aeroporto UFKB
-+ novo aeroporto NNB
-+ novo aeroporto LIX
-+ novo aeroporto GLQ
-+ novo aeroporto NHT
-+ novo aeroporto CHR
-+ novo aeroporto WWOD
-+ novo aeroporto TZJ
-+ novo aeroporto BZT
-+ novo aeroporto CLD
-+ novo aeroporto JTTW
-+ novo aeroporto ELTX
-+ novo aeroporto VEEZ
-+ novo aeroporto DPH
-+ novo aeroporto IGSO
-+ novo aeroporto TKZW
-+ novo aeroporto EHGZ
-+ novo aeroporto DLG
-+ novo aeroporto GFC
-+ novo aeroporto JICN
-+ novo aeroporto TUUE
-+ novo aeroporto MUOG
-+ novo aeroporto QEA
-+ novo aeroporto NGU
-+ novo aeroporto LFYC
-+ novo aeroporto DEOP
-+ novo aeroporto TCA
-+ novo aeroporto ZWS
-+ novo aeroporto LNS
-+ novo aeroporto RIXT
-+ novo aeroporto KCZB
-+ novo aeroporto EZRR
-+ novo aeroporto VHUK
-+ novo aeroporto WMR
-+ novo aeroporto KLZV
-+ novo aeroporto SQS
-+ novo aeroporto NNF
-+ novo aeroporto REDH
-+ novo aeroporto CYD
-+ novo aeroporto ULBG
-+ novo aeroporto AUIX
-+ novo aeroporto UZC
-+ novo aeroporto TUO
-+ novo aeroporto KCDL
-+ novo aeroporto JOAU
-+ novo aeroporto BXAV
-+ novo aeroporto EDC
-+ novo aeroporto ZKD
-+ novo aeroporto EEJB
-+ novo aeroporto EPVO
-+ novo aeroporto YZPH
-+ novo aeroporto RDJ
-+ novo aeroporto BJP
-+ novo aeroporto NSPT
-+ novo aeroporto CXZG
-+ novo aeroporto IJBM
-+ novo aeroporto WCUU
-+ novo aeroporto JDU
-+ novo aeroporto HDVK
-+ novo aeroporto LXC
-+ novo aeroporto PXXR
-+ novo aeroporto YZY
-+ novo aeroporto JZV
-+ novo aeroporto XZG
-+ novo aeroporto DQWZ
-+ novo aeroporto FEOP
-+ novo aeroporto ZPXF
-+ novo aeroporto UEX
-+ novo aeroporto CYRI
-+ novo aeroporto QFTP
-+ novo aeroporto AIIS
-+ novo aeroporto KLK
-+ novo aeroporto ZBJ
-+ novo aeroporto QIGW
-+ novo aeroporto KTWO
-+ novo voo RSN RDQ 19:59
-+ novo voo RDQ RSN 13:50
-+ novo voo RSN LTD 01:54
-+ novo voo LTD RSN 15:59
-+ novo voo RSN ITLO 14:14
-+ novo voo ITLO RSN 19:22
-+ novo voo RSN QTV 17:00
-+ novo voo QTV RSN 07:22
-+ novo voo RSN TRQY 21:33
-+ novo voo TRQY RSN 00:19
-+ novo voo RSN EBLA 13:09
-+ novo voo EBLA RSN 20:16
-+ novo voo RSN EUP 23:29
-+ novo voo EUP RSN 20:53
-+ novo voo RSN LTL 05:53
-+ novo voo LTL RSN 03:55
-+ novo voo RSN GGJF 17:35
-+ novo voo GGJF RSN 06:59
-+ novo voo RSN ERFS 20:58
-+ novo voo ERFS RSN 07:11
-+ novo voo RSN YPER 09:47
-+ novo voo YPER RSN 16:27
-+ novo voo RSN VSWB 13:29
-+ novo voo VSWB RSN 05:30
-+ novo voo RSN JDXQ 05:31
-+ novo voo JDXQ RSN 18:17
-+ novo voo RSN PIL 07:47
-+ novo voo PIL RSN 15:22
-+ novo voo RSN VRQ 21:49
-+ novo voo VRQ RSN 20:59
-+ novo voo RSN AWR 11:41
-+ novo voo AWR RSN 16:31
-+ novo voo RSN PYY 14:31
-+ novo voo PYY RSN 00:52
-+ novo voo RSN WQD 07:50
-+ novo voo WQD RSN 01:30
-+ novo voo RSN ZAJX 23:03
-+ novo voo ZAJX RSN 19:55
-+ novo voo RSN FIGC 04:15
-+ novo voo FIGC RSN 10:54
-+ novo voo RSN ERJ 01:27
-+ novo voo ERJ RSN 19:17
-+ novo voo RSN BEJ 02:00
-+ novo voo BEJ RSN 17:13
-+ novo voo RSN GLS 23:27
-+ novo voo GLS RSN 03:15
-+ novo voo RSN RHZR 14:02
-+ novo voo RHZR RSN 22:23
-+ novo voo RSN VHIN 00:55
-+ novo voo VHIN RSN 18:21
-+ novo voo RSN KWH 11:48
-+ novo voo KWH RSN 20:07
-+ novo voo RSN BQSG 04:50
-+ novo voo BQSG RSN 19:47
-+ novo voo RSN YZZ 04:22
-+ novo voo YZZ RSN 20:53
-+ novo voo RSN DGB 09:19
-+ novo voo DGB RSN 11:53
-+ novo voo RSN OMRO 12:57
-+ novo voo OMRO RSN 16:03
-+ novo voo RSN YPXD 05:18
-+ novo voo YPXD RSN 20:30
-+ novo voo RSN GOAR 01:35
-+ novo voo GOAR RSN 21:18
-+ novo voo RSN WYM 00:02
-+ novo voo WYM RSN 00:50
-+ novo voo RSN QGI 04:11
-+ novo voo QGI RSN 03:22
-+ novo voo RSN EHIX 17:39
-+ novo voo EHIX RSN 03:47
-+ novo voo RSN OYL 10:29
-+ novo voo OYL RSN 09:41
-+ novo voo RSN NCTS 04:50
-+ novo voo NCTS RSN 13:48
-+ novo voo RSN IPG 05:39
-+ novo voo IPG RSN 04:51
-+ novo voo RSN WWXN 17:23
-+ novo voo WWXN RSN 03:19
-+ novo voo RSN WNI 16:00
-+ novo voo WNI RSN 03:07
-+ novo voo RSN EQG 21:09
-+ novo voo EQG RSN 01:55
-+ novo voo RSN XPVU 20:23
-+ novo voo XPVU RSN 10:17
-+ novo voo RSN MUP 06:22
-+ novo voo MUP RSN 20:02
-+ novo voo RSN HSKA 01:54
-+ novo voo HSKA RSN 13:26
-+ novo voo RSN UPC 11:30
-+ novo voo UPC RSN 01:49
-+ novo voo RSN NYP 06:34
-+ novo voo NYP RSN 08:48
-+ novo voo RSN XLQ 03:00
-+ novo voo XLQ RSN 05:39
-+ novo voo RSN JWYR 19:09
-+ novo voo JWYR RSN 04:10
-+ novo voo RSN VHGP 16:47
-+ novo voo VHGP RSN 04:40
-+ novo voo RSN SJAJ 02:27
-+ novo voo SJAJ RSN 05:40
-+ novo voo RSN UVTP 16:50
-+ novo voo UVTP RSN 12:34
-+ novo voo RSN KRI 06:18
-+ novo voo KRI RSN 09:59
-+ novo voo RSN SZA 21:19
-+ novo voo SZA RSN 19:47
-+ novo voo RSN NSWY 23:08
-+ novo voo NSWY RSN 22:52
-+ novo voo RSN UQZ 03:18
-+ novo voo UQZ RSN 15:04
-+ novo voo RSN ZGIM 04:32
-+ novo voo ZGIM RSN 07:36
-+ novo voo RSN UOK 19:27
-+ novo voo UOK RSN 19:04
-+ novo voo RSN JFGA 10:01
-+ novo voo JFGA RSN 22:32
-+ novo voo RSN QRFQ 16:32
-+ novo voo QRFQ RSN 06:46
-+ novo voo RSN HTAU 00:50
-+ novo voo HTAU RSN 13:05
-+ novo voo RSN ZSCV 06:13
-+ novo voo ZSCV RSN 18:48
-+ novo voo RSN BNL 17:31
-+ novo voo BNL RSN 13:14
-+ novo voo RSN XXKR 05:28
-+ novo voo XXKR RSN 12:39
-+ novo voo RSN WEX 23:32
-+ novo voo WEX RSN 05:02
-+ novo voo RSN MXZF 04:42
-+ novo voo MXZF RSN 21:59
-+ novo voo RSN GVC 14:34
-+ novo voo GVC RSN 23:16
-+ novo voo RSN OEJC 12:25
-+ novo voo OEJC RSN 08:27
-+ novo voo RSN CGBO 04:12
-+ novo voo CGBO RSN 06:01
-+ novo voo RSN QATN 17:24
-+ novo voo QATN RSN 03:29
-+ novo voo RSN FFLB 12:09
-+ novo voo FFLB RSN 23:34
-+ novo voo RSN IEYH 19:48
-+ novo voo IEYH RSN 20:15
-+ novo voo RSN DYMA 15:39
-+ novo voo DYMA RSN 07:11
-+ novo voo RSN BPG 22:56
-+ novo voo BPG RSN 10:54
-+ novo voo RSN TOPB 01:47
-+ novo voo TOPB RSN 16:43
-+ novo voo RSN FKHF 22:43
-+ novo voo FKHF RSN 18:23
-+ novo voo RSN UFKB 09:46
-+ novo voo UFKB RSN 11:07
-+ novo voo RSN NNB 04:05
-+ novo voo NNB RSN 12:12
-+ novo voo RSN LIX 09:26
-+ novo voo LIX RSN 02:25
-+ novo voo RSN GLQ 22:38
-+ novo voo GLQ RSN 14:23
-+ novo voo RSN NHT 13:49
-+ novo voo NHT RSN 06:31
-+ novo voo RSN CHR 08:28
-+ novo voo CHR RSN 10:07
-+ novo voo RSN WWOD 19:44
-+ novo voo WWOD RSN 00:37
-+ novo voo RSN TZJ 17:12
-+ novo voo TZJ RSN 01:50
-+ novo voo RSN BZT 11:36
-+ novo voo BZT RSN 15:54
-+ novo voo RSN CLD 16:05
-+ novo voo CLD RSN 01:52
-+ novo voo RSN JTTW 01:48
-+ novo voo JTTW RSN 12:26
-+ novo voo RSN ELTX 05:09
-+ novo voo ELTX RSN 16:14
-+ novo voo RSN VEEZ 18:59
-+ novo voo VEEZ RSN 03:12
-+ novo voo RSN DPH 13:49
-+ novo voo DPH RSN 02:20
-+ novo voo RSN IGSO 09:36
-+ novo voo IGSO RSN 02:06
-+ novo voo RSN TKZW 05:11
-+ novo voo TKZW RSN 13:47
-+ novo voo RSN EHGZ 13:45
-+ novo voo EHGZ RSN 21:25
-+ novo voo RSN DLG 10:35
-+ novo voo DLG RSN 23:51
-+ novo voo RSN GFC 14:28
-+ novo voo GFC RSN 13:58
-+ novo voo RSN JICN 18:44
-+ novo voo JICN RSN 20:26
-+ novo voo RSN TUUE 03:43
-+ novo voo TUUE RSN 21:49
-+ novo voo RSN MUOG 22:50
-+ novo voo MUOG RSN 00:15
-+ novo voo RSN QEA 04:49
-+ novo voo QEA RSN 19:36
-+ novo voo RSN NGU 14:18
-+ novo voo NGU RSN 07:19
-+ novo voo RSN LFYC 11:17
-+ novo voo LFYC RSN 04:17
-+ novo voo RSN DEOP 19:20
-+ novo voo DEOP RSN 10:58
-+ novo voo RSN TCA 04:36
-+ novo voo TCA RSN 07:16
-+ novo voo RSN ZWS 11:12
-+ novo voo ZWS RSN 18:23
-+ novo voo RSN LNS 09:01
-+ novo voo LNS RSN 04:56
-+ novo voo RSN RIXT 13:12
-+ novo voo RIXT RSN 07:32
-+ novo voo RSN KCZB 18:04
-+ novo voo KCZB RSN 13:42
-+ novo voo RSN EZRR 13:14
-+ novo voo EZRR RSN 07:33
-+ novo voo RSN VHUK 08:48
-+ novo voo VHUK RSN 18:42
-+ novo voo RSN WMR 12:43
-+ novo voo WMR RSN 12:35
-+ novo voo RSN KLZV 23:01
-+ novo voo KLZV RSN 15:36
-+ novo voo RSN SQS 17:54
-+ novo voo SQS RSN 15:24
-+ novo voo RSN NNF 07:53
-+ novo voo NNF RSN 07:05
-+ novo voo RSN REDH 15:13
-+ novo voo REDH RSN 11:00
-+ novo voo RSN CYD 22:00
-+ novo voo CYD RSN 06:25
-+ novo voo RSN ULBG 19:24
-+ novo voo ULBG RSN 08:08
-+ novo voo RSN AUIX 18:01
-+ novo voo AUIX RSN 11:08
-+ novo voo RSN UZC 23:27
-+ novo voo UZC RSN 16:26
-+ novo voo RSN TUO 23:21
-+ novo voo TUO RSN 05:32
-+ novo voo RSN KCDL 22:06
-+ novo voo KCDL RSN 19:04
-+ novo voo RSN JOAU 23:24
-+ novo voo JOAU RSN 00:08
-+ novo voo RSN BXAV 05:50
-+ novo voo BXAV RSN 08:26
-+ novo voo RSN EDC 20:29
-+ novo voo EDC RSN 09:13
-+ novo voo RSN ZKD 11:12
-+ novo voo ZKD RSN 06:58
-+ novo voo RSN EEJB 14:20
-+ novo voo EEJB RSN 14:55
-+ novo voo RSN EPVO 19:18
-+ novo voo EPVO RSN 04:22
-+ novo voo RSN YZPH 10:43
-+ novo voo YZPH RSN 20:16
-+ novo voo RSN RDJ 19:16
-+ novo voo RDJ RSN 12:37
-+ novo voo RSN BJP 00:16
-+ novo voo BJP RSN 20:34
-+ novo voo RSN NSPT 13:16
-+ novo voo NSPT RSN 07:30
-+ novo voo RSN CXZG 02:17
-+ novo voo CXZG RSN 17:10
-+ novo voo RSN IJBM 05:08
-+ novo voo IJBM RSN 23:04
-+ novo voo RSN WCUU 11:51
-+ novo voo WCUU RSN 16:56
-+ novo voo RSN JDU 14:36
-+ novo voo JDU RSN 05:20
-+ novo voo RSN HDVK 18:25
-+ novo voo HDVK RSN 04:57
-+ novo voo RSN LXC 13:51
-+ novo voo LXC RSN 04:33
-+ novo voo RSN PXXR 15:54
-+ novo voo PXXR RSN 20:53
-+ novo voo RSN YZY 17:32
-+ novo voo YZY RSN 19:36
-+ novo voo RSN JZV 17:54
-+ novo voo JZV RSN 16:48
-+ novo voo RSN XZG 21:06
-+ novo voo XZG RSN 06:02
-+ novo voo RSN DQWZ 02:39
-+ novo voo DQWZ RSN 12:08
-+ novo voo RSN FEOP 23:42
-+ novo voo FEOP RSN 07:06
-+ novo voo RSN ZPXF 23:28
-+ novo voo ZPXF RSN 10:11
-+ novo voo RSN UEX 06:20
-+ novo voo UEX RSN 01:36
-+ novo voo RSN CYRI 09:01
-+ novo voo CYRI RSN 03:08
-+ novo voo RSN QFTP 21:10
-+ novo voo QFTP RSN 19:26
-+ novo voo RSN AIIS 14:06
-+ novo voo AIIS RSN 19:25
-+ novo voo RSN KLK 07:04
-+ novo voo KLK RSN 03:02
-+ novo voo RSN ZBJ 01:00
-+ novo voo ZBJ RSN 10:50
-+ novo voo RSN QIGW 18:27
-+ novo voo QIGW RSN 21:42
-+ novo voo RSN KTWO 15:08
-+ novo voo KTWO RSN 04:51
-+ aeroporto JVN desconhecido
-+ aeroporto NYB desconhecido
-+ aeroporto CTRI desconhecido
-+ aeroporto CTRI desconhecido
-+ aeroporto NYB desconhecido
++ novo voo BAVW VFPW 19:50
++ novo voo VFPW BAVW 22:09
++ novo voo KGW BAVW 17:58
++ novo voo BAVW KGW 03:13
++ novo voo ZDQL KGW 14:14
++ novo voo KGW ZDQL 09:16
++ novo voo WEVI ZDQL 06:59
++ novo voo ZDQL WEVI 00:14
++ novo voo INS WEVI 10:34
++ novo voo WEVI INS 12:19
++ novo voo DPX INS 11:18
++ novo voo INS DPX 09:28
++ novo voo UOV DPX 13:26
++ novo voo DPX UOV 05:29
++ novo voo QVD UOV 18:23
++ novo voo UOV QVD 03:48
++ novo voo LPU QVD 22:55
++ novo voo QVD LPU 07:19
++ novo voo QWMG LPU 12:57
++ novo voo LPU QWMG 11:57
++ novo voo UFNP QWMG 17:36
++ novo voo QWMG UFNP 05:57
++ novo voo ZXAS UFNP 14:39
++ novo voo UFNP ZXAS 21:56
++ novo voo DJEC ZXAS 18:18
++ novo voo ZXAS DJEC 10:02
++ novo voo VXNN DJEC 22:16
++ novo voo DJEC VXNN 09:35
++ novo voo QBH VXNN 10:39
++ novo voo VXNN QBH 13:19
++ novo voo XRYT QBH 15:28
++ novo voo QBH XRYT 11:57
++ novo voo ECZL XRYT 16:47
++ novo voo XRYT ECZL 23:56
++ novo voo PYRO ECZL 03:31
++ novo voo ECZL PYRO 10:45
++ novo voo LWCW PYRO 14:55
++ novo voo PYRO LWCW 04:52
++ novo voo GBV LWCW 14:42
++ novo voo LWCW GBV 21:07
++ novo voo PIZH GBV 05:02
++ novo voo GBV PIZH 18:53
++ novo voo HPLA PIZH 05:10
++ novo voo PIZH HPLA 18:01
++ novo voo GFTJ HPLA 08:57
++ novo voo HPLA GFTJ 09:19
++ novo voo FCWD GFTJ 07:49
++ novo voo GFTJ FCWD 02:30
++ novo voo MEII FCWD 00:32
++ novo voo FCWD MEII 13:53
++ novo voo ELNG MEII 22:14
++ novo voo MEII ELNG 10:21
++ novo voo VVR ELNG 00:02
++ novo voo ELNG VVR 12:48
++ novo voo CED VVR 13:37
++ novo voo VVR CED 13:46
++ novo voo PDGW CED 14:09
++ novo voo CED PDGW 22:03
++ novo voo AHSH PDGW 14:03
++ novo voo PDGW AHSH 16:41
++ novo voo QKHC AHSH 01:07
++ novo voo AHSH QKHC 00:57
++ novo voo PNYU QKHC 09:01
++ novo voo QKHC PNYU 03:14
++ novo voo NAG PNYU 15:07
++ novo voo PNYU NAG 00:13
++ novo voo XXF NAG 09:15
++ novo voo NAG XXF 07:54
++ novo voo CIVT XXF 23:00
++ novo voo XXF CIVT 15:17
++ novo voo BPZ CIVT 04:42
++ novo voo CIVT BPZ 11:11
++ novo voo YTKK BPZ 16:44
++ novo voo BPZ YTKK 14:15
++ novo voo XRNO YTKK 17:47
++ novo voo YTKK XRNO 09:23
++ novo voo AMA XRNO 23:00
++ novo voo XRNO AMA 11:43
++ novo voo BCF AMA 06:46
++ novo voo AMA BCF 16:41
++ novo voo ZEP BCF 00:13
++ novo voo BCF ZEP 02:37
++ novo voo IZYC ZEP 10:05
++ novo voo ZEP IZYC 16:23
++ novo voo BTOH IZYC 15:29
++ novo voo IZYC BTOH 14:50
++ novo voo HTE BTOH 18:14
++ novo voo BTOH HTE 18:41
++ novo voo QVG HTE 11:23
++ novo voo HTE QVG 05:07
++ novo voo DIS QVG 16:43
++ novo voo QVG DIS 14:02
++ novo voo HUI DIS 22:00
++ novo voo DIS HUI 11:32
++ novo voo GKU HUI 15:00
++ novo voo HUI GKU 18:06
++ novo voo NDWN GKU 12:05
++ novo voo GKU NDWN 07:11
++ novo voo KOCA NDWN 02:10
++ novo voo NDWN KOCA 19:56
++ novo voo WKRA KOCA 17:52
++ novo voo KOCA WKRA 17:34
++ novo voo JVK WKRA 22:21
++ novo voo WKRA JVK 08:24
++ novo voo ZTI JVK 22:15
++ novo voo JVK ZTI 16:33
++ novo voo CEPQ ZTI 01:33
++ novo voo ZTI CEPQ 00:09
++ novo voo BMJ CEPQ 08:11
++ novo voo CEPQ BMJ 07:18
++ novo voo PGD BMJ 06:11
++ novo voo BMJ PGD 12:57
++ novo voo SUB PGD 12:19
++ novo voo PGD SUB 16:08
++ novo voo RZC SUB 09:54
++ novo voo SUB RZC 14:58
++ novo voo AHU RZC 14:12
++ novo voo RZC AHU 10:40
++ novo voo RKYK AHU 14:05
++ novo voo AHU RKYK 12:48
++ novo voo FMB RKYK 18:34
++ novo voo RKYK FMB 08:22
++ novo voo ENWR FMB 05:50
++ novo voo FMB ENWR 07:59
++ novo voo NIDS ENWR 09:20
++ novo voo ENWR NIDS 10:47
++ novo voo VMKP NIDS 04:25
++ novo voo NIDS VMKP 20:11
++ novo voo BKJS VMKP 08:17
++ novo voo VMKP BKJS 12:45
++ novo voo JDR BKJS 17:31
++ novo voo BKJS JDR 18:28
++ novo voo RSKW JDR 00:01
++ novo voo JDR RSKW 10:25
++ novo voo INCX RSKW 23:10
++ novo voo RSKW INCX 23:25
++ novo voo HQEC INCX 01:41
++ novo voo INCX HQEC 07:25
++ novo voo QUI HQEC 17:38
++ novo voo HQEC QUI 01:38
++ novo voo OZP QUI 21:35
++ novo voo QUI OZP 03:42
++ novo voo LAHG OZP 00:46
++ novo voo OZP LAHG 16:08
++ novo voo MXZ LAHG 02:48
++ novo voo LAHG MXZ 09:39
++ novo voo RLA MXZ 19:32
++ novo voo MXZ RLA 06:39
++ novo voo VPZ RLA 21:24
++ novo voo RLA VPZ 05:01
++ novo voo MGLT VPZ 02:02
++ novo voo VPZ MGLT 07:10
++ novo voo PLHA MGLT 04:38
++ novo voo MGLT PLHA 07:18
++ novo voo VBFK PLHA 22:09
++ novo voo PLHA VBFK 04:22
++ novo voo FTU VBFK 19:46
++ novo voo VBFK FTU 08:52
++ novo voo GTSM FTU 22:37
++ novo voo FTU GTSM 06:10
++ novo voo FOJ GTSM 04:25
++ novo voo GTSM FOJ 01:44
++ novo voo DIWR FOJ 17:29
++ novo voo FOJ DIWR 11:40
++ novo voo JKD DIWR 01:42
++ novo voo DIWR JKD 20:47
++ novo voo YKC JKD 01:10
++ novo voo JKD YKC 19:42
++ novo voo HFSR YKC 15:32
++ novo voo YKC HFSR 00:26
++ novo voo ANO HFSR 07:54
++ novo voo HFSR ANO 00:32
++ novo voo TKKH ANO 07:53
++ novo voo ANO TKKH 04:52
++ novo voo PVF TKKH 08:21
++ novo voo TKKH PVF 13:17
++ novo voo YPQ PVF 21:11
++ novo voo PVF YPQ 02:42
++ novo voo IBCN YPQ 12:21
++ novo voo YPQ IBCN 16:26
++ novo voo AAG IBCN 02:49
++ novo voo IBCN AAG 21:41
++ novo voo HMIB AAG 00:12
++ novo voo AAG HMIB 01:44
++ novo voo IOU HMIB 05:53
++ novo voo HMIB IOU 20:22
++ novo voo JGLQ IOU 10:43
++ novo voo IOU JGLQ 03:34
++ novo voo DLIX JGLQ 14:38
++ novo voo JGLQ DLIX 09:42
++ novo voo YOCI DLIX 19:48
++ novo voo DLIX YOCI 16:21
++ novo voo GVVG YOCI 08:58
++ novo voo YOCI GVVG 22:51
++ novo voo CWDO GVVG 03:56
++ novo voo GVVG CWDO 10:41
++ novo voo EUO CWDO 23:51
++ novo voo CWDO EUO 02:22
++ novo voo QND EUO 16:12
++ novo voo EUO QND 07:38
++ novo voo BVCG QND 00:13
++ novo voo QND BVCG 10:53
++ novo voo KDR BVCG 13:54
++ novo voo BVCG KDR 16:16
++ novo voo TVS KDR 07:43
++ novo voo KDR TVS 04:30
++ novo voo COGK TVS 11:45
++ novo voo TVS COGK 17:39
++ novo voo IIOY COGK 10:55
++ novo voo COGK IIOY 09:38
++ novo voo SSC IIOY 06:06
++ novo voo IIOY SSC 12:08
++ novo voo LST SSC 00:33
++ novo voo SSC LST 09:25
++ novo voo TOM LST 02:13
++ novo voo LST TOM 15:05
++ novo voo WWEP TOM 21:16
++ novo voo TOM WWEP 06:21
++ novo voo YLDJ WWEP 06:47
++ novo voo WWEP YLDJ 19:12
++ novo voo RRXD YLDJ 13:19
++ novo voo YLDJ RRXD 17:47
++ novo voo GRA RRXD 07:59
++ novo voo RRXD GRA 14:37
++ novo voo MVX GRA 14:31
++ novo voo GRA MVX 01:46
++ novo voo GPW MVX 10:55
++ novo voo MVX GPW 16:41
++ novo voo KKE GPW 13:36
++ novo voo GPW KKE 10:35
++ novo voo HAPW KKE 14:24
++ novo voo KKE HAPW 00:10
++ novo voo NHPY HAPW 10:53
++ novo voo HAPW NHPY 02:19
++ novo voo IQW NHPY 16:37
++ novo voo NHPY IQW 02:30
++ novo voo SEFS IQW 22:20
++ novo voo IQW SEFS 21:00
++ novo voo TNX SEFS 10:54
++ novo voo SEFS TNX 15:56
++ novo voo TORL TNX 20:38
++ novo voo TNX TORL 08:06
++ novo voo EPL TORL 15:29
++ novo voo TORL EPL 10:19
++ novo voo SBJF EPL 10:47
++ novo voo EPL SBJF 17:06
++ novo voo TUP SBJF 22:28
++ novo voo SBJF TUP 14:53
++ novo voo DHLQ TUP 08:52
++ novo voo TUP DHLQ 09:47
++ novo voo PXRQ DHLQ 22:07
++ novo voo DHLQ PXRQ 03:55
++ novo voo HPO PXRQ 02:58
++ novo voo PXRQ HPO 02:09
++ novo voo EHO HPO 09:55
++ novo voo HPO EHO 06:49
++ novo voo LFQ EHO 18:27
++ novo voo EHO LFQ 22:54
++ novo voo JBZA LFQ 18:42
++ novo voo LFQ JBZA 05:27
++ novo voo EHE JBZA 00:37
++ novo voo JBZA EHE 09:20
++ novo voo GVUA EHE 01:10
++ novo voo EHE GVUA 10:28
++ novo voo NHDD GVUA 07:50
++ novo voo GVUA NHDD 07:36
++ novo voo JKBN NHDD 05:18
++ novo voo NHDD JKBN 07:08
++ novo voo HFW JKBN 02:07
++ novo voo JKBN HFW 18:00
++ novo voo YEN HFW 12:36
++ novo voo HFW YEN 14:33
++ novo voo HPK YEN 22:51
++ novo voo YEN HPK 05:05
++ novo voo VSG HPK 13:36
++ novo voo HPK VSG 17:47
++ novo voo ABP VSG 01:52
++ novo voo VSG ABP 05:11
++ novo voo REL ABP 03:30
++ novo voo ABP REL 19:48
++ novo voo HXD REL 07:28
++ novo voo REL HXD 04:54
++ novo voo YSPH HXD 05:53
++ novo voo HXD YSPH 21:14
++ novo voo MQY YSPH 06:16
++ novo voo YSPH MQY 08:37
++ novo voo DIA MQY 11:06
++ novo voo MQY DIA 01:12
++ novo voo TCQ DIA 23:39
++ novo voo DIA TCQ 08:03
++ novo voo IKNL TCQ 17:50
++ novo voo TCQ IKNL 18:30
++ novo voo SCDD IKNL 04:15
++ novo voo IKNL SCDD 10:25
++ novo voo MAD SCDD 21:11
++ novo voo SCDD MAD 20:31
++ novo voo ZWV MAD 15:47
++ novo voo MAD ZWV 03:16
++ novo voo WJW ZWV 14:07
++ novo voo ZWV WJW 11:27
++ novo voo CCF WJW 12:00
++ novo voo WJW CCF 05:30
++ novo voo WAI CCF 05:14
++ novo voo CCF WAI 02:12
++ novo voo NSZ WAI 02:21
++ novo voo WAI NSZ 09:10
++ novo voo FYU NSZ 10:25
++ novo voo NSZ FYU 13:52
++ novo voo EYI FYU 00:34
++ novo voo FYU EYI 14:01
++ novo voo AMW EYI 12:01
++ novo voo EYI AMW 15:55
++ novo voo KUIG AMW 05:28
++ novo voo AMW KUIG 10:43
++ novo voo GCHK KUIG 20:37
++ novo voo KUIG GCHK 17:26
++ novo voo NJJV GCHK 01:48
++ novo voo GCHK NJJV 01:41
++ novo voo YNWB NJJV 16:17
++ novo voo NJJV YNWB 15:00
++ novo voo XXDB YNWB 20:52
++ novo voo YNWB XXDB 18:35
++ novo voo ZLM XXDB 01:40
++ novo voo XXDB ZLM 07:06
++ novo voo TPSW ZLM 22:18
++ novo voo ZLM TPSW 02:27
++ novo voo CFKL TPSW 16:05
++ novo voo TPSW CFKL 23:34
++ novo voo IJNV CFKL 03:26
++ novo voo CFKL IJNV 10:33
++ novo voo QQEQ IJNV 22:22
++ novo voo IJNV QQEQ 19:52
++ novo voo HPJB QQEQ 08:17
++ novo voo QQEQ HPJB 09:53
++ novo voo KTRW HPJB 09:43
++ novo voo HPJB KTRW 02:09
++ novo voo APUU KTRW 21:13
++ novo voo KTRW APUU 05:04
++ novo voo TXTG APUU 23:36
++ novo voo APUU TXTG 10:14
++ novo voo KOV TXTG 13:00
++ novo voo TXTG KOV 20:47
++ novo voo JDQC KOV 14:31
++ novo voo KOV JDQC 17:40
++ novo voo IXRX JDQC 15:41
++ novo voo JDQC IXRX 11:11
++ novo voo SNR IXRX 22:37
++ novo voo IXRX SNR 03:54
++ novo voo ENSG SNR 17:21
++ novo voo SNR ENSG 02:23
++ novo voo OBS ENSG 21:00
++ novo voo ENSG OBS 13:48
++ novo voo ANQ OBS 14:31
++ novo voo OBS ANQ 00:48
++ novo voo XEI ANQ 19:31
++ novo voo ANQ XEI 21:06
++ novo voo PNO XEI 08:53
++ novo voo XEI PNO 12:56
++ novo voo WYPN PNO 08:41
++ novo voo PNO WYPN 09:36
++ novo voo VFL WYPN 07:13
++ novo voo WYPN VFL 10:02
++ novo voo SPB VFL 12:32
++ novo voo VFL SPB 21:00
++ novo voo XIB SPB 15:11
++ novo voo SPB XIB 19:48
++ novo voo ALA XIB 10:00
++ novo voo XIB ALA 18:52
++ novo voo BNMH ALA 08:37
++ novo voo ALA BNMH 12:26
++ novo voo KWKB BNMH 16:57
++ novo voo BNMH KWKB 00:47
++ novo voo GZF KWKB 08:59
++ novo voo KWKB GZF 00:57
++ novo voo VCD GZF 08:12
++ novo voo GZF VCD 23:11
++ novo voo RYX VCD 09:21
++ novo voo VCD RYX 12:55
++ novo voo KXC RYX 03:04
++ novo voo RYX KXC 16:44
++ novo voo XEYY KXC 04:36
++ novo voo KXC XEYY 22:24
++ novo voo BNHI XEYY 18:57
++ novo voo XEYY BNHI 14:37
++ novo voo UHU BNHI 03:13
++ novo voo BNHI UHU 04:24
++ novo voo XCWE UHU 21:10
++ novo voo UHU XCWE 14:14
++ novo voo UGE XCWE 12:34
++ novo voo XCWE UGE 07:50
++ novo voo ZEC UGE 00:22
++ novo voo UGE ZEC 07:32
++ novo voo OZA ZEC 13:06
++ novo voo ZEC OZA 06:45
++ novo voo WFE OZA 01:12
++ novo voo OZA WFE 12:32
++ novo voo AGJ WFE 10:41
++ novo voo WFE AGJ 22:24
++ novo voo QTE AGJ 02:40
++ novo voo AGJ QTE 13:00
++ novo voo PBWU QTE 13:48
++ novo voo QTE PBWU 10:55
++ novo voo AWRJ PBWU 03:00
++ novo voo PBWU AWRJ 17:11
++ novo voo WKE AWRJ 12:16
++ novo voo AWRJ WKE 20:28
++ novo voo GVX WKE 16:42
++ novo voo WKE GVX 19:29
++ novo voo ZTOD GVX 08:43
++ novo voo GVX ZTOD 19:12
++ novo voo QLZ ZTOD 12:42
++ novo voo ZTOD QLZ 07:04
++ novo voo EVG QLZ 03:11
++ novo voo QLZ EVG 02:16
++ novo voo MHCI EVG 17:40
++ novo voo EVG MHCI 05:28
++ novo voo EFAP MHCI 10:12
++ novo voo MHCI EFAP 04:55
++ novo voo WAMU EFAP 02:51
++ novo voo EFAP WAMU 08:26
++ novo voo JTP WAMU 23:38
++ novo voo WAMU JTP 06:26
++ novo voo NFP JTP 12:29
++ novo voo JTP NFP 07:47
++ novo voo WBGY NFP 05:05
++ novo voo NFP WBGY 15:26
++ novo voo DFMQ WBGY 01:24
++ novo voo WBGY DFMQ 14:32
++ novo voo OYX DFMQ 03:14
++ novo voo DFMQ OYX 12:11
++ novo voo DYIL OYX 13:14
++ novo voo OYX DYIL 20:12
++ novo voo KXT DYIL 19:52
++ novo voo DYIL KXT 21:16
++ novo voo IMKS KXT 19:33
++ novo voo KXT IMKS 09:53
++ novo voo QHGO IMKS 19:42
++ novo voo IMKS QHGO 01:36
++ novo voo PMT QHGO 23:04
++ novo voo QHGO PMT 21:40
++ novo voo TGI PMT 13:29
++ novo voo PMT TGI 11:13
++ novo voo UHH TGI 00:48
++ novo voo TGI UHH 22:25
++ novo voo MHAX UHH 07:20
++ novo voo UHH MHAX 22:57
++ novo voo MWZ MHAX 07:52
++ novo voo MHAX MWZ 04:17
++ novo voo ENQY MWZ 02:45
++ novo voo MWZ ENQY 03:30
++ novo voo IIXW ENQY 14:35
++ novo voo ENQY IIXW 20:38
++ novo voo MKO IIXW 17:06
++ novo voo IIXW MKO 03:28
++ novo voo GUNQ MKO 09:16
++ novo voo MKO GUNQ 01:50
++ novo voo WZI GUNQ 09:21
++ novo voo GUNQ WZI 12:05
++ novo voo HKIP WZI 08:44
++ novo voo WZI HKIP 07:23
++ novo voo FOC HKIP 15:05
++ novo voo HKIP FOC 03:05
++ novo voo DUMS FOC 09:27
++ novo voo FOC DUMS 02:18
++ novo voo USC DUMS 21:32
++ novo voo DUMS USC 03:57
++ novo voo EMC USC 07:18
++ novo voo USC EMC 02:11
++ novo voo SYZK EMC 07:11
++ novo voo EMC SYZK 21:30
++ novo voo XKZI SYZK 09:25
++ novo voo SYZK XKZI 08:41
++ novo voo JRIF XKZI 06:14
++ novo voo XKZI JRIF 18:52
++ novo voo YJJ JRIF 18:53
++ novo voo JRIF YJJ 23:45
++ novo voo DVWH YJJ 05:16
++ novo voo YJJ DVWH 13:10
++ novo voo OLGU DVWH 02:54
++ novo voo DVWH OLGU 15:03
++ novo voo KGS OLGU 07:01
++ novo voo OLGU KGS 08:13
++ novo voo HDAE KGS 15:19
++ novo voo KGS HDAE 05:17
++ novo voo ZNGI HDAE 06:28
++ novo voo HDAE ZNGI 10:15
++ novo voo ONC ZNGI 04:20
++ novo voo ZNGI ONC 20:49
++ novo voo ZNP ONC 15:03
++ novo voo ONC ZNP 21:22
++ novo voo LLM ZNP 13:17
++ novo voo ZNP LLM 07:30
++ novo voo BXK LLM 22:21
++ novo voo LLM BXK 03:55
++ novo voo XVC BXK 17:37
++ novo voo BXK XVC 20:51
++ novo voo GJV XVC 00:35
++ novo voo XVC GJV 04:07
++ novo voo NIH GJV 02:14
++ novo voo GJV NIH 11:15
++ novo voo QRG NIH 03:33
++ novo voo NIH QRG 12:40
++ novo voo GKS QRG 22:55
++ novo voo QRG GKS 00:46
++ novo voo YHKJ GKS 20:51
++ novo voo GKS YHKJ 11:03
++ novo voo YNWX YHKJ 06:07
++ novo voo YHKJ YNWX 01:11
++ novo voo SVV YNWX 09:18
++ novo voo YNWX SVV 09:21
++ novo voo NDF SVV 00:16
++ novo voo SVV NDF 12:04
++ novo voo LVS NDF 14:42
++ novo voo NDF LVS 21:31
++ novo voo XIL LVS 00:31
++ novo voo LVS XIL 03:18
++ novo voo OTS XIL 02:00
++ novo voo XIL OTS 01:49
++ novo voo BSR OTS 11:35
++ novo voo OTS BSR 23:12
++ novo voo DMLR BSR 03:04
++ novo voo BSR DMLR 20:28
++ novo voo IRDF DMLR 10:46
++ novo voo DMLR IRDF 18:20
++ novo voo AUP IRDF 17:56
++ novo voo IRDF AUP 08:11
++ novo voo CCCW AUP 10:42
++ novo voo AUP CCCW 07:19
++ novo voo CGJ CCCW 20:54
++ novo voo CCCW CGJ 19:41
++ novo voo WCC CGJ 15:49
++ novo voo CGJ WCC 03:49
++ novo voo FVY WCC 11:23
++ novo voo WCC FVY 14:18
++ novo voo YMD FVY 11:11
++ novo voo FVY YMD 08:47
++ novo voo XOIB YMD 23:09
++ novo voo YMD XOIB 06:09
++ novo voo UDOL XOIB 15:57
++ novo voo XOIB UDOL 19:45
++ novo voo SNP UDOL 12:00
++ novo voo UDOL SNP 09:44
++ novo voo JRXU SNP 14:59
++ novo voo SNP JRXU 18:37
++ novo voo UZFY JRXU 10:53
++ novo voo JRXU UZFY 06:25
++ novo voo CYX UZFY 18:16
++ novo voo UZFY CYX 15:26
++ novo voo LCSI CYX 08:46
++ novo voo CYX LCSI 22:41
++ novo voo BJM LCSI 10:17
++ novo voo LCSI BJM 23:30
++ novo voo OCJZ BJM 18:49
++ novo voo BJM OCJZ 12:59
++ novo voo YON OCJZ 16:22
++ novo voo OCJZ YON 15:52
++ novo voo HLE YON 10:26
++ novo voo YON HLE 03:54
++ novo voo FDR HLE 08:18
++ novo voo HLE FDR 23:40
++ novo voo KWEH FDR 03:27
++ novo voo FDR KWEH 20:18
++ novo voo PLRZ KWEH 12:04
++ novo voo KWEH PLRZ 08:16
++ novo voo ULS PLRZ 06:56
++ novo voo PLRZ ULS 08:16
++ novo voo ZWF ULS 16:02
++ novo voo ULS ZWF 03:17
++ novo voo SDO ZWF 09:02
++ novo voo ZWF SDO 01:05
++ novo voo NXT SDO 15:21
++ novo voo SDO NXT 22:33
++ novo voo JYX NXT 23:25
++ novo voo NXT JYX 18:58
++ novo voo DHZJ JYX 00:40
++ novo voo JYX DHZJ 04:24
++ novo voo YYE DHZJ 04:28
++ novo voo DHZJ YYE 19:00
++ novo voo AIOL YYE 00:25
++ novo voo YYE AIOL 11:31
++ novo voo IKW AIOL 19:58
++ novo voo AIOL IKW 09:48
++ novo voo LQSZ IKW 06:39
++ novo voo IKW LQSZ 12:13
++ novo voo GZP LQSZ 22:37
++ novo voo LQSZ GZP 20:57
++ novo voo IPZ GZP 23:14
++ novo voo GZP IPZ 08:37
++ novo voo VJME IPZ 02:02
++ novo voo IPZ VJME 23:29
++ novo voo MFFE VJME 05:48
++ novo voo VJME MFFE 08:02
++ novo voo NSQP MFFE 20:44
++ novo voo MFFE NSQP 21:44
++ novo voo ANP NSQP 13:18
++ novo voo NSQP ANP 08:07
++ novo voo EHNC ANP 08:42
++ novo voo ANP EHNC 05:42
++ novo voo OUTW EHNC 17:32
++ novo voo EHNC OUTW 07:59
++ novo voo TKEE OUTW 08:16
++ novo voo OUTW TKEE 19:28
++ novo voo JFL TKEE 22:16
++ novo voo TKEE JFL 17:06
++ novo voo LPT JFL 13:55
++ novo voo JFL LPT 02:07
++ novo voo JLS LPT 21:08
++ novo voo LPT JLS 02:17
++ novo voo NFCB JLS 05:34
++ novo voo JLS NFCB 05:10
++ novo voo LQMD NFCB 23:42
++ novo voo NFCB LQMD 22:02
++ novo voo GWC LQMD 10:40
++ novo voo LQMD GWC 11:33
++ novo voo RMWV GWC 21:38
++ novo voo GWC RMWV 21:41
++ novo voo HDYX RMWV 00:30
++ novo voo RMWV HDYX 13:21
++ novo voo PSQ HDYX 20:42
++ novo voo HDYX PSQ 15:35
++ novo voo DKL PSQ 06:15
++ novo voo PSQ DKL 22:37
++ novo voo QPT DKL 06:27
++ novo voo DKL QPT 02:39
++ novo voo AJND QPT 09:40
++ novo voo QPT AJND 14:41
++ novo voo VASP AJND 03:05
++ novo voo AJND VASP 16:10
++ novo voo GLPT VASP 10:54
++ novo voo VASP GLPT 19:25
++ novo voo STR GLPT 01:00
++ novo voo GLPT STR 06:46
++ novo voo IJA STR 05:04
++ novo voo STR IJA 21:10
++ novo voo DKY IJA 22:11
++ novo voo IJA DKY 05:02
++ novo voo LJS DKY 06:41
++ novo voo DKY LJS 05:02
++ novo voo ZPQ LJS 13:36
++ novo voo LJS ZPQ 03:43
++ novo voo EKZR ZPQ 20:25
++ novo voo ZPQ EKZR 09:31
++ novo voo TLTM EKZR 06:49
++ novo voo EKZR TLTM 23:58
++ novo voo DXL TLTM 23:24
++ novo voo TLTM DXL 19:53
++ novo voo HZSD DXL 08:51
++ novo voo DXL HZSD 06:56
++ novo voo VNE HZSD 10:13
++ novo voo HZSD VNE 16:32
++ novo voo APU VNE 00:21
++ novo voo VNE APU 07:54
++ novo voo QJHJ APU 05:40
++ novo voo APU QJHJ 06:16
++ novo voo TJJ QJHJ 22:55
++ novo voo QJHJ TJJ 14:19
++ novo voo EVP TJJ 11:15
++ novo voo TJJ EVP 18:34
++ novo voo ZUR EVP 03:24
++ novo voo EVP ZUR 01:33
++ novo voo AZOS ZUR 22:25
++ novo voo ZUR AZOS 04:08
++ novo voo UOP AZOS 01:13
++ novo voo AZOS UOP 12:44
++ novo voo QQQ UOP 00:34
++ novo voo UOP QQQ 13:12
++ novo voo JGV QQQ 23:24
++ novo voo QQQ JGV 04:34
++ novo voo QLM JGV 18:02
++ novo voo JGV QLM 14:15
++ novo voo VIFS QLM 18:49
++ novo voo QLM VIFS 03:09
++ novo voo ZRU VIFS 10:38
++ novo voo VIFS ZRU 13:14
++ novo voo GWQV ZRU 21:31
++ novo voo ZRU GWQV 00:00
++ novo voo SPHJ GWQV 18:27
++ novo voo GWQV SPHJ 03:43
++ novo voo XBI SPHJ 11:30
++ novo voo SPHJ XBI 03:08
++ novo voo KOCD XBI 04:02
++ novo voo XBI KOCD 06:33
++ novo voo QRJ KOCD 08:35
++ novo voo KOCD QRJ 00:48
++ novo voo BOFB QRJ 20:21
++ novo voo QRJ BOFB 11:01
++ novo voo WYH BOFB 18:07
++ novo voo BOFB WYH 13:39
++ novo voo UZAN WYH 22:26
++ novo voo WYH UZAN 10:21
++ novo voo PUCH UZAN 16:05
++ novo voo UZAN PUCH 08:11
++ novo voo GPAQ PUCH 20:23
++ novo voo PUCH GPAQ 23:04
++ novo voo FVM GPAQ 21:48
++ novo voo GPAQ FVM 05:11
++ novo voo MWIO FVM 22:17
++ novo voo FVM MWIO 21:22
++ novo voo NRE MWIO 16:09
++ novo voo MWIO NRE 17:23
++ novo voo PLQM NRE 06:19
++ novo voo NRE PLQM 01:39
++ novo voo QZD PLQM 21:24
++ novo voo PLQM QZD 04:03
++ novo voo UIN QZD 20:52
++ novo voo QZD UIN 09:22
++ novo voo OFQG UIN 03:32
++ novo voo UIN OFQG 21:41
++ novo voo VCZS OFQG 10:34
++ novo voo OFQG VCZS 13:31
++ novo voo VCG VCZS 17:50
++ novo voo VCZS VCG 02:07
++ novo voo PYO VCG 22:05
++ novo voo VCG PYO 14:01
++ novo voo NCR PYO 17:37
++ novo voo PYO NCR 21:22
++ novo voo OHBS NCR 05:54
++ novo voo NCR OHBS 10:19
++ novo voo XCFK OHBS 09:18
++ novo voo OHBS XCFK 10:59
++ novo voo KCY XCFK 13:53
++ novo voo XCFK KCY 20:55
++ novo voo ZAWT KCY 15:10
++ novo voo KCY ZAWT 09:00
++ novo voo SVZE ZAWT 19:29
++ novo voo ZAWT SVZE 10:19
++ novo voo XUN SVZE 02:40
++ novo voo SVZE XUN 03:50
++ novo voo WGOL XUN 01:03
++ novo voo XUN WGOL 13:37
++ novo voo PFFM WGOL 00:39
++ novo voo WGOL PFFM 02:27
++ novo voo MZZW PFFM 11:42
++ novo voo PFFM MZZW 17:40
++ novo voo XTBA MZZW 08:15
++ novo voo MZZW XTBA 21:37
++ novo voo UTJQ XTBA 01:44
++ novo voo XTBA UTJQ 22:23
++ novo voo NCS UTJQ 19:52
++ novo voo UTJQ NCS 02:45
++ novo voo RFG NCS 09:33
++ novo voo NCS RFG 08:59
++ novo voo TRNJ RFG 19:02
++ novo voo RFG TRNJ 16:47
++ novo voo SXH TRNJ 13:08
++ novo voo TRNJ SXH 20:41
++ novo voo WGC SXH 09:42
++ novo voo SXH WGC 19:05
++ novo voo GXB WGC 10:52
++ novo voo WGC GXB 17:23
++ novo voo MXB GXB 02:44
++ novo voo GXB MXB 09:32
++ novo voo PVN MXB 04:44
++ novo voo MXB PVN 02:36
++ novo voo NXJ PVN 03:02
++ novo voo PVN NXJ 20:22
++ novo voo EJO NXJ 07:47
++ novo voo NXJ EJO 13:58
++ novo voo WXYQ EJO 11:45
++ novo voo EJO WXYQ 16:54
++ novo voo FWT WXYQ 19:12
++ novo voo WXYQ FWT 19:10
++ novo voo YRU FWT 10:06
++ novo voo FWT YRU 12:44
++ novo voo UCJR YRU 18:28
++ novo voo YRU UCJR 19:48
++ novo voo HHAV UCJR 14:59
++ novo voo UCJR HHAV 04:53
++ novo voo QUMI HHAV 18:44
++ novo voo HHAV QUMI 21:24
++ novo voo VWY QUMI 15:31
++ novo voo QUMI VWY 09:30
++ novo voo VWJS VWY 04:29
++ novo voo VWY VWJS 02:21
++ novo voo FLPD VWJS 05:03
++ novo voo VWJS FLPD 10:27
++ novo voo LAY FLPD 05:29
++ novo voo FLPD LAY 00:37
++ novo voo MRWT LAY 05:56
++ novo voo LAY MRWT 23:09
++ novo voo XQB MRWT 23:41
++ novo voo MRWT XQB 00:06
++ novo voo LOXL XQB 03:58
++ novo voo XQB LOXL 13:01
++ novo voo WJFT LOXL 07:34
++ novo voo LOXL WJFT 21:49
++ novo voo ONJU WJFT 03:06
++ novo voo WJFT ONJU 09:06
++ novo voo AZE ONJU 12:39
++ novo voo ONJU AZE 23:38
++ novo voo WCJ AZE 11:50
++ novo voo AZE WCJ 02:18
++ novo voo BAA WCJ 23:22
++ novo voo WCJ BAA 14:59
++ novo voo NQN BAA 02:46
++ novo voo BAA NQN 21:19
++ novo voo BLK NQN 04:02
++ novo voo NQN BLK 20:12
++ novo voo HTX BLK 17:24
++ novo voo BLK HTX 23:16
++ novo voo CTV HTX 02:19
++ novo voo HTX CTV 02:57
++ novo voo SBTW CTV 16:32
++ novo voo CTV SBTW 09:26
++ novo voo YKG SBTW 07:16
++ novo voo SBTW YKG 16:50
++ novo voo UEB YKG 05:34
++ novo voo YKG UEB 21:58
++ novo voo ERJ UEB 16:39
++ novo voo UEB ERJ 10:26
++ novo voo HJY ERJ 10:20
++ novo voo ERJ HJY 17:10
++ novo voo VGB HJY 22:55
++ novo voo HJY VGB 21:32
++ novo voo DWTY VGB 11:04
++ novo voo VGB DWTY 23:48
++ novo voo YTWT DWTY 22:41
++ novo voo DWTY YTWT 11:43
++ novo voo ESAM YTWT 17:59
++ novo voo YTWT ESAM 11:01
++ novo voo WRY ESAM 01:27
++ novo voo ESAM WRY 22:00
++ novo voo XRD WRY 20:58
++ novo voo WRY XRD 18:35
++ novo voo YOQ XRD 15:58
++ novo voo XRD YOQ 13:37
++ novo voo MYWD YOQ 00:59
++ novo voo YOQ MYWD 14:51
++ novo voo UWC MYWD 01:32
++ novo voo MYWD UWC 04:11
++ novo voo XVMQ UWC 22:04
++ novo voo UWC XVMQ 08:30
++ novo voo SKNF XVMQ 12:26
++ novo voo XVMQ SKNF 04:08
++ novo voo LYFD SKNF 08:04
++ novo voo SKNF LYFD 16:21
++ novo voo YINZ LYFD 04:49
++ novo voo LYFD YINZ 09:03
++ novo voo QNI YINZ 14:53
++ novo voo YINZ QNI 09:57
++ novo voo MMYJ QNI 06:35
++ novo voo QNI MMYJ 06:07
++ novo voo MBT MMYJ 10:36
++ novo voo MMYJ MBT 01:56
++ novo voo OIKV MBT 16:40
++ novo voo MBT OIKV 09:44
++ novo voo ICYD OIKV 03:48
++ novo voo OIKV ICYD 13:25
++ novo voo ITZ ICYD 02:19
++ novo voo ICYD ITZ 19:29
++ novo voo ATR ITZ 11:39
++ novo voo ITZ ATR 11:25
++ novo voo MGQ ATR 17:47
++ novo voo ATR MGQ 17:29
++ novo voo SDXB MGQ 06:21
++ novo voo MGQ SDXB 14:06
++ novo voo KDGP SDXB 08:21
++ novo voo SDXB KDGP 19:59
++ novo voo QBOJ KDGP 21:41
++ novo voo KDGP QBOJ 09:01
++ novo voo QHOS QBOJ 18:00
++ novo voo QBOJ QHOS 06:28
++ novo voo JUXK QHOS 06:09
++ novo voo QHOS JUXK 06:07
++ novo voo QSBX JUXK 02:37
++ novo voo JUXK QSBX 02:19
++ novo voo YPMY QSBX 22:43
++ novo voo QSBX YPMY 10:38
++ novo voo ZKYF YPMY 16:52
++ novo voo YPMY ZKYF 05:25
++ novo voo RVCF ZKYF 19:59
++ novo voo ZKYF RVCF 08:17
++ novo voo LXP RVCF 02:12
++ novo voo RVCF LXP 11:18
++ novo voo RGLL LXP 22:33
++ novo voo LXP RGLL 09:27
++ novo voo XBWP RGLL 07:02
++ novo voo RGLL XBWP 02:40
++ novo voo TAD XBWP 00:48
++ novo voo XBWP TAD 03:45
++ novo voo ODD TAD 00:52
++ novo voo TAD ODD 09:48
++ novo voo NBUO ODD 02:42
++ novo voo ODD NBUO 20:30
++ novo voo RQZ NBUO 18:40
++ novo voo NBUO RQZ 00:17
++ novo voo BYOE RQZ 14:28
++ novo voo RQZ BYOE 12:42
++ novo voo URD BYOE 04:42
++ novo voo BYOE URD 12:10
++ novo voo OEW URD 13:50
++ novo voo URD OEW 01:59
++ novo voo JRG OEW 22:41
++ novo voo OEW JRG 20:13
++ novo voo BVR JRG 08:35
++ novo voo JRG BVR 05:24
++ novo voo KEIF BVR 21:50
++ novo voo BVR KEIF 16:38
++ novo voo DWI KEIF 07:10
++ novo voo KEIF DWI 10:34
++ novo voo WLD DWI 23:51
++ novo voo DWI WLD 09:08
++ novo voo RVH WLD 07:43
++ novo voo WLD RVH 11:31
++ novo voo YHZF RVH 10:43
++ novo voo RVH YHZF 08:00
++ novo voo FOWO YHZF 00:25
++ novo voo YHZF FOWO 09:17
++ novo voo XLV FOWO 04:52
++ novo voo FOWO XLV 17:07
++ novo voo VZN XLV 13:54
++ novo voo XLV VZN 06:43
++ novo voo TSZ VZN 15:38
++ novo voo VZN TSZ 16:14
++ novo voo WVOB TSZ 23:52
++ novo voo TSZ WVOB 06:12
++ novo voo HWOQ WVOB 12:17
++ novo voo WVOB HWOQ 01:42
++ novo voo XQCE HWOQ 17:10
++ novo voo HWOQ XQCE 23:07
++ novo voo QCLU XQCE 07:44
++ novo voo XQCE QCLU 07:43
++ novo voo WPG QCLU 16:10
++ novo voo QCLU WPG 23:30
++ novo voo QVU WPG 02:58
++ novo voo WPG QVU 15:16
++ novo voo NVMM QVU 05:32
++ novo voo QVU NVMM 08:46
++ novo voo CNA NVMM 00:19
++ novo voo NVMM CNA 05:30
++ novo voo MQCL CNA 09:37
++ novo voo CNA MQCL 12:25
++ novo voo UNU MQCL 06:17
++ novo voo MQCL UNU 06:40
++ novo voo FXDB UNU 09:58
++ novo voo UNU FXDB 07:02
++ novo voo BQFV FXDB 18:43
++ novo voo FXDB BQFV 02:19
++ novo voo DQT BQFV 08:07
++ novo voo BQFV DQT 00:53
++ novo voo LHE DQT 04:42
++ novo voo DQT LHE 08:30
++ novo voo JUG LHE 19:00
++ novo voo LHE JUG 20:35
++ novo voo IWY JUG 19:44
++ novo voo JUG IWY 01:03
++ novo voo KSGH IWY 18:38
++ novo voo IWY KSGH 20:52
++ novo voo NEP KSGH 00:05
++ novo voo KSGH NEP 23:41
++ novo voo DSG NEP 08:33
++ novo voo NEP DSG 11:09
++ novo voo OQN DSG 14:28
++ novo voo DSG OQN 11:16
++ novo voo JGT OQN 16:12
++ novo voo OQN JGT 07:05
++ novo voo KZB JGT 01:03
++ novo voo JGT KZB 17:48
++ novo voo FXO KZB 09:48
++ novo voo KZB FXO 00:16
++ novo voo WHO FXO 20:48
++ novo voo FXO WHO 22:47
++ novo voo PVC WHO 11:38
++ novo voo WHO PVC 01:29
++ novo voo KAP PVC 05:09
++ novo voo PVC KAP 18:20
++ novo voo QEG KAP 22:21
++ novo voo KAP QEG 20:31
++ novo voo KZRX QEG 14:08
++ novo voo QEG KZRX 14:20
++ novo voo SDEQ KZRX 19:52
++ novo voo KZRX SDEQ 17:18
++ novo voo IOB SDEQ 09:18
++ novo voo SDEQ IOB 14:35
++ novo voo ETSH IOB 11:52
++ novo voo IOB ETSH 20:46
++ novo voo UASA ETSH 02:12
++ novo voo ETSH UASA 23:48
++ novo voo UPM UASA 09:19
++ novo voo UASA UPM 15:57
++ novo voo UUOG UPM 01:08
++ novo voo UPM UUOG 23:25
++ novo voo IDV UUOG 21:51
++ novo voo UUOG IDV 17:53
++ novo voo JBQ IDV 06:40
++ novo voo IDV JBQ 20:16
++ novo voo KGGJ JBQ 19:54
++ novo voo JBQ KGGJ 03:21
++ novo voo ZDUZ KGGJ 14:42
++ novo voo KGGJ ZDUZ 21:13
++ novo voo WTAJ ZDUZ 16:26
++ novo voo ZDUZ WTAJ 03:02
++ novo voo RXCN WTAJ 12:39
++ novo voo WTAJ RXCN 08:49
++ novo voo TUQ RXCN 22:07
++ novo voo RXCN TUQ 21:28
++ novo voo ZLDK TUQ 23:11
++ novo voo TUQ ZLDK 01:30
++ novo voo WNA ZLDK 07:48
++ novo voo ZLDK WNA 09:13
++ novo voo UJN WNA 11:05
++ novo voo WNA UJN 10:00
++ novo voo PJWO UJN 06:16
++ novo voo UJN PJWO 17:12
++ novo voo PQR PJWO 09:15
++ novo voo PJWO PQR 01:16
++ novo voo IQJV PQR 21:03
++ novo voo PQR IQJV 15:32
++ novo voo CRA IQJV 14:32
++ novo voo IQJV CRA 04:29
++ novo voo RNJB CRA 08:56
++ novo voo CRA RNJB 18:18
++ novo voo FRC RNJB 02:36
++ novo voo RNJB FRC 21:33
++ novo voo NOZK FRC 14:18
++ novo voo FRC NOZK 18:59
++ novo voo IHVQ NOZK 14:08
++ novo voo NOZK IHVQ 05:23
++ novo voo MHD IHVQ 02:06
++ novo voo IHVQ MHD 03:50
++ novo voo YNR MHD 05:50
++ novo voo MHD YNR 16:32
++ novo voo RJL YNR 15:50
++ novo voo YNR RJL 22:24
++ novo voo AYID RJL 22:02
++ novo voo RJL AYID 13:44
++ novo voo PUF AYID 01:50
++ novo voo AYID PUF 16:31
++ novo voo JVZ PUF 03:01
++ novo voo PUF JVZ 03:16
++ novo voo AIB JVZ 07:21
++ novo voo JVZ AIB 20:13
++ novo voo YZJI AIB 20:44
++ novo voo AIB YZJI 12:18
++ novo voo FIQX YZJI 13:45
++ novo voo YZJI FIQX 01:34
++ novo voo HGD FIQX 01:39
++ novo voo FIQX HGD 01:19
++ novo voo GCQ HGD 00:59
++ novo voo HGD GCQ 22:02
++ novo voo EFIJ GCQ 22:49
++ novo voo GCQ EFIJ 00:34
++ novo voo RGF EFIJ 15:10
++ novo voo EFIJ RGF 21:22
++ novo voo GPOE RGF 14:27
++ novo voo RGF GPOE 02:53
++ novo voo OPY GPOE 09:22
++ novo voo GPOE OPY 19:11
++ novo voo VGJS OPY 03:35
++ novo voo OPY VGJS 13:33
++ novo voo SAE VGJS 02:47
++ novo voo VGJS SAE 17:16
++ novo voo IGRT SAE 00:31
++ novo voo SAE IGRT 00:08
++ novo voo XBW IGRT 22:39
++ novo voo IGRT XBW 09:05
++ novo voo VCKI XBW 06:54
++ novo voo XBW VCKI 23:13
++ novo voo AXRQ VCKI 12:09
++ novo voo VCKI AXRQ 23:50
++ novo voo GQGD AXRQ 21:32
++ novo voo AXRQ GQGD 04:29
++ novo voo RXW GQGD 17:54
++ novo voo GQGD RXW 00:30
++ novo voo XAMF RXW 13:20
++ novo voo RXW XAMF 13:09
++ novo voo GZV XAMF 03:31
++ novo voo XAMF GZV 22:07
++ novo voo CRKX GZV 09:59
++ novo voo GZV CRKX 11:22
++ novo voo WGGY CRKX 10:47
++ novo voo CRKX WGGY 13:27
++ novo voo XQSG WGGY 04:24
++ novo voo WGGY XQSG 23:12
++ novo voo AJE XQSG 02:41
++ novo voo XQSG AJE 20:43
++ novo voo HDEG AJE 07:38
++ novo voo AJE HDEG 04:04
++ novo voo TMOZ HDEG 15:05
++ novo voo HDEG TMOZ 19:16
++ novo voo LEPC TMOZ 21:55
++ novo voo TMOZ LEPC 00:48
++ novo voo NXM LEPC 12:21
++ novo voo LEPC NXM 02:56
++ novo voo GLAF NXM 18:34
++ novo voo NXM GLAF 18:54
++ novo voo ULKU GLAF 19:53
++ novo voo GLAF ULKU 03:25
++ novo voo OPER ULKU 11:45
++ novo voo ULKU OPER 13:52
++ novo voo MXOY OPER 10:30
++ novo voo OPER MXOY 07:10
++ novo voo PLYV MXOY 23:22
++ novo voo MXOY PLYV 03:52
++ novo voo CLQB PLYV 12:10
++ novo voo PLYV CLQB 15:28
++ novo voo LHL CLQB 16:39
++ novo voo CLQB LHL 20:30
++ novo voo NOHA LHL 08:53
++ novo voo LHL NOHA 21:47
++ novo voo BXN NOHA 07:25
++ novo voo NOHA BXN 16:44
++ novo voo DGN BXN 14:47
++ novo voo BXN DGN 20:15
++ novo voo FCO DGN 11:03
++ novo voo DGN FCO 03:46
++ novo voo RCS FCO 18:15
++ novo voo FCO RCS 13:51
++ novo voo FWAV RCS 02:47
++ novo voo RCS FWAV 00:00
++ novo voo YIH FWAV 03:48
++ novo voo FWAV YIH 23:56
++ novo voo VWAC YIH 22:22
++ novo voo YIH VWAC 18:11
++ novo voo YFWN VWAC 07:26
++ novo voo VWAC YFWN 21:41
++ novo voo AUKS YFWN 08:27
++ novo voo YFWN AUKS 09:53
++ novo voo MIWG AUKS 21:59
++ novo voo AUKS MIWG 23:48
++ novo voo OVP MIWG 19:03
++ novo voo MIWG OVP 13:06
++ novo voo XMLW OVP 20:16
++ novo voo OVP XMLW 06:47
++ novo voo UJP XMLW 15:22
++ novo voo XMLW UJP 11:11
++ novo voo JRQK UJP 18:43
++ novo voo UJP JRQK 20:21
++ novo voo MXT JRQK 05:42
++ novo voo JRQK MXT 05:33
++ novo voo TEG MXT 18:41
++ novo voo MXT TEG 02:22
++ novo voo SRTY TEG 15:22
++ novo voo TEG SRTY 07:28
++ novo voo HVTU SRTY 13:47
++ novo voo SRTY HVTU 22:23
++ novo voo FHRA HVTU 04:45
++ novo voo HVTU FHRA 01:18
++ novo voo APV FHRA 20:27
++ novo voo FHRA APV 14:09
++ novo voo JLW APV 08:07
++ novo voo APV JLW 21:09
++ novo voo ZVZO JLW 12:05
++ novo voo JLW ZVZO 04:16
++ novo voo FWOX ZVZO 07:45
++ novo voo ZVZO FWOX 20:59
++ novo voo HYRQ FWOX 01:39
++ novo voo FWOX HYRQ 13:57
++ novo voo KLOP HYRQ 02:53
++ novo voo HYRQ KLOP 21:19
++ novo voo HRW KLOP 14:55
++ novo voo KLOP HRW 16:52
++ novo voo JRW HRW 09:08
++ novo voo HRW JRW 20:01
++ novo voo EUX JRW 15:08
++ novo voo JRW EUX 10:53
++ novo voo RYU EUX 08:10
++ novo voo EUX RYU 04:51
++ novo voo FSW RYU 17:17
++ novo voo RYU FSW 06:54
++ novo voo GDBZ FSW 16:25
++ novo voo FSW GDBZ 01:21
++ novo voo WLH GDBZ 12:06
++ novo voo GDBZ WLH 15:54
++ novo voo ABUU WLH 03:14
++ novo voo WLH ABUU 12:00
++ novo voo EDR ABUU 16:21
++ novo voo ABUU EDR 20:01
++ novo voo VWW EDR 09:10
++ novo voo EDR VWW 03:09
++ novo voo COT VWW 08:13
++ novo voo VWW COT 08:15
++ novo voo YYO COT 00:07
++ novo voo COT YYO 13:10
++ novo voo DWAG YYO 02:25
++ novo voo YYO DWAG 00:37
++ novo voo UFGD DWAG 11:46
++ novo voo DWAG UFGD 20:22
++ novo voo JHO UFGD 16:32
++ novo voo UFGD JHO 01:59
++ novo voo HVIY JHO 05:48
++ novo voo JHO HVIY 09:08
++ novo voo FWWZ HVIY 15:45
++ novo voo HVIY FWWZ 16:46
++ novo voo KUW FWWZ 15:12
++ novo voo FWWZ KUW 12:05
++ novo voo VNF KUW 01:08
++ novo voo KUW VNF 16:41
++ novo voo JGH VNF 11:25
++ novo voo VNF JGH 21:39
++ novo voo CMPG JGH 04:00
++ novo voo JGH CMPG 01:09
++ novo voo ANW CMPG 04:05
++ novo voo CMPG ANW 03:09
++ novo voo WRPW ANW 12:00
++ novo voo ANW WRPW 18:52
++ novo voo UTLW WRPW 02:45
++ novo voo WRPW UTLW 12:01
++ novo voo XQSH UTLW 13:17
++ novo voo UTLW XQSH 21:50
++ novo voo FNOQ XQSH 09:43
++ novo voo XQSH FNOQ 09:08
++ novo voo VXXJ FNOQ 22:04
++ novo voo FNOQ VXXJ 15:55
++ novo voo FRPU VXXJ 03:43
++ novo voo VXXJ FRPU 03:30
++ novo voo XQFM FRPU 08:08
++ novo voo FRPU XQFM 13:01
++ novo voo WJKJ XQFM 00:30
++ novo voo XQFM WJKJ 00:15
++ novo voo FIXX WJKJ 15:53
++ novo voo WJKJ FIXX 10:26
++ novo voo LEEZ FIXX 02:48
++ novo voo FIXX LEEZ 00:44
++ novo voo ZWUZ LEEZ 10:51
++ novo voo LEEZ ZWUZ 01:30
++ novo voo JGYB ZWUZ 15:30
++ novo voo ZWUZ JGYB 07:59
++ novo voo NYVU JGYB 01:47
++ novo voo JGYB NYVU 15:11
++ novo voo KQV NYVU 00:42
++ novo voo NYVU KQV 08:28
++ novo voo YZBL KQV 16:23
++ novo voo KQV YZBL 05:39
++ novo voo HMB YZBL 01:25
++ novo voo YZBL HMB 16:26
++ novo voo KVIR HMB 06:34
++ novo voo HMB KVIR 04:41
++ novo voo QRIT KVIR 07:34
++ novo voo KVIR QRIT 20:30
++ novo voo GPB QRIT 00:10
++ novo voo QRIT GPB 22:11
++ novo voo BTO GPB 14:39
++ novo voo GPB BTO 14:32
++ novo voo VQY BTO 23:45
++ novo voo BTO VQY 10:54
++ novo voo QZH VQY 20:36
++ novo voo VQY QZH 11:44
++ novo voo DPPE QZH 14:19
++ novo voo QZH DPPE 21:51
++ novo voo ZCI DPPE 15:19
++ novo voo DPPE ZCI 11:53
++ novo voo JYL ZCI 12:35
++ novo voo ZCI JYL 04:14
++ novo voo UQXL JYL 19:17
++ novo voo JYL UQXL 20:51
++ novo voo RMMF UQXL 15:11
++ novo voo UQXL RMMF 20:47
++ novo voo HYK RMMF 18:29
++ novo voo RMMF HYK 11:14
++ novo voo OKX HYK 22:57
++ novo voo HYK OKX 12:21
++ novo voo POH OKX 20:45
++ novo voo OKX POH 00:26
++ novo voo OJY POH 05:01
++ novo voo POH OJY 11:49
++ novo voo BHX OJY 11:16
++ novo voo OJY BHX 03:48
++ novo voo YTFX BHX 07:59
++ novo voo BHX YTFX 22:14
++ novo voo YOS YTFX 04:13
++ novo voo YTFX YOS 09:49
++ novo voo WDU YOS 20:13
++ novo voo YOS WDU 03:06
++ novo voo PKI WDU 11:59
++ novo voo WDU PKI 05:22
++ novo voo JARA PKI 02:01
++ novo voo PKI JARA 14:40
++ novo voo NOT JARA 06:39
++ novo voo JARA NOT 23:25
++ novo voo PUUO NOT 14:41
++ novo voo NOT PUUO 11:38
++ novo voo SHQP PUUO 09:03
++ novo voo PUUO SHQP 05:22
++ novo voo OFFB SHQP 18:57
++ novo voo SHQP OFFB 13:42
++ novo voo KXVA OFFB 02:44
++ novo voo OFFB KXVA 15:51
++ novo voo EBSG KXVA 00:57
++ novo voo KXVA EBSG 01:24
++ novo voo SQH EBSG 12:26
++ novo voo EBSG SQH 08:54
++ novo voo JUYE SQH 17:15
++ novo voo SQH JUYE 19:00
++ novo voo MPI JUYE 16:35
++ novo voo JUYE MPI 11:00
++ novo voo GZGW MPI 09:50
++ novo voo MPI GZGW 19:21
++ novo voo LXGW GZGW 22:14
++ novo voo GZGW LXGW 07:27
++ novo voo CYD LXGW 14:07
++ novo voo LXGW CYD 21:27
++ novo voo BYO CYD 07:08
++ novo voo CYD BYO 16:07
++ novo voo QFD BYO 19:47
++ novo voo BYO QFD 12:59
++ novo voo OAZU QFD 23:56
++ novo voo QFD OAZU 22:31
++ novo voo LMZ OAZU 17:41
++ novo voo OAZU LMZ 04:49
++ novo voo SYM LMZ 16:19
++ novo voo LMZ SYM 10:44
++ novo voo DAO SYM 22:44
++ novo voo SYM DAO 13:12
++ novo voo YKQ DAO 05:32
++ novo voo DAO YKQ 08:32
++ novo voo QYX YKQ 20:47
++ novo voo YKQ QYX 10:01
++ novo voo MTE QYX 01:06
++ novo voo QYX MTE 19:59
++ novo voo ZGKZ MTE 07:55
++ novo voo MTE ZGKZ 11:29
++ novo voo GPTS ZGKZ 21:27
++ novo voo ZGKZ GPTS 08:56
++ novo voo ZMP GPTS 14:14
++ novo voo GPTS ZMP 07:38
++ novo voo BUO ZMP 16:10
++ novo voo ZMP BUO 08:24
++ novo voo IMBY BUO 12:50
++ novo voo BUO IMBY 02:25
++ novo voo TWH IMBY 16:44
++ novo voo IMBY TWH 06:55
++ novo voo LDOE TWH 16:09
++ novo voo TWH LDOE 14:41
++ novo voo UQD LDOE 08:31
++ novo voo LDOE UQD 03:18
++ novo voo XUUR UQD 09:10
++ novo voo UQD XUUR 19:47
++ novo voo UECI XUUR 06:39
++ novo voo XUUR UECI 11:29
++ novo voo YWAH UECI 00:58
++ novo voo UECI YWAH 03:08
++ novo voo DFS YWAH 08:00
++ novo voo YWAH DFS 19:54
++ novo voo EBEP DFS 03:26
++ novo voo DFS EBEP 05:45
++ novo voo SVI EBEP 10:23
++ novo voo EBEP SVI 05:58
++ novo voo MNQ SVI 16:40
++ novo voo SVI MNQ 06:27
++ novo voo KKEX MNQ 00:03
++ novo voo MNQ KKEX 15:23
++ novo voo KBO KKEX 14:47
++ novo voo KKEX KBO 01:34
++ novo voo BMTI KBO 10:42
++ novo voo KBO BMTI 05:23
++ novo voo ZQQ BMTI 19:01
++ novo voo BMTI ZQQ 20:46
++ novo voo YXGJ ZQQ 07:55
++ novo voo ZQQ YXGJ 10:25
++ novo voo UWDH YXGJ 23:17
++ novo voo YXGJ UWDH 21:33
++ novo voo QOH UWDH 20:51
++ novo voo UWDH QOH 10:20
++ novo voo YKN QOH 15:42
++ novo voo QOH YKN 18:04
++ novo voo MZN YKN 22:59
++ novo voo YKN MZN 14:31
++ novo voo WMO MZN 03:19
++ novo voo MZN WMO 13:17
++ novo voo KKG WMO 06:32
++ novo voo WMO KKG 14:10
++ novo voo VFME KKG 18:18
++ novo voo KKG VFME 08:32
++ novo voo XAM VFME 05:11
++ novo voo VFME XAM 04:09
++ novo voo IXTW XAM 19:20
++ novo voo XAM IXTW 03:58
++ novo voo PWR IXTW 09:53
++ novo voo IXTW PWR 23:46
++ novo voo QDE PWR 09:04
++ novo voo PWR QDE 09:35
++ novo voo BCU QDE 22:33
++ novo voo QDE BCU 06:45
++ novo voo QFA BCU 19:39
++ novo voo BCU QFA 06:55
++ novo voo UYEG QFA 13:42
++ novo voo QFA UYEG 19:09
++ novo voo UFC UYEG 13:55
++ novo voo UYEG UFC 02:46
++ novo voo KMF UFC 21:59
++ novo voo UFC KMF 20:09
++ novo voo KMVJ KMF 13:23
++ novo voo KMF KMVJ 04:42
++ novo voo ZZIF KMVJ 19:17
++ novo voo KMVJ ZZIF 10:51
++ novo voo LHCB ZZIF 03:28
++ novo voo ZZIF LHCB 03:51
++ novo voo JCX LHCB 18:41
++ novo voo LHCB JCX 18:59
++ novo voo ABNE JCX 16:20
++ novo voo JCX ABNE 03:44
++ novo voo UIFF ABNE 01:45
++ novo voo ABNE UIFF 20:17
++ novo voo LIHZ UIFF 13:01
++ novo voo UIFF LIHZ 08:51
++ novo voo SEFU LIHZ 03:06
++ novo voo LIHZ SEFU 01:58
++ novo voo MIB WPR 06:14
++ novo voo MQCL TVF 10:18
++ novo voo VNF MHAX 14:51
++ novo voo KGYX YDQU 10:28
++ novo voo DXSP NJJV 01:42
++ novo voo ZEG KES 19:10
++ novo voo ICG NQN 23:27
++ novo voo IJA KZRX 06:15
++ novo voo QKHC VXJ 06:57
++ novo voo DXSP XOH 21:09
++ novo voo NCS YZBL 22:51
++ novo voo LST MWZ 15:22
++ novo voo CAB KKE 04:33
++ novo voo MFFE ASZ 19:18
++ novo voo COT HYG 11:17
++ novo voo MIB GKU 07:37
++ novo voo TEG TOB 21:21
++ novo voo VGB FLPD 03:03
++ novo voo XMLW KDP 02:06
++ novo voo JUXK AZE 13:43
++ novo voo TOB TXUR 15:43
++ novo voo GNXN UFNP 06:18
++ novo voo MTE ONC 16:48
++ novo voo ZNGI GPB 02:11
++ novo voo KEIF NHDD 00:07
++ novo voo YINZ KZB 18:01
++ novo voo GCQ EFLM 15:15
++ novo voo JHO YLDJ 15:36
++ novo voo GFE AUZK 01:08
++ novo voo MHD DGJ 00:28
++ novo voo FRPU OQN 04:48
++ novo voo VINL AHU 11:26
++ novo voo YPQ VSG 17:41
++ novo voo YIH FRPU 12:03
++ novo voo GSN YUWW 11:09
++ novo voo JVK GVUA 08:24
++ novo voo QLM WPR 06:43
++ novo voo GPW ASZ 23:10
++ novo voo XVC HWOQ 14:21
++ novo voo MGLT GJV 03:12
++ novo voo NLLK JCFY 20:26
++ novo voo YOCI TQL 14:40
++ novo voo VUA JUQP 15:04
++ novo voo ZDQL EHE 21:30
++ novo voo ANQ WJW 00:48
++ novo voo YPQ DIA 21:16
++ novo voo LSO LEEZ 16:14
++ novo voo SSC AZK 08:00
++ novo voo BUO SCDD 07:54
++ novo voo KCY OCOU 06:46
++ novo voo EUO AIB 14:44
++ novo voo EUX XFD 16:43
++ novo voo EXPY OAH 17:16
++ novo voo QHX ZKYF 14:03
++ novo voo JCEJ QRIT 10:05
++ novo voo QUI NXT 23:44
++ novo voo LPT XUN 21:05
++ novo voo QOH IHUM 13:17
++ novo voo FIXX AIIF 07:27
++ novo voo AUKS JYKU 16:29
++ novo voo YOTQ RQZ 13:14
++ novo voo LQMD GVX 23:17
++ novo voo DUMS FSW 01:33
++ novo voo YZJI GQEI 09:22
++ novo voo JRXU OPU 12:43
++ novo voo CTV RLA 18:34
++ novo voo WYH FOWO 07:49
++ novo voo XBW YMD 01:55
++ novo voo BCYC DFS 22:35
++ novo voo FVM MWZ 10:53
++ novo voo NSZ SUB 18:21
++ novo voo OZX RGF 07:21
++ novo voo UFNP MEII 14:51
++ novo voo KMF PLQM 07:48
++ novo voo COGK DPX 05:14
++ novo voo UIFF GZV 09:11
++ novo voo QBH WYH 01:53
++ novo voo NOHA BCF 03:30
++ novo voo JADK QHAH 10:22
++ novo voo YTKK QSBX 19:44
++ novo voo SXH BAVW 07:18
++ novo voo ULKU HPO 10:21
++ novo voo AIOL EXPY 06:19
++ novo voo QHOS UCQU 10:43
++ novo voo WCT UFNP 13:05
++ novo voo TLTM XLV 19:29
++ novo voo XUN KWPO 16:56
++ novo voo REL BCF 21:02
++ novo voo GNXN UEB 18:18
++ novo voo TUP WWEP 09:58
++ novo voo UTJQ KZRX 15:15
++ novo voo PBWU PDGW 06:52
++ novo voo TWH VCG 05:06
++ novo voo ISU CCC 21:28
++ novo voo QZH PLQM 04:01
++ novo voo BXN FIQX 11:49
++ novo voo GLPI DKY 22:35
++ novo voo OCJZ JVXT 06:07
++ novo voo ANW CLQB 16:14
++ novo voo JUY FHRA 04:30
++ novo voo HTE PBWU 13:52
++ novo voo XCWE TUP 00:37
++ novo voo BAVW KXT 23:55
++ novo voo NBAD AYA 00:07
++ novo voo DUM RMMF 19:00
++ novo voo RNJB DOK 00:50
++ novo voo YRU GUZ 20:55
++ novo voo AUN ZEP 15:35
++ novo voo ZBQQ ZEC 04:16
++ novo voo BCF YZJI 07:40
++ novo voo DSX VFPW 09:06
++ novo voo YDQU GRA 06:36
++ novo voo SGNF QTNY 09:10
++ novo voo MMYJ QSBX 11:36
++ novo voo NOHA GJV 09:58
++ novo voo QZD XRNO 18:08
++ novo voo ESAM ONJU 18:31
++ novo voo CJN UOV 08:00
++ novo voo FRC QQEQ 14:36
++ novo voo BDGF MWIO 17:31
++ novo voo ANH XAA 23:50
++ novo voo KMVJ UJP 17:18
++ novo voo AABO YMD 01:53
++ novo voo IZYC GPAQ 03:26
++ novo voo UWC CGJ 22:22
++ novo voo JGV YWAH 15:27
++ novo voo VHUU HVTU 14:08
++ novo voo SGNF RVAX 22:34
++ novo voo FMNY TSZ 11:30
++ novo voo QVU TRNJ 21:34
++ novo voo PDGW TLIK 04:27
++ novo voo NXM GDBZ 10:26
++ novo voo GNXN GLPI 01:25
++ novo voo GBV MHD 20:18
++ novo voo UUOG GWC 13:22
++ novo voo CRKX BTO 18:44
++ novo voo URD OEW 05:13
++ novo voo FWT PUUO 19:55
++ novo voo WQCT CCC 05:28
++ novo voo SVI OPU 01:50
++ novo voo WBGY XXDB 05:18
++ novo voo MGQ INS 12:21
++ novo voo VVR SDEQ 12:13
++ novo voo AYID KKP 07:32
++ novo voo HXD KMVJ 04:43
++ novo voo XCFK YZBL 09:57
++ novo voo GPOE ZNGI 19:01
++ novo voo DDQ QFA 07:34
++ novo voo LAY CYX 07:09
++ novo voo DWI HPLA 01:58
++ novo voo FTU WRY 19:52
++ novo voo HVIY ULKU 15:16
++ novo voo FCO MXG 16:29
++ novo voo QSD DKL 05:25
++ novo voo JGLQ OZX 08:53
++ novo voo OZP SVZE 13:36
++ novo voo BPZ LUTA 13:55
++ novo voo PLQM SPHJ 04:22
++ novo voo ZRU DSG 07:14
++ novo voo RMWV BOV 12:21
++ novo voo VVC RSKW 23:10
++ novo voo IRDF ZTI 16:51
++ novo voo SVN JBZP 06:06
++ novo voo OVB HYG 18:38
++ novo voo JBZA MKO 00:37
++ novo voo PYO NXJ 01:58
++ novo voo IPZ STMG 19:41
++ novo voo GYNW OOTQ 04:15
++ novo voo TLIK AFMF 11:52
++ novo voo YYQB PUF 09:33
++ novo voo KXC VPZ 08:42
++ novo voo AYID FXO 02:51
++ novo voo KSGH VGJS 14:53
++ novo voo ZTOD LIK 22:58
++ novo voo SGTO UOP 09:44
++ novo voo KBO YZWO 07:30
++ novo voo CMPG DGJ 19:48
++ novo voo ZLDK OPG 06:42
++ novo voo ZFZB WCJ 14:03
++ novo voo JBQ INCX 05:07
++ novo voo BMTI AFMF 15:42
++ novo voo HAPW SRTY 08:27
++ novo voo OLGU FWAV 01:47
++ novo voo MTE CZHA 21:42
++ novo voo VWAC WRPW 17:19
++ novo voo QLZ UEB 18:11
++ novo voo DWAG CLH 09:07
++ novo voo GPW BTOH 22:47
++ novo voo LST GJP 22:40
++ novo voo MXOY BVR 18:27
++ novo voo CRKX MIB 08:12
++ novo voo SNR ESAM 20:56
++ novo voo VMKP ULKU 02:45
++ novo voo ZUR LAHG 03:08
++ novo voo DQT YPJ 14:41
++ novo voo HFSR PNO 00:51
++ novo voo YXQI VSG 22:03
++ novo voo QRJ KUIG 08:55
++ novo voo RCS OHBS 17:32
++ novo voo ZVG FEJB 21:33
++ aeroporto HPV desconhecido
++ aeroporto FDS desconhecido
++ aeroporto XSIU desconhecido
++ aeroporto KBZ desconhecido
++ aeroporto QINN desconhecido
 De   Para Parte Chega
 ==== ==== ===== =====
-KLZV RSN  15:36 15:08
-RSN  PXXR 15:54 21:48
-Tempo de viagem: 2171 minutos
-+ aeroporto MJV desconhecido
+CTNP KGPS 09:11 03:22
+KGPS HEDS 16:07 21:46
+HEDS OKD  19:49 05:39
+OKD  KLUL 23:24 02:06
+KLUL UVD  02:59 03:32
+UVD  VCL  23:07 08:45
+VCL  VAQN 09:05 15:37
+VAQN YCC  00:32 14:00
+YCC  MJN  06:57 02:18
+MJN  DDQ  16:34 08:24
+DDQ  QFA  07:34 09:08
+QFA  UYEG 19:09 07:58
+UYEG UFC  02:46 02:15
+UFC  KMF  20:09 23:26
+KMF  KMVJ 04:42 19:51
+KMVJ ZZIF 10:51 10:05
+ZZIF LHCB 03:51 03:05
+LHCB JCX  18:59 13:12
+JCX  ABNE 03:44 23:15
+ABNE UIFF 20:17 09:12
+UIFF LIHZ 08:51 14:26
+LIHZ SEFU 01:58 10:02
+Tempo de viagem: 36602 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-TRQY RSN  00:19 21:26
-RSN  TOPB 01:47 22:30
-Tempo de viagem: 2873 minutos
-+ aeroporto CTRI desconhecido
+SEFU LIHZ 03:06 19:23
+LIHZ UIFF 13:01 07:21
+UIFF GZV  09:11 17:24
+GZV  CRKX 11:22 07:15
+CRKX MIB  08:12 20:01
+MIB  YZWO 14:39 18:10
+YZWO TKB  04:28 18:27
+TKB  JUY  22:31 23:55
+JUY  NFFC 01:37 10:57
+NFFC QVEJ 18:46 19:07
+QVEJ QTNY 17:25 09:37
+QTNY OCOU 20:37 05:21
+OCOU VMOY 14:17 19:40
+VMOY GUZ  00:12 04:10
+GUZ  OLE  03:46 15:07
+OLE  IHW  14:15 18:24
+IHW  BXP  10:32 22:54
+BXP  XOH  03:36 14:45
+XOH  EWEU 03:28 18:56
+EWEU NBAD 13:49 12:35
+NBAD VQHD 16:37 07:58
+VQHD QHNB 11:01 15:41
+QHNB VNLQ 01:48 15:12
+VNLQ FUK  17:29 20:22
+FUK  OCR  04:47 07:28
+OCR  WCT  19:36 07:06
+WCT  KGYX 18:50 04:56
+KGYX SGNF 17:27 18:01
+SGNF OFPJ 15:25 14:35
+OFPJ YDV  08:51 23:19
+YDV  DDQ  18:02 01:56
+DDQ  MJN  12:29 10:12
+MJN  YCC  23:27 12:17
+YCC  VAQN 22:44 06:34
+VAQN VCL  18:44 13:56
+VCL  UVD  09:35 17:36
+UVD  KLUL 04:47 15:49
+KLUL OKD  14:25 01:08
+OKD  HEDS 14:11 11:59
+HEDS KGPS 20:33 08:07
+KGPS CTNP 22:12 22:31
+Tempo de viagem: 56071 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-GLQ  RSN  14:23 10:57
-RSN  BZT  11:36 05:45
-Tempo de viagem: 3656 minutos
+ZLM  TPSW 02:27 09:41
+TPSW CFKL 23:34 13:44
+CFKL IJNV 10:33 22:55
+IJNV QQEQ 19:52 17:01
+QQEQ HPJB 09:53 11:45
+HPJB KTRW 02:09 08:21
+KTRW APUU 05:04 23:13
+APUU TXTG 10:14 13:39
+TXTG KOV  20:47 19:04
+KOV  JDQC 17:40 01:54
+JDQC IXRX 11:11 23:47
+IXRX SNR  03:54 06:47
+SNR  ESAM 20:56 16:10
+ESAM YTWT 17:59 01:39
+YTWT DWTY 22:41 12:29
+DWTY VGB  11:04 04:56
+VGB  FLPD 03:03 08:25
+FLPD VWJS 05:03 14:38
+VWJS VWY  04:29 10:33
+VWY  QUMI 15:31 08:17
+QUMI HHAV 18:44 11:19
+HHAV UCJR 14:59 01:58
+UCJR YRU  18:28 22:22
+YRU  GUZ  20:55 22:17
+GUZ  VMOY 08:34 19:37
+VMOY OCOU 20:58 19:20
+OCOU QTNY 10:11 08:04
+QTNY QVEJ 13:55 16:52
+QVEJ NFFC 04:37 09:13
+Tempo de viagem: 43035 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-PIL  RSN  15:22 00:01
-RSN  GOAR 01:35 12:21
-Tempo de viagem: 1492 minutos
+TOM  LST  02:13 00:11
+LST  GJP  22:40 16:10
+GJP  ICG  17:37 08:52
+ICG  NQN  23:27 00:56
+NQN  BLK  20:12 22:43
+BLK  HTX  23:16 03:45
+HTX  CTV  02:57 15:19
+Tempo de viagem: 9762 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-JOAU RSN  00:08 03:24
-RSN  UEX  06:20 11:31
-Tempo de viagem: 2080 minutos
+TXTG KOV  20:47 19:04
+KOV  JDQC 17:40 01:54
+JDQC IXRX 11:11 23:47
+IXRX SNR  03:54 06:47
+SNR  ESAM 20:56 16:10
+ESAM WRY  22:00 12:07
+WRY  XRD  18:35 19:02
+XRD  YOQ  13:37 10:30
+YOQ  MYWD 14:51 09:42
+MYWD UWC  04:11 10:48
+UWC  CGJ  22:22 23:21
+CGJ  CCCW 20:54 15:59
+CCCW AUP  10:42 11:12
+AUP  IRDF 17:56 02:51
+IRDF ZTI  16:51 17:52
+ZTI  JVK  22:15 06:39
+JVK  GVUA 08:24 09:55
+GVUA EHE  01:10 20:52
+EHE  JBZA 00:37 01:41
+JBZA MKO  00:37 19:51
+MKO  IIXW 17:06 18:44
+IIXW ENQY 14:35 10:22
+ENQY MWZ  02:45 09:01
+MWZ  MHAX 07:52 08:34
+MHAX UHH  07:20 16:32
+UHH  TGI  00:48 10:21
+Tempo de viagem: 36378 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-RDQ  RSN  13:50 22:53
-RSN  MUP  06:22 13:02
-Tempo de viagem: 2561 minutos
+HQEC QUI  01:38 15:50
+QUI  OZP  03:42 02:16
+OZP  SVZE 13:36 06:32
+SVZE ZAWT 19:29 06:17
+ZAWT KCY  15:10 18:33
+KCY  XCFK 13:53 03:35
+XCFK YZBL 09:57 14:48
+YZBL HMB  16:26 02:40
+HMB  KVIR 04:41 10:59
+KVIR QRIT 20:30 03:43
+QRIT GPB  22:11 00:31
+GPB  BTO  14:32 20:22
+BTO  VQY  10:54 15:04
+VQY  QZH  11:44 00:55
+QZH  PLQM 04:01 15:39
+PLQM SPHJ 04:22 23:26
+Tempo de viagem: 21173 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-WQD  RSN  01:30 20:57
-RSN  KLK  07:04 11:43
-Tempo de viagem: 2471 minutos
+OCJZ JVXT 06:07 08:18
+JVXT AFMF 14:09 04:24
+AFMF LSO  19:04 15:33
+LSO  LEEZ 16:14 01:37
+LEEZ FIXX 02:48 03:47
+FIXX WJKJ 15:53 05:38
+WJKJ XQFM 00:30 03:39
+XQFM FRPU 08:08 06:59
+FRPU OQN  04:48 17:55
+OQN  DSG  14:28 21:36
+DSG  NEP  08:33 15:18
+NEP  KSGH 00:05 20:15
+KSGH IWY  18:38 06:21
+IWY  JUG  19:44 10:22
+JUG  LHE  19:00 04:03
+LHE  DQT  04:42 14:21
+DQT  YPJ  14:41 16:02
+YPJ  SLXM 19:02 15:11
+SLXM YXQI 16:48 10:20
+YXQI DXSP 16:34 06:55
+DXSP VWH  06:24 21:02
+VWH  BBGF 09:50 17:06
+BBGF TRV  00:35 03:23
+TRV  IGB  11:11 18:40
+IGB  TYPR 20:37 00:57
+Tempo de viagem: 32670 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-UPC  RSN  01:49 14:24
-RSN  DYMA 15:39 21:27
-Tempo de viagem: 1734 minutos
-+ aeroporto JVN desconhecido
-+ aeroporto JVN desconhecido
+GDBZ WLH  15:54 16:10
+WLH  ABUU 12:00 22:12
+ABUU EDR  20:01 15:48
+EDR  VWW  03:09 06:43
+VWW  COT  08:15 22:44
+COT  HYG  11:17 21:35
+HYG  SVN  21:52 22:22
+SVN  JBZP 06:06 04:54
+JBZP SGTO 04:29 23:33
+SGTO UOP  09:44 10:44
+UOP  QQQ  13:12 02:55
+QQQ  JGV  04:34 20:26
+JGV  QLM  14:15 11:39
+QLM  WPR  06:43 05:32
+WPR  ABBY 13:52 10:29
+ABBY GQEI 16:02 15:58
+GQEI LUX  17:20 23:23
+LUX  AYA  12:18 13:21
+AYA  ECH  08:52 23:07
+ECH  YXRT 00:07 05:48
+YXRT OIPF 03:32 05:15
+OIPF QJJ  04:36 18:54
+QJJ  PBLA 05:17 14:21
+PBLA XUAJ 01:34 13:49
+XUAJ BJZ  02:12 15:57
+Tempo de viagem: 36958 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ZBJ  RSN  10:50 11:19
-RSN  WMR  12:43 23:20
-Tempo de viagem: 1226 minutos
+DGN  FCO  03:46 06:45
+FCO  MXG  16:29 15:39
+MXG  IKLS 04:28 06:49
+IKLS UBR  02:54 19:00
+UBR  GNXN 14:48 05:30
+GNXN GLPI 01:25 10:44
+GLPI YOTQ 23:29 05:49
+YOTQ SVN  08:01 13:18
+SVN  JBZP 06:06 04:54
+JBZP SGTO 04:29 23:33
+SGTO UOP  09:44 10:44
+UOP  QQQ  13:12 02:55
+QQQ  JGV  04:34 20:26
+JGV  YWAH 15:27 12:29
+YWAH DFS  19:54 15:57
+DFS  EBEP 05:45 22:46
+EBEP SVI  05:58 09:12
+Tempo de viagem: 25640 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-FIGC RSN  10:54 08:55
-RSN  LFYC 11:17 09:11
-Tempo de viagem: 3369 minutos
+YKG  SBTW 07:16 22:47
+SBTW CTV  16:32 14:36
+CTV  RLA  18:34 07:29
+RLA  MXZ  19:32 09:27
+MXZ  LAHG 02:48 02:15
+LAHG OZP  00:46 10:37
+OZP  SVZE 13:36 06:32
+SVZE ZAWT 19:29 06:17
+ZAWT KCY  15:10 18:33
+KCY  XCFK 13:53 03:35
+XCFK YZBL 09:57 14:48
+YZBL HMB  16:26 02:40
+HMB  KVIR 04:41 10:59
+KVIR QRIT 20:30 03:43
+QRIT GPB  22:11 00:31
+GPB  BTO  14:32 20:22
+BTO  VQY  10:54 15:04
+VQY  QZH  11:44 00:55
+QZH  PLQM 04:01 15:39
+PLQM QZD  04:03 15:11
+QZD  XRNO 18:08 02:25
+XRNO YTKK 17:47 19:01
+Tempo de viagem: 28433 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-WWOD RSN  00:37 03:34
-RSN  ZSCV 06:13 20:07
-Tempo de viagem: 1998 minutos
-+ voo RSN QTV 17:00 removido
-+ voo RSN GGJF 17:35 removido
-+ voo YPER RSN 16:27 removido
-+ voo RSN ZAJX 23:03 removido
-+ voo RSN ERJ 01:27 removido
-+ voo RSN QTV 17:00 inexistente
+HQEC QUI  01:38 15:50
+QUI  OZP  03:42 02:16
+OZP  LAHG 16:08 04:48
+LAHG MXZ  09:39 20:33
+MXZ  RLA  06:39 03:28
+RLA  VPZ  05:01 09:50
+VPZ  MGLT 07:10 11:58
+MGLT PLHA 07:18 03:35
+PLHA VBFK 04:22 13:38
+VBFK FTU  08:52 23:17
+FTU  WRY  19:52 15:07
+WRY  ESAM 01:27 09:36
+ESAM ONJU 18:31 21:18
+ONJU AZE  23:38 11:28
+AZE  WCJ  02:18 00:27
+Tempo de viagem: 22358 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-RIXT RSN  07:32 08:24
-RSN  NHT  13:49 18:19
-Tempo de viagem: 1007 minutos
+BUO  IMBY 02:25 08:02
+IMBY TWH  06:55 07:14
+TWH  LDOE 14:41 01:24
+LDOE UQD  03:18 00:01
+UQD  XUUR 19:47 02:47
+XUUR UECI 11:29 02:20
+UECI YWAH 03:08 17:47
+YWAH DFS  19:54 15:57
+DFS  EBEP 05:45 22:46
+EBEP SVI  05:58 09:12
+SVI  MNQ  06:27 02:52
+MNQ  KKEX 15:23 20:30
+KKEX KBO  01:34 13:01
+KBO  YZWO 07:30 18:09
+YZWO MIB  09:28 23:29
+MIB  WPR  06:14 16:43
+Tempo de viagem: 21247 minutos
++ voo AABO YMD 01:53 removido
++ voo DUM VHUU 17:46 removido
++ voo VMKP ULKU 02:45 removido
++ voo NXM GDBZ 10:26 removido
++ voo DDQ QFA 07:34 removido
++ voo AABO YMD 01:53 removido
++ aeroporto QLX desconhecido
 De   Para Parte Chega
 ==== ==== ===== =====
-KCZB RSN  13:42 03:13
-RSN  NNB  04:05 09:13
-Tempo de viagem: 2093 minutos
-+ sem voos de QIGW para ERJ
+AOWP ZER  15:40 10:30
+ZER  TOB  02:42 10:41
+TOB  VVC  15:24 20:53
+VVC  RSKW 23:10 03:41
+RSKW JDR  00:01 10:33
+JDR  BKJS 17:31 06:22
+BKJS VMKP 08:17 05:27
+VMKP ULKU 02:45 02:42
+ULKU HPO  10:21 09:28
+HPO  PXRQ 02:58 15:10
+PXRQ DHLQ 22:07 16:45
+Tempo de viagem: 17060 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-FIGC RSN  10:54 08:55
-RSN  GFC  14:28 19:41
-Tempo de viagem: 2767 minutos
-+ aeroporto GLA desconhecido
-+ sem voos de CYD para ERJ
+TKS  NDK  01:53 02:37
+NDK  CGR  12:36 17:59
+CGR  DSX  14:50 17:20
+DSX  VFPW 09:06 09:21
+VFPW GYNW 20:51 11:57
+GYNW OOTQ 04:15 20:37
+OOTQ YDQU 01:30 10:30
+YDQU GHZK 15:49 20:29
+GHZK CAB  03:48 17:00
+CAB  KKE  04:33 13:28
+KKE  HAPW 00:10 09:06
+HAPW SRTY 08:27 13:59
+SRTY TEG  15:22 19:29
+TEG  TOB  21:21 17:45
+TOB  VVC  15:24 20:53
+VVC  RSKW 23:10 03:41
+RSKW JDR  00:01 10:33
+JDR  BKJS 17:31 06:22
+BKJS VMKP 08:17 05:27
+VMKP ULKU 02:45 02:42
+Tempo de viagem: 25222 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-BXAV RSN  08:26 23:31
-RSN  WYM  00:02 23:21
-Tempo de viagem: 3255 minutos
+JYKU YMOP 16:36 23:58
+YMOP LIK  22:31 06:47
+LIK  KQKN 22:02 13:21
+KQKN SWT  19:45 01:47
+SWT  PQVY 13:32 00:26
+PQVY LUTA 04:32 05:52
+LUTA DVJ  08:15 14:38
+DVJ  OZX  03:23 10:23
+OZX  RGF  07:21 02:10
+Tempo de viagem: 11037 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-JICN RSN  20:26 16:42
-RSN  EDC  20:29 15:51
-Tempo de viagem: 3924 minutos
+WHO  FXO  20:48 01:45
+FXO  KZB  09:48 18:26
+KZB  JGT  01:03 07:42
+JGT  OQN  16:12 04:17
+OQN  DSG  14:28 21:36
+DSG  NEP  08:33 15:18
+NEP  KSGH 00:05 20:15
+KSGH VGJS 14:53 07:15
+VGJS SAE  17:16 06:32
+SAE  IGRT 00:08 19:22
+IGRT XBW  09:05 19:33
+XBW  VCKI 23:13 04:08
+VCKI AXRQ 23:50 02:02
+AXRQ GQGD 04:29 09:41
+GQGD RXW  00:30 16:16
+RXW  XAMF 13:09 11:41
+XAMF GZV  22:07 03:11
+GZV  CRKX 11:22 07:15
+CRKX MIB  08:12 20:01
+MIB  WPR  06:14 16:43
+Tempo de viagem: 26660 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-CHR  RSN  10:07 15:15
-RSN  WWXN 17:23 18:38
-Tempo de viagem: 1835 minutos
+JNUV WVEG 02:14 19:42
+WVEG UHI  10:27 00:52
+UHI  IMD  17:17 12:07
+IMD  ISU  20:19 12:06
+ISU  CCC  21:28 23:57
+CCC  OPR  17:03 05:35
+OPR  MXG  08:54 05:52
+MXG  IKLS 04:28 06:49
+IKLS UBR  02:54 19:00
+UBR  GNXN 14:48 05:30
+GNXN UFNP 06:18 08:10
+UFNP MEII 14:51 22:25
+MEII ELNG 10:21 16:28
+ELNG VVR  12:48 10:11
+VVR  CED  13:46 17:27
+CED  PDGW 22:03 12:06
+PDGW TLIK 04:27 13:44
+TLIK LDR  15:36 02:47
+LDR  CIFJ 23:35 08:37
+Tempo de viagem: 27716 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-UZC  RSN  16:26 06:29
-RSN  AWR  11:41 17:10
-Tempo de viagem: 2772 minutos
+AWRJ PBWU 03:00 04:21
+PBWU PDGW 06:52 07:21
+PDGW TLIK 04:27 13:44
+TLIK VHUU 15:03 21:33
+VHUU HVTU 14:08 23:52
+HVTU SRTY 13:47 00:13
+SRTY TEG  15:22 19:29
+TEG  MXT  18:41 21:07
+MXT  JRQK 05:42 19:41
+JRQK UJP  18:43 03:19
+UJP  XMLW 15:22 09:25
+Tempo de viagem: 13748 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-NNB  RSN  12:12 16:01
-RSN  QRFQ 16:32 01:39
-Tempo de viagem: 1559 minutos
-+ aeroporto CTRI desconhecido
+OAH  ZBQQ 07:35 09:33
+ZBQQ ZEC  04:16 05:15
+ZEC  OZA  06:45 19:41
+OZA  WFE  12:32 21:45
+WFE  AGJ  22:24 01:10
+AGJ  QTE  13:00 07:32
+QTE  PBWU 10:55 10:12
+PBWU PDGW 06:52 07:21
+PDGW TLIK 04:27 13:44
+TLIK LDR  15:36 02:47
+LDR  CIFJ 23:35 08:37
+CIFJ ZEB  22:20 13:31
+ZEB  CEAC 15:32 07:09
+CEAC WQCT 10:46 08:17
+WQCT WPR  10:30 07:33
+WPR  ABBY 13:52 10:29
+ABBY GQEI 16:02 15:58
+GQEI LUX  17:20 23:23
+LUX  AYA  12:18 13:21
+AYA  ECH  08:52 23:07
+ECH  YXRT 00:07 05:48
+YXRT OIPF 03:32 05:15
+OIPF QJJ  04:36 18:54
+QJJ  PBLA 05:17 14:21
+PBLA XUAJ 01:34 13:49
+XUAJ BJZ  02:12 15:57
+BJZ  NGVN 10:30 19:02
+NGVN MGBC 23:15 20:14
+MGBC SKB  02:57 12:43
+SKB  TKS  18:14 03:04
+Tempo de viagem: 39082 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-QGI  RSN  03:22 05:26
-RSN  KRI  06:18 22:09
-Tempo de viagem: 2242 minutos
+TKS  NDK  01:53 02:37
+NDK  CGR  12:36 17:59
+CGR  DSX  14:50 17:20
+DSX  ZLK  08:13 13:37
+ZLK  YPJ  00:17 23:02
+YPJ  SLXM 19:02 15:11
+SLXM YXQI 16:48 10:20
+YXQI VSG  22:03 23:00
+VSG  ABP  05:11 11:04
+ABP  REL  19:48 01:26
+REL  BCF  21:02 17:33
+BCF  AMA  06:46 05:59
+AMA  XRNO 23:00 04:40
+XRNO YTKK 17:47 19:01
+YTKK BPZ  16:44 12:20
+BPZ  LUTA 13:55 19:52
+LUTA DVJ  08:15 14:38
+DVJ  OZX  03:23 10:23
+OZX  ZVG  22:20 15:13
+ZVG  LXYD 15:31 21:29
+LXYD WYX  21:13 10:49
+WYX  PQH  22:21 14:48
+PQH  ANH  08:10 06:22
+ANH  WTQP 23:51 21:28
+WTQP TRA  19:34 13:34
+TRA  QSD  19:09 18:58
+QSD  FPO  00:23 08:44
+FPO  TVN  19:04 19:36
+TVN  LME  15:03 04:17
+LME  VUA  15:41 22:43
+Tempo de viagem: 45269 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-BPG  RSN  10:54 23:35
-RSN  LIX  09:26 20:43
-Tempo de viagem: 3439 minutos
-+ aeroporto EXUJ desconhecido
+AGJ  QTE  13:00 07:32
+QTE  PBWU 10:55 10:12
+PBWU AWRJ 17:11 04:39
+AWRJ WKE  20:28 02:39
+WKE  GVX  19:29 09:36
+GVX  ZTOD 19:12 22:37
+ZTOD QLZ  07:04 18:03
+QLZ  UEB  18:11 05:56
+UEB  ERJ  10:26 15:21
+ERJ  HJY  17:10 22:31
+HJY  VGB  21:32 23:10
+VGB  FLPD 03:03 08:25
+FLPD VWJS 05:03 14:38
+VWJS VWY  04:29 10:33
+VWY  QUMI 15:31 08:17
+QUMI HHAV 18:44 11:19
+HHAV UCJR 14:59 01:58
+UCJR YRU  18:28 22:22
+YRU  GUZ  20:55 22:17
+GUZ  OLE  03:46 15:07
+OLE  IHW  14:15 18:24
+IHW  BXP  10:32 22:54
+BXP  XOH  03:36 14:45
+XOH  EWEU 03:28 18:56
+EWEU NBAD 13:49 12:35
+NBAD VQHD 16:37 07:58
+VQHD QHNB 11:01 15:41
+QHNB VNLQ 01:48 15:12
+VNLQ FUK  17:29 20:22
+FUK  OCR  04:47 07:28
+OCR  WCT  19:36 07:06
+WCT  KGYX 18:50 04:56
+KGYX SGNF 17:27 18:01
+SGNF OFPJ 15:25 14:35
+OFPJ YDV  08:51 23:19
+YDV  DDQ  18:02 01:56
+DDQ  MJN  12:29 10:12
+MJN  YCC  23:27 12:17
+YCC  VAQN 22:44 06:34
+VAQN VCL  18:44 13:56
+VCL  UVD  09:35 17:36
+UVD  KLUL 04:47 15:49
+KLUL OKD  14:25 01:08
+OKD  HEDS 14:11 11:59
+HEDS KGPS 20:33 08:07
+KGPS CTNP 22:12 22:31
+Tempo de viagem: 62755 minutos
+De   Para Parte Chega
+==== ==== ===== =====
+CTNP KGPS 09:11 03:22
+KGPS HEDS 16:07 21:46
+HEDS OKD  19:49 05:39
+OKD  KLUL 23:24 02:06
+KLUL UVD  02:59 03:32
+UVD  VCL  23:07 08:45
+VCL  VAQN 09:05 15:37
+VAQN YCC  00:32 14:00
+YCC  MJN  06:57 02:18
+MJN  DDQ  16:34 08:24
+DDQ  QFA  07:34 09:08
+QFA  UYEG 19:09 07:58
+UYEG UFC  02:46 02:15
+UFC  KMF  20:09 23:26
+KMF  KMVJ 04:42 19:51
+KMVJ ZZIF 10:51 10:05
+ZZIF LHCB 03:51 03:05
+LHCB JCX  18:59 13:12
+JCX  ABNE 03:44 23:15
+ABNE UIFF 20:17 09:12
+UIFF LIHZ 08:51 14:26
+LIHZ SEFU 01:58 10:02
+Tempo de viagem: 36602 minutos
+De   Para Parte Chega
+==== ==== ===== =====
+SEFU LIHZ 03:06 19:23
+LIHZ UIFF 13:01 07:21
+UIFF GZV  09:11 17:24
+GZV  CRKX 11:22 07:15
+CRKX MIB  08:12 20:01
+MIB  YZWO 14:39 18:10
+YZWO TKB  04:28 18:27
+TKB  JUY  22:31 23:55
+JUY  NFFC 01:37 10:57
+NFFC QVEJ 18:46 19:07
+QVEJ QTNY 17:25 09:37
+QTNY OCOU 20:37 05:21
+OCOU VMOY 14:17 19:40
+VMOY GUZ  00:12 04:10
+GUZ  OLE  03:46 15:07
+OLE  IHW  14:15 18:24
+IHW  BXP  10:32 22:54
+BXP  XOH  03:36 14:45
+XOH  EWEU 03:28 18:56
+EWEU NBAD 13:49 12:35
+NBAD VQHD 16:37 07:58
+VQHD QHNB 11:01 15:41
+QHNB VNLQ 01:48 15:12
+VNLQ FUK  17:29 20:22
+FUK  OCR  04:47 07:28
+OCR  WCT  19:36 07:06
+WCT  KGYX 18:50 04:56
+KGYX SGNF 17:27 18:01
+SGNF OFPJ 15:25 14:35
+OFPJ YDV  08:51 23:19
+YDV  DDQ  18:02 01:56
+DDQ  MJN  12:29 10:12
+MJN  YCC  23:27 12:17
+YCC  VAQN 22:44 06:34
+VAQN VCL  18:44 13:56
+VCL  UVD  09:35 17:36
+UVD  KLUL 04:47 15:49
+KLUL OKD  14:25 01:08
+OKD  HEDS 14:11 11:59
+HEDS KGPS 20:33 08:07
+KGPS CTNP 22:12 22:31
+Tempo de viagem: 56071 minutos

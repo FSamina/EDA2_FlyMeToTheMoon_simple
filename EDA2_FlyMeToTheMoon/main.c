@@ -74,10 +74,16 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         puts("no relax ha erro\n");
         return;
     }
-    short diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
+    int diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
     diffTempos=diffTempos+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
+    // if(strcmp(v->Id,"TGI")==0)
+    // {
+    //     printf("TGI É UM DESTINO QUANDO ANALISAMOS O %s\n",u.Id);
+    //     printf("O diffTempos = %d e o destino conhecido ate agr(%s) ja tem tempo %d",diffTempos,v->Id,v->tempoTotalDiskt);
+    // }
     if (diffTempos < v->tempoTotalDiskt)
     {
+        
         v->tempoTotalDiskt=diffTempos;
         v->vooP=noDaLinkedList.data;
         somaMinutosAHoras(&noDaLinkedList.data.hourPartida,&noDaLinkedList.data.minutePartida,noDaLinkedList.data.tempTotal);
