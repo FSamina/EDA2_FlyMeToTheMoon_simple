@@ -49,19 +49,25 @@ void initializeSource(struct air *aeroportoPartida, short horaChegada, short min
         puts("Endereço incorreto no inicialize Source\n");
         return;
     }
+    strcpy(hashArray[index]->vooP.IdAirPartida, "NIL");
+    hashArray[index]->tempoTotalDiskt = 0;
+    hashArray[index]->hourProntoParaPartir = (short) horaChegada;
+    hashArray[index]->minProntoParaPartir = (short) minutoChegada;
+    insert_Heap(*hashArray[index]);
 
     for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
-        if (hashArray[i] != NULL) {
+        if (hashArray[i] != NULL&& i!=index) 
+        {
             hashArray[i]->tempoTotalDiskt = INFINITO;//Iniciliaza  tempoTotalDisk ao "+infinito"
             strcpy(hashArray[i]->vooP.IdAirPartida, "NIL");//marca um dummy
             hashArray[i]->hourProntoParaPartir=(short)0;
             hashArray[i]->minProntoParaPartir=(short)0;
+            insert_Heap(*hashArray[i]);
         }
+        
     }
-    hashArray[index]->tempoTotalDiskt = 0;
-    hashArray[index]->hourProntoParaPartir = (short) horaChegada;
-    hashArray[index]->minProntoParaPartir = (short) minutoChegada;
+    
 }
 
 void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList) 
@@ -133,20 +139,20 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
 void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChegada, short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights *tempLista;//instancia das linked list para a percorrer
-    
-    initializeSource(aeroportoPartida, horaChegada, minutoChegada);//inicializa os aeroportos para a pesquisa
     CreateHeap();
+    initializeSource(aeroportoPartida, horaChegada, minutoChegada);//inicializa os aeroportos para a pesquisa
+    
     h->firstpop = true;
 
-    for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
-    {
-        if (hashArray[i] != NULL) {
+    // for (int i = 0; i < SIZE; i++)//mete todos os aeroportos  na queue
+    // {
+    //     if (hashArray[i] != NULL) {
 
 
-            insert_Heap(*hashArray[i]);
+    //         insert_Heap(*hashArray[i]);
 
-        }
-    }
+    //     }
+    // }
 
 
     while (h->count != 0) 
