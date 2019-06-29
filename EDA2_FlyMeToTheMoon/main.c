@@ -159,6 +159,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
                 relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
             }else
             {
+                //printf("AIR  COM MAIS 24 %s  com %.2hd:%.2hd  %.2hd:%.2hd \n",tempAir.Id,tempLista->data.hourPartida,tempLista->data.minutePartida,tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir);
                 tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt+MINUTOS_DIA;
                 relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
                 tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
