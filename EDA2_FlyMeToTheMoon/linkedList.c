@@ -70,24 +70,22 @@ struct linkedFlights *add_from_disk(struct linkedFlights *linkedFlights, char Id
                           short minutePartida,
                           short tempTotal)
 {
-    if (!search_fligths(linkedFlights, IdAirChegada, hourPartida, minutePartida))
-    {
-        struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
-        strcpy(tempHEAD->data.IdAirPartida, IdAirPartida);
-        strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
-        tempHEAD->data.hourPartida = hourPartida;
-        tempHEAD->data.minutePartida = minutePartida;
-        tempHEAD->data.tempTotal = tempTotal;
-        if (linkedFlights != NULL) {
-            if (linkedFlights->data.tempTotal != 0)
-                tempHEAD->son = linkedFlights;
-            else
-                tempHEAD->son = NULL;
-        } else
+    
+    struct linkedFlights *tempHEAD = malloc(sizeof(struct linkedFlights));
+    strcpy(tempHEAD->data.IdAirPartida, IdAirPartida);
+    strcpy(tempHEAD->data.IdAirChegada, IdAirChegada);
+    tempHEAD->data.hourPartida = hourPartida;
+    tempHEAD->data.minutePartida = minutePartida;
+    tempHEAD->data.tempTotal = tempTotal;
+    if (linkedFlights != NULL) {
+        if (linkedFlights->data.tempTotal != 0)
+            tempHEAD->son = linkedFlights;
+        else
             tempHEAD->son = NULL;
-        return tempHEAD;
     } else
-        return linkedFlights;
+        tempHEAD->son = NULL;
+    return tempHEAD;
+    
 }
 
 
