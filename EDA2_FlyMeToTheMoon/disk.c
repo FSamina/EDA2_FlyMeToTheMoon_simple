@@ -34,10 +34,10 @@ void enter_FMTTM() {
     short minutePartida_t;
     short tempTotal_t;
     for (int i = 0; i < SIZE; ++i) {
+        struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto        
         if (fscanf(file_ht, "%s", id_temp) == EOF)
             i = SIZE;
         else if (strcmp(id_temp, "0") != 0) {
-            struct air *novoAir = (struct air *) malloc(sizeof(struct air));//criamos o novo aeroporto
             strcpy(novoAir->Id, id_temp);
             novoAir->linkedVoos = NULL;
             hashArray[i] = novoAir;
@@ -50,8 +50,8 @@ void enter_FMTTM() {
                                                    tempTotal_t);
                 else break;
             }
+            
         }
-
     }
 
 }

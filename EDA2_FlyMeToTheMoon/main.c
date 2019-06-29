@@ -171,6 +171,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
             }
 
             tempLista = tempLista->son;
+            
         }
     }
     free(h);

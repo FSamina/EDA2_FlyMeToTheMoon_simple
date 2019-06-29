@@ -112,10 +112,13 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
                     if (temp_pai != NULL)//caso estejamos a remover do meio 
                     {
                         temp_pai->son = temp->son;
+                        free(temp);
                         return head;
                     } else
-                    {
-                        return temp->son;
+                    {   
+                        temp_pai= temp->son;
+                        free(temp);
+                        return temp_pai;
                     }
                 }
             }
