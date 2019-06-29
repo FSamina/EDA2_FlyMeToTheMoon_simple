@@ -107,7 +107,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
         //struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
-        printf("%.5s  %.5s  %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        printf("%-4s  %-4s  %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
 
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
         printf(" %.2hd:%.2hd\n",airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
@@ -153,7 +153,8 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
         tempLista = tempAir.linkedVoos;
         while (tempLista != NULL)//ver todos os voos de tempAir
         {
-            if (getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida) >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir))
+            if ((strcmp(tempAir.Id,aeroportoPartida->Id)==0 && getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)) ||
+            getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)+30)
             {
                 relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
             }else
