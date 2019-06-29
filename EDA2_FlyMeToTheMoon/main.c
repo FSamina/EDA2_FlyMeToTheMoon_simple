@@ -107,7 +107,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
         //struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
-        printf("%.5s  %.5s  %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
+        printf("%-4s %-4s %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
 
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
         printf(" %.2hd:%.2hd\n",airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
