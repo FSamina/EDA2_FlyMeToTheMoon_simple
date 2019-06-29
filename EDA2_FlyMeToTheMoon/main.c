@@ -174,7 +174,7 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
             
         }
     }
-    free(h);
+    freeHeap();
 }
 
 
@@ -262,6 +262,7 @@ void intrudAir(char key[5])//recebe como argumento codigo e hora local
     } else {
         printf("+ aeroporto %s existe\n", novoAir->Id);
     }
+        
 }
 
 int main(void) {

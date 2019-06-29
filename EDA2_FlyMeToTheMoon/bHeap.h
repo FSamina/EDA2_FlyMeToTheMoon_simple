@@ -13,6 +13,7 @@ int indexfinder(struct air* air);
 int parent(int i);
 void decreaseKey(int i, int new_val);
 void CreateHeap();
+void freeHeap();
 bool popCheck();
 void insert_Heap(struct air air);
 void print();

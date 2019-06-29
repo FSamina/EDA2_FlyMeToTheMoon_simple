@@ -76,6 +76,12 @@ void CreateHeap(){
     h->arr = (struct air *) malloc(HEAP_SIZE*sizeof(struct air)); //size in bytes    
 }
 
+void freeHeap()
+{
+    free(h->arr);
+    free(h);
+}
+
 void insert_Heap(struct air air){
     if( h->count < HEAP_SIZE){
         h->arr[h->count] = air;
