@@ -45,7 +45,7 @@ void enter_FMTTM() {
             while (fscanf(file_ll, "%s %hd %hd %hd", IdAirChegada_t, &hourPartida_t, &minutePartida_t, &tempTotal_t) !=
                    0) {
                 if (strcmp(IdAirChegada_t, "-") != 0)
-                    hashArray[i]->linkedVoos = add_from_disk(hashArray[i]->linkedVoos, id_temp, IdAirChegada_t, hourPartida_t,
+                    hashArray[i]->linkedVoos = add(hashArray[i]->linkedVoos, id_temp, IdAirChegada_t, hourPartida_t,
                                                    minutePartida_t,
                                                    tempTotal_t);
                 else break;
