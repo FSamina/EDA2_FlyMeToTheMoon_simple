@@ -98,7 +98,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
                                            short hourPartida,
                                            short minutePartida) {
     struct linkedFlights *temp;
-    struct linkedFlights *temp_pai;
+    struct linkedFlights *temp_pai=NULL;
     temp = head;
     while (temp != NULL) {
         if (strcmp(temp->data.IdAirChegada, IdAirChegada_remove) == 0) 
@@ -109,7 +109,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
                 {
                     printf("+ voo %s %s %.2hd:%.2hd removido\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida,
                            minutePartida);
-                    if (temp_pai != NULL) 
+                    if (temp_pai != NULL)//caso estejamos a remover do meio 
                     {
                         temp_pai->son = temp->son;
                         return head;
