@@ -130,7 +130,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
 //    1 if u.d + w(u,v) < v.d then
 //    2     v.d <- u.d + w(u,v)
 // 3 v.p <- u
-void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChegada) {
+void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChegada, short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights *tempLista;//instancia das linked list para a percorrer
     
@@ -155,24 +155,34 @@ void dijkstra(struct air *aeroportoPartida, short horaChegada, short minutoChega
         
         tempAir = PopMin();
         
-        //printf("POP %s %d \n",tempAir.Id,tempAir.tempoTotalDiskt);
-        tempLista = tempAir.linkedVoos;
-        while (tempLista != NULL)//ver todos os voos de tempAir
+        if(strcmp(tempAir.Id,IdAirChegada)!=0)
         {
-            if ((strcmp(tempAir.Id,aeroportoPartida->Id)==0 && getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)) ||
-                getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)+30)
+            //printf("POP %s %d \n",tempAir.Id,tempAir.tempoTotalDiskt);
+            tempLista = tempAir.linkedVoos;
+            while (tempLista != NULL)//ver todos os voos de tempAir
             {
-                relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
-            }else
-            {
-                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt+MINUTOS_DIA;
-                relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
-                tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
-            }
+                if ((strcmp(tempAir.Id,aeroportoPartida->Id)==0 && getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)) ||
+                    getMinutosDeHoras(tempLista->data.hourPartida,tempLista->data.minutePartida)  >= getMinutosDeHoras(tempAir.hourProntoParaPartir,tempAir.minProntoParaPartir)+30)
+                {
+                    relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
+                }else
+                {
+                    tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt+MINUTOS_DIA;
+                    relax(tempAir,searchAir(tempLista->data.IdAirChegada),*tempLista);
+                    tempAir.tempoTotalDiskt=tempAir.tempoTotalDiskt-MINUTOS_DIA;//porque o voo que vem a seguir usa o mesmo aeroporto (se Nº Voos >1 no aeroporto)
+                }
 
-            tempLista = tempLista->son;
+                tempLista = tempLista->son;
+                
+            }
             
+        }else
+        {
+            freeHeap();
+            return;
         }
+        
+        
     }
     freeHeap();
 }
@@ -194,7 +204,7 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
         return;
     }
     
-    dijkstra(airPartida,hourChegadaAoAir,minuteChegadaAoAirPartida);
+    dijkstra(airPartida,IdAirChegada,hourChegadaAoAir,minuteChegadaAoAirPartida);
     
     if (printVoos(airFinal,IdAirPartida))
     {
