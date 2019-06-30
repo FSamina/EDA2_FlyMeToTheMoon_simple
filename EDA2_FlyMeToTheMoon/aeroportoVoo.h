@@ -22,8 +22,8 @@ struct air
 {
     char Id[5];
     struct linkedFlights *linkedVoos;
-    struct voos vooP;//P
+    struct voos vooP;//Nosso "p"
     short hourProntoParaPartir;//Tempo
     short minProntoParaPartir;//Tempo
-    unsigned int tempoTotalDiskt; //NOSSO D//Pode estar 287998560 minutes  a voar 
+    unsigned int tempoTotalDiskt; //Nosso "d"
 };

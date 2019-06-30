@@ -13,63 +13,6 @@ Min Heap implementation in c
 */
 
 
-
-
-// int main(){
-//     int i;
-//     CreateHeap(); //Min Heap
-//     struct air *novoAir = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-//     strcpy(novoAir->Id,"LIS");
-//     novoAir->tempoTotalDiskt=7;
-//     struct air *novoAir2 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-//     strcpy(novoAir2->Id,"MASD");
-//     novoAir2->tempoTotalDiskt=8;
-//     struct air *novoAir3 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-//     strcpy(novoAir3->Id,"ABCD");
-//     novoAir3->tempoTotalDiskt=3;
-//     struct air *novoAir4 = (struct air*) malloc(sizeof(struct air));//criamos o novo aeroporto
-//     strcpy(novoAir4->Id,"OPOA");
-//     novoAir4->tempoTotalDiskt=1;
-//     if( h == NULL ){
-//         printf("__Memory Issue____\n");
-//         return -1;
-//     }
-
-
-//     insert(*novoAir);
-//     insert(*novoAir2);
-//     insert(*novoAir3);
-//     insert(*novoAir4);
-
-//     print();
-//     bool flag = false;
-//     for(i=0;i<4;i++){
-        
-//         if (popCheck())
-//         {
-            
-//             struct air min = PopMin();
-//             printf(" Pop Minima : %s\n", min.Id);
-//             if (!flag)
-//             {
-//                 decreaseKey(indexfinder(novoAir2),1);
-//                 printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
-                
-
-//                 flag=true;
-//             }
-            
-        
-//         }
-        
-//         print();
-//     }
-//     printf("DISKTRA NOVO %d \n",h->arr[indexfinder(novoAir2)].tempoTotalDiskt);
-
-
-//     return 0;
-// }
-
 void CreateHeap(){
     h = (struct Heap * ) malloc(sizeof(struct Heap)); //one is number of heap
     h->count=0;   
@@ -108,7 +51,6 @@ int indexfinder(struct air* air)
     {
         if (strcmp(h->arr[i].Id,air->Id)==0)
         {
-            //printf(" NO array esta %s  que é igual a %s\n",h->arr[i].Id,air->Id);
             return i;
         }
     }

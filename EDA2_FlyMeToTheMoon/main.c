@@ -11,11 +11,7 @@
 #define INFINITO 287998561
 #define MINUTOS_DIA 1440
 
-// INITIALIZE-SINGLE-SOURCE(G, s)
-//    1 for each vertex v in G.V do
-// 2 v.d <- INFINITY // peso do caminho mais curto de s a v
-// 3 v.p <- NIL // predecessor de v nesse caminho
-// 4 s.d <- 0
+
 short getMinutosDeHoras(short h, short m) {
     return h * 60 + m;
 }
@@ -43,12 +39,6 @@ void somaMinutosAHoras(unsigned short *h, unsigned short *m, short minutosSoma) 
 void initializeSource(struct air *aeroportoPartida, short horaChegada, short minutoChegada) {
     unsigned int index = search(aeroportoPartida->Id);
 
-    //printf("%s\n",hashArray[index]->Id);
-    if (index ==-1)
-    {
-        puts("Endereço incorreto no inicialize Source\n");
-        return;
-    }
 
     for (int i = 0; i < SIZE; i++)//inicializa todos os aeroportos
     {
@@ -68,19 +58,8 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
 {
     short htemp= noDaLinkedList.data.hourPartida;
     short mtemp= noDaLinkedList.data.minutePartida;
-    
-    if (v ==NULL)
-    {
-        puts("no relax ha erro\n");
-        return;
-    }
     int diffTempos=getMinutosDeHoras(noDaLinkedList.data.hourPartida,noDaLinkedList.data.minutePartida)-getMinutosDeHoras(u.hourProntoParaPartir,u.minProntoParaPartir);
     diffTempos=diffTempos+ noDaLinkedList.data.tempTotal + u.tempoTotalDiskt;
-    // if(strcmp(v->Id,"TGI")==0)
-    // {
-    //     printf("TGI É UM DESTINO QUANDO ANALISAMOS O %s\n",u.Id);
-    //     printf("O diffTempos = %d e o destino conhecido ate agr(%s) ja tem tempo %d",diffTempos,v->Id,v->tempoTotalDiskt);
-    // }
     if (diffTempos < v->tempoTotalDiskt)
     {
         
@@ -97,7 +76,6 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
 
 bool printVoos(struct air* airFinal,char IdAirPartida[5])
 {
-    //printf("RESUSIVA AIR %s\n\n",airFinal->Id);
     if (strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)//chegamos ao aeroporto inicial
     {
         if (!printVoos(searchAir(airFinal->vooP.IdAirPartida),IdAirPartida))
@@ -112,7 +90,6 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     
     if(strcmp(airFinal->vooP.IdAirPartida,"NIL")!=0)
     {
-        //struct air* temp = searchAir(airFinal->vooP.IdAirPartida);
         printf("%-4s %-4s %.2hd:%.2hd",airFinal->vooP.IdAirPartida,airFinal->vooP.IdAirChegada,airFinal->vooP.hourPartida,airFinal->vooP.minutePartida);
 
         somaMinutosAHoras(&airFinal->vooP.hourPartida,&airFinal->vooP.minutePartida,airFinal->vooP.tempTotal);
@@ -126,10 +103,7 @@ bool printVoos(struct air* airFinal,char IdAirPartida[5])
     return false;
 }
 
-// RELAX(u, v, w)
-//    1 if u.d + w(u,v) < v.d then
-//    2     v.d <- u.d + w(u,v)
-// 3 v.p <- u
+
 void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChegada, short minutoChegada) {
     struct air tempAir;//criamos o novo aeroporto
     struct linkedFlights *tempLista;//instancia das linked list para a percorrer
@@ -157,7 +131,6 @@ void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChega
         
         if(strcmp(tempAir.Id,IdAirChegada)!=0)
         {
-            //printf("POP %s %d \n",tempAir.Id,tempAir.tempoTotalDiskt);
             tempLista = tempAir.linkedVoos;
             while (tempLista != NULL)//ver todos os voos de tempAir
             {
@@ -188,7 +161,6 @@ void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChega
 }
 
 
-//TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
 void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoAir, short minuteChegadaAoAirPartida)
 {
     struct air* airFinal=searchAir(IdAirChegada);
@@ -221,7 +193,6 @@ void calcViagem(char IdAirPartida[5], char IdAirChegada[5], short hourChegadaAoA
 }
 
 
-//FD <aeroporto-partida> <aeroporto-destino> <hora-partida>
 void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short minutePartida) {
     int hashIndex = search(IdAirPartida);
     int hashIndex_chegada = search(IdAirChegada);
@@ -234,9 +205,8 @@ void delVoo(char IdAirPartida[5], char IdAirChegada[5], short hourPartida, short
 
 }
 
-//FI <c´odigo> <aeroporto-partida> <aeroporto-destino> <hora-partida> <dura¸c~ao>
 void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short mPartida,
-               short tempoDeVoo)//temos de addicionar aerporto de partida
+               short tempoDeVoo)
 {
     int hashIndex = search(IdAirPartida);
     int hashIndex_chegada = search(IdAirChegada);
@@ -248,18 +218,10 @@ void intrudVoo(char IdAirPartida[5], char IdAirChegada[5], short hPartida, short
         printf("+ aeroporto %s desconhecido\n", IdAirPartida);
     else
         printf("+ aeroporto %s desconhecido\n", IdAirChegada);
-    //struct voos* novoVoo = (struct voos*) malloc(sizeof(struct voos));//criamos o novo aeroporto
-    //strcpy(novoVoo->IdAirChegada,IdAirChegada);
-    //novoVoo->hourPartida =hPartida;
-    //novoVoo->minutePartida=mPartida;
-    //novoVoo->tempTotal=tempoDeVoo;
-    //enviar para  linked list
 
-
-    //write(fileVoo,hashIndex,pos,novoVoo);
 }
 
-//AI <código> <fuso-hor´ario>
+
 void intrudAir(char key[5])//recebe como argumento codigo e hora local
 {
     bool check;
@@ -285,9 +247,8 @@ int main(void) {
     short hLocal = 0;
     short mLocal = 0;
     short duracaoVoo = 0;
-    //AI LIS 00:00
 
-    while (scanf("%s", cod) != EOF)// enquanto houver mais linhas // le strings
+    while (scanf("%s", cod) != EOF)// enquanto houver mais linhas tem valor bool true
     {
         if (strcmp(cod, "X") == 0) {
             exit_FMTTM();
@@ -298,76 +259,19 @@ int main(void) {
             scanf("%s", idAir);
             intrudAir(idAir);
         } else if (strcmp(cod, "FI") == 0) {
-            //FI IB3111 PDL MAD 09:50 80
             scanf("%s %s %hd:%hd %hd", idAirPartida, idAirDestino, &hLocal, &mLocal, &duracaoVoo);
             intrudVoo(idAirPartida, idAirDestino, hLocal, mLocal, duracaoVoo);
-            //printf("%s %s %s %hd:%hd %hd\n",idVoo,idAirPartida,idAirDestino,hLocal,mLocal,duracaoVoo);
         } else if (strcmp(cod, "FD") == 0) {
-            //FD BA1
+         
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
 
             delVoo(idAirPartida, idAirDestino, hLocal, mLocal);
         } else if (strcmp(cod, "TR") == 0) {
-            //TR LIS PDL 00:00
-            //TR <aeroporto-partida> <aeroporto-destino> <hora-chegada-aeroporto>
+       
             scanf("%s %s %hd:%hd", idAirPartida, idAirDestino, &hLocal, &mLocal);
             calcViagem(idAirPartida, idAirDestino, hLocal, mLocal);
         }
 
     }
-
-
-    // //5 Aeroportos de teste
-    // struct air *itemA = malloc(sizeof(struct air));
-    // char  arrA[5] = "LISB";
-    // strcpy(itemA->Id,arrA);
-    // itemA->flag =false;
-    // insert(itemA);
-    // struct air *itemB = malloc(sizeof(struct air));
-    // char arrB[5] = "MADR";
-    // strcpy(itemB->Id,arrB);
-    // itemB->flag =false;
-    // insert(itemB);
-    // struct air *itemC =  malloc(sizeof(struct air));
-    // char arrC[5] = "NY";
-    // strcpy(itemC->Id,arrC);
-    // itemC->flag =false;
-    // insert(itemC);
-    // struct air *itemD =  malloc(sizeof(struct air));
-    // char arrD[5] = "PORT";
-    // strcpy(itemD->Id,arrD);
-    // itemD->flag =false;
-    // insert(itemD);
-    // struct air *itemE =  malloc(sizeof(struct air));
-    // char arrE[5] = "LIBA";
-    // strcpy(itemE->Id,arrE);
-    // itemE->flag =false;
-    // insert(itemE);
-
-    // item = search("PORT");
-
-    // if(item != NULL) {
-    //     printf("Element found: %s\n", item->Id);
-    // } else {
-    //     printf("Element not found\n");
-    // }
-
-    // delete(item);
-    // item = search("LISB");
-
-    // if(item != NULL) {
-    //     printf("Element found: %s\n", item->Id);
-    // } else {
-    //     printf("Element not found\n");
-    // }
-
-    //display();
-
-
-    //disk save
-
-
-
-
     return 0;
 }
