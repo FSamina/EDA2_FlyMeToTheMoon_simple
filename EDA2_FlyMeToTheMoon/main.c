@@ -97,7 +97,7 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
         noDaLinkedList.data.hourPartida=htemp;
         noDaLinkedList.data.minutePartida=mtemp;
-        decreaseKey(indexfinder(v),diffTempos);
+        decreaseKey(v->indexNaHeap,diffTempos);
     }  
 }
 

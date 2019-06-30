@@ -26,4 +26,5 @@ struct air
     short hourProntoParaPartir;//Tempo
     short minProntoParaPartir;//Tempo
     unsigned int tempoTotalDiskt; //NOSSO D//Pode estar 287998560 minutes  a voar 
+    int indexNaHeap;
 };

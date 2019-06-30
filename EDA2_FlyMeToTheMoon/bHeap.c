@@ -82,8 +82,13 @@ void freeHeap()
     free(h);
 }
 
-void insert_Heap(struct air air){
-    if( h->count < HEAP_SIZE){
+void insert_Heap(struct air air)
+{
+    int temp = search(air.Id);
+    if( h->count < HEAP_SIZE)
+    {
+        hashArray[temp]->indexNaHeap=h->count;
+        //se nao funcar adicona na heap o coiso tambem
         h->arr[h->count] = air;
         heapify_bottom_top(h->count);
         h->count++;
@@ -102,29 +107,34 @@ void heapify_bottom_top(int index){
         heapify_bottom_top(parent_node);
     }
 }
-int indexfinder(struct air* air)
-{
-    for(int i =0; i < h->count;i++)
-    {
-        if (strcmp(h->arr[i].Id,air->Id)==0)
-        {
-            //printf(" NO array esta %s  que é igual a %s\n",h->arr[i].Id,air->Id);
-            return i;
-        }
-    }
-    puts("NÃO ENCONTREI O INDEX\n");
-    return -1;
-}
+// int indexfinder(struct air* air)
+// {
+//     for(int i =0; i < h->count;i++)
+//     {
+//         if (strcmp(h->arr[i].Id,air->Id)==0)
+//         {
+//             //printf(" NO array esta %s  que é igual a %s\n",h->arr[i].Id,air->Id);
+//             return i;
+//         }
+//     }
+//     puts("NÃO ENCONTREI O INDEX\n");
+//     return -1;
+// }
 int parent(int i) 
 { 
     return (i-1)/2; 
 } 
 void swap(struct air x,int i,struct air y, int parent) 
 { 
+    unsigned int indexX = search(x.Id);
+    unsigned int indexY =search(y.Id);
     struct air temp = x; 
     x = y;
-    h->arr[i]=y; 
-    h->arr[parent] = temp; 
+    h->arr[i]=y;
+    hashArray[indexY]->indexNaHeap=i; 
+    h->arr[parent] = temp;
+    hashArray[indexX]->indexNaHeap=parent;
+
 } 
 void decreaseKey(int i, int new_val) 
 { 
