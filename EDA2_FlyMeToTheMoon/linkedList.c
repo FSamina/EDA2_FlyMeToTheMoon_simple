@@ -107,7 +107,7 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
                 {
                     printf("+ voo %s %s %.2hd:%.2hd removido\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida,
                            minutePartida);
-                    if (temp_pai != NULL)//caso estejamos a remover do meio 
+                    if (temp_pai != NULL)
                     {
                         temp_pai->son = temp->son;
                         free(temp);
@@ -128,12 +128,3 @@ struct linkedFlights *remove_linkedFlights(struct linkedFlights *head,
     printf("+ voo %s %s %.2hd:%.2hd inexistente\n", IdAirPartida_remove, IdAirChegada_remove, hourPartida, minutePartida);
     return head;
 }
-/*
-int main() {
-    struct linkedFlights *testeDOStestes = malloc(sizeof(struct linkedFlights));
-    testeDOStestes = add(testeDOStestes, "helo", 1, 1, 1);
-    testeDOStestes = add(testeDOStestes, "helo2", 2, 2, 2);
-    testeDOStestes = add(testeDOStestes, "helo3", 3, 3, 3);
-    printf("%d", searchList(testeDOStestes, "helo2")->data.hourPartida);
-}
-*/
