@@ -63,7 +63,7 @@ void initializeSource(struct air *aeroportoPartida, short horaChegada, short min
             strcpy(hashArray[i]->vooP.IdAirPartida, "NIL");//marca um dummy
             hashArray[i]->hourProntoParaPartir=(short)0;
             hashArray[i]->minProntoParaPartir=(short)0;
-            insert_Heap(*hashArray[i]);
+            
         }
         
     }
@@ -97,7 +97,9 @@ void relax(struct air u, struct air *v,struct linkedFlights noDaLinkedList)
         v->minProntoParaPartir=noDaLinkedList.data.minutePartida;
         noDaLinkedList.data.hourPartida=htemp;
         noDaLinkedList.data.minutePartida=mtemp;
+        insert_Heap(*hashArray[search(v->Id)]);
         decreaseKey(v->indexNaHeap,diffTempos);
+        
     }  
 }
 
@@ -160,7 +162,7 @@ void dijkstra(struct air *aeroportoPartida,char IdAirChegada[5], short horaChega
         
         
         tempAir = PopMin();
-        
+        //printf("%s com d= %d \n",tempAir.Id,tempAir.tempoTotalDiskt);
         if(strcmp(tempAir.Id,IdAirChegada)!=0)
         {
             //printf("POP %s %d \n",tempAir.Id,tempAir.tempoTotalDiskt);

@@ -8,8 +8,7 @@ struct Heap{
 };
 struct Heap *h; 
 
-
-int indexfinder(struct air* air);
+//int indexfinder(struct air* air);
 int parent(int i);
 void decreaseKey(int i, int new_val);
 void CreateHeap();

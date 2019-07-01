@@ -1,433 +1,939 @@
-+ voo NDJ BQWJ 16:43 removido
-+ voo CAP MQR 03:47 removido
-+ voo UEQD CAP 07:17 removido
-+ voo HWY PAW 22:34 removido
-+ voo YAD BSML 11:30 removido
-+ voo NDJ BQWJ 16:43 inexistente
++ novo aeroporto VOT
++ novo aeroporto NHAX
++ novo aeroporto JKPF
++ novo aeroporto XHL
++ novo aeroporto XRI
++ novo aeroporto BAG
++ novo aeroporto ZBPD
++ novo aeroporto NUN
++ novo aeroporto HXA
++ novo aeroporto OJS
++ novo aeroporto RCDA
++ novo aeroporto VXJD
++ novo aeroporto KFI
++ novo aeroporto GLH
++ novo aeroporto DWG
++ novo aeroporto YPOY
++ novo aeroporto EKQ
++ novo aeroporto DTOD
++ novo aeroporto LBT
++ novo aeroporto FGW
++ novo aeroporto YCAF
++ novo aeroporto EEW
++ novo aeroporto CMND
++ novo aeroporto RNC
++ novo aeroporto QXT
++ novo aeroporto IGWB
++ novo aeroporto BJTQ
++ novo aeroporto XRPO
++ novo aeroporto TKUX
++ novo aeroporto JAI
++ novo aeroporto NNG
++ novo aeroporto KBBS
++ novo aeroporto ZWF
++ novo aeroporto HATP
++ novo aeroporto MGNJ
++ novo aeroporto AFYY
++ novo aeroporto ZJQ
++ novo aeroporto WZW
++ novo aeroporto AXB
++ novo aeroporto WZP
++ novo aeroporto GPVX
++ novo aeroporto JFEV
++ novo aeroporto EAF
++ novo aeroporto RGOJ
++ novo aeroporto KIS
++ novo aeroporto JRV
++ novo aeroporto QULR
++ novo aeroporto AOCT
++ novo aeroporto IYT
++ novo aeroporto EVX
++ novo aeroporto MDZY
++ novo aeroporto LGW
++ novo aeroporto ROZ
++ novo aeroporto GWYX
++ novo aeroporto AMFU
++ novo aeroporto PUF
++ novo aeroporto YAD
++ novo aeroporto PJL
++ novo aeroporto NXVJ
++ novo aeroporto NZCC
++ novo aeroporto AAFD
++ novo aeroporto TJW
++ novo aeroporto YSKG
++ novo aeroporto MMDB
++ novo aeroporto OOKN
++ novo aeroporto TOZ
++ novo aeroporto TBCT
++ novo aeroporto HXFA
++ novo aeroporto EHI
++ novo aeroporto RRP
++ novo aeroporto DUF
++ novo aeroporto LWK
++ novo aeroporto GDP
++ novo aeroporto AIID
++ novo aeroporto LKCQ
++ novo aeroporto MWUV
++ novo aeroporto OMKU
++ novo aeroporto FBRS
++ novo aeroporto BQFG
++ novo aeroporto MHRU
++ novo aeroporto VFW
++ novo aeroporto YLMU
++ novo aeroporto JPY
++ novo aeroporto CSOH
++ novo aeroporto FZVI
++ novo aeroporto AQZN
++ novo aeroporto QHJN
++ novo aeroporto INNT
++ novo aeroporto JDMB
++ novo aeroporto JDVX
++ novo aeroporto REL
++ novo aeroporto MEM
++ novo aeroporto DBC
++ novo aeroporto JNJ
++ novo aeroporto VYN
++ novo aeroporto BYWN
++ novo aeroporto YWCV
++ novo aeroporto OMZB
++ novo aeroporto NIP
++ novo aeroporto NQU
++ novo voo NHAX VOT 11:07
++ novo voo VOT NHAX 07:41
++ novo voo JKPF NHAX 11:08
++ novo voo NHAX JKPF 08:05
++ novo voo XHL VOT 03:56
++ novo voo VOT XHL 05:17
++ novo voo XRI XHL 02:24
++ novo voo XHL XRI 16:29
++ novo voo BAG XHL 06:22
++ novo voo XHL BAG 21:04
++ novo voo ZBPD NHAX 19:34
++ novo voo NHAX ZBPD 06:43
++ novo voo NUN NHAX 19:00
++ novo voo NHAX NUN 06:35
++ novo voo HXA XHL 17:45
++ novo voo XHL HXA 16:46
++ novo voo OJS NUN 01:21
++ novo voo NUN OJS 08:19
++ novo voo RCDA NHAX 21:13
++ novo voo NHAX RCDA 05:36
++ novo voo VXJD HXA 03:37
++ novo voo HXA VXJD 23:49
++ novo voo KFI HXA 23:58
++ novo voo HXA KFI 07:45
++ novo voo GLH BAG 20:07
++ novo voo BAG GLH 17:38
++ novo voo DWG NHAX 19:56
++ novo voo NHAX DWG 08:10
++ novo voo YPOY JKPF 14:23
++ novo voo JKPF YPOY 17:52
++ novo voo EKQ VOT 06:35
++ novo voo VOT EKQ 05:25
++ novo voo DTOD YPOY 10:19
++ novo voo YPOY DTOD 07:19
++ novo voo LBT KFI 21:59
++ novo voo KFI LBT 16:55
++ novo voo FGW DTOD 09:09
++ novo voo DTOD FGW 16:24
++ novo voo YCAF GLH 21:02
++ novo voo GLH YCAF 03:29
++ novo voo EEW YPOY 18:00
++ novo voo YPOY EEW 21:19
++ novo voo CMND EKQ 02:49
++ novo voo EKQ CMND 15:48
++ novo voo RNC NUN 23:26
++ novo voo NUN RNC 09:27
++ novo voo QXT DTOD 15:29
++ novo voo DTOD QXT 04:31
++ novo voo IGWB RNC 00:11
++ novo voo RNC IGWB 10:11
++ novo voo BJTQ NUN 06:50
++ novo voo NUN BJTQ 01:39
++ novo voo XRPO DTOD 15:34
++ novo voo DTOD XRPO 06:00
++ novo voo TKUX FGW 15:45
++ novo voo FGW TKUX 22:14
++ novo voo JAI GLH 21:31
++ novo voo GLH JAI 13:42
++ novo voo NNG QXT 05:09
++ novo voo QXT NNG 04:59
++ novo voo KBBS EKQ 18:03
++ novo voo EKQ KBBS 09:29
++ novo voo ZWF VOT 05:11
++ novo voo VOT ZWF 20:57
++ novo voo HATP XRI 11:27
++ novo voo XRI HATP 01:58
++ novo voo MGNJ JKPF 09:46
++ novo voo JKPF MGNJ 14:47
++ novo voo AFYY XRI 03:25
++ novo voo XRI AFYY 21:20
++ novo voo ZJQ AFYY 13:07
++ novo voo AFYY ZJQ 18:10
++ novo voo WZW DTOD 19:02
++ novo voo DTOD WZW 23:29
++ novo voo AXB YCAF 20:38
++ novo voo YCAF AXB 05:16
++ novo voo WZP CMND 15:27
++ novo voo CMND WZP 10:52
++ novo voo GPVX QXT 00:42
++ novo voo QXT GPVX 13:41
++ novo voo JFEV RNC 16:04
++ novo voo RNC JFEV 03:07
++ novo voo EAF ZWF 12:27
++ novo voo ZWF EAF 08:57
++ novo voo RGOJ HATP 01:50
++ novo voo HATP RGOJ 09:09
++ novo voo KIS RNC 13:16
++ novo voo RNC KIS 05:51
++ novo voo JRV RGOJ 20:12
++ novo voo RGOJ JRV 04:09
++ novo voo QULR QXT 16:55
++ novo voo QXT QULR 20:15
++ novo voo AOCT CMND 00:46
++ novo voo CMND AOCT 02:28
++ novo voo IYT XHL 05:54
++ novo voo XHL IYT 18:03
++ novo voo EVX HATP 06:16
++ novo voo HATP EVX 18:21
++ novo voo MDZY BAG 18:00
++ novo voo BAG MDZY 02:55
++ novo voo LGW GPVX 02:18
++ novo voo GPVX LGW 03:56
++ novo voo ROZ JAI 00:17
++ novo voo JAI ROZ 05:04
++ novo voo GWYX VXJD 19:24
++ novo voo VXJD GWYX 17:33
++ novo voo AMFU RNC 10:33
++ novo voo RNC AMFU 20:33
++ novo voo PUF JFEV 21:51
++ novo voo JFEV PUF 15:01
++ novo voo YAD EAF 22:50
++ novo voo EAF YAD 14:07
++ novo voo PJL VOT 11:42
++ novo voo VOT PJL 22:58
++ novo voo NXVJ RNC 11:41
++ novo voo RNC NXVJ 21:07
++ novo voo NZCC BJTQ 20:07
++ novo voo BJTQ NZCC 09:50
++ novo voo AAFD NHAX 19:28
++ novo voo NHAX AAFD 17:18
++ novo voo TJW GPVX 17:58
++ novo voo GPVX TJW 21:32
++ novo voo YSKG JAI 07:37
++ novo voo JAI YSKG 18:11
++ novo voo MMDB VXJD 22:35
++ novo voo VXJD MMDB 18:34
++ novo voo OOKN YCAF 04:25
++ novo voo YCAF OOKN 00:53
++ novo voo TOZ VXJD 03:55
++ novo voo VXJD TOZ 20:46
++ novo voo TBCT VXJD 22:05
++ novo voo VXJD TBCT 21:42
++ novo voo HXFA PUF 09:30
++ novo voo PUF HXFA 07:05
++ novo voo EHI BJTQ 20:50
++ novo voo BJTQ EHI 00:15
++ novo voo RRP LGW 00:55
++ novo voo LGW RRP 03:43
++ novo voo DUF QXT 21:01
++ novo voo QXT DUF 19:58
++ novo voo LWK OOKN 20:50
++ novo voo OOKN LWK 06:20
++ novo voo GDP JAI 06:38
++ novo voo JAI GDP 02:21
++ novo voo AIID IYT 12:44
++ novo voo IYT AIID 05:32
++ novo voo LKCQ EHI 19:32
++ novo voo EHI LKCQ 16:25
++ novo voo MWUV ZJQ 23:48
++ novo voo ZJQ MWUV 20:39
++ novo voo OMKU JKPF 11:38
++ novo voo JKPF OMKU 17:09
++ novo voo FBRS QXT 06:12
++ novo voo QXT FBRS 10:57
++ novo voo BQFG HATP 09:46
++ novo voo HATP BQFG 04:10
++ novo voo MHRU BAG 16:18
++ novo voo BAG MHRU 15:07
++ novo voo VFW FGW 10:25
++ novo voo FGW VFW 13:04
++ novo voo YLMU CMND 17:36
++ novo voo CMND YLMU 23:48
++ novo voo JPY OJS 13:29
++ novo voo OJS JPY 14:07
++ novo voo CSOH DUF 22:09
++ novo voo DUF CSOH 14:20
++ novo voo FZVI HATP 15:50
++ novo voo HATP FZVI 17:07
++ novo voo AQZN AOCT 03:19
++ novo voo AOCT AQZN 20:47
++ novo voo QHJN LGW 00:40
++ novo voo LGW QHJN 05:10
++ novo voo INNT ZJQ 09:23
++ novo voo ZJQ INNT 07:32
++ novo voo JDMB GWYX 04:19
++ novo voo GWYX JDMB 11:01
++ novo voo JDVX AQZN 08:42
++ novo voo AQZN JDVX 12:02
++ novo voo REL KFI 13:28
++ novo voo KFI REL 05:09
++ novo voo MEM ZJQ 11:35
++ novo voo ZJQ MEM 12:58
++ novo voo DBC YCAF 22:42
++ novo voo YCAF DBC 19:53
++ novo voo JNJ ZJQ 10:36
++ novo voo ZJQ JNJ 11:19
++ novo voo VYN LWK 01:22
++ novo voo LWK VYN 06:43
++ novo voo BYWN DTOD 16:32
++ novo voo DTOD BYWN 19:59
++ novo voo YWCV MHRU 01:07
++ novo voo MHRU YWCV 00:42
++ novo voo OMZB BJTQ 03:17
++ novo voo BJTQ OMZB 14:46
++ novo voo NIP JRV 21:58
++ novo voo JRV NIP 22:13
++ novo voo DUF NZCC 03:08
++ novo voo OJS KFI 11:39
++ novo voo LGW NUN 01:14
++ novo voo FBRS JKPF 15:50
++ novo voo CMND NZCC 06:01
++ novo voo YWCV NXVJ 17:53
++ novo voo ROZ FGW 17:04
++ novo voo XRPO EVX 22:08
++ novo voo AIID YLMU 19:56
++ novo voo MMDB DTOD 23:59
++ novo voo WZP ZJQ 14:42
++ novo voo TOZ JFEV 21:49
++ novo voo QXT JDVX 21:47
++ novo voo JPY QHJN 10:42
++ novo voo JDMB RGOJ 03:59
++ novo voo ZBPD AIID 13:31
++ novo voo MGNJ ROZ 10:34
++ novo voo KFI JNJ 11:05
++ novo voo IGWB CSOH 06:40
++ novo voo QULR KFI 11:54
++ novo voo AOCT VXJD 04:15
++ novo voo XRI EVX 13:15
++ novo voo MHRU AXB 04:09
++ novo voo HXA VXJD 11:37
++ novo voo AQZN EHI 01:28
++ novo voo VYN EVX 21:44
++ novo voo INNT EHI 22:40
++ novo voo NHAX KFI 13:14
++ novo voo IGWB LWK 00:03
++ novo voo EKQ KIS 00:00
++ novo voo EVX NZCC 19:52
++ novo voo AMFU JNJ 08:02
++ novo voo VFW MDZY 20:54
++ novo voo BYWN NZCC 20:13
++ novo voo CSOH EEW 06:47
++ novo voo MDZY TOZ 20:12
++ novo voo EKQ YLMU 11:14
++ novo voo TJW RCDA 23:06
++ novo voo MGNJ GDP 00:53
++ novo voo HXA LGW 10:36
++ novo voo MHRU IYT 07:49
++ novo voo OJS TOZ 13:50
++ novo voo CSOH VYN 00:40
++ novo voo VXJD LGW 02:13
++ novo voo IYT YWCV 10:10
++ novo voo AIID OOKN 07:18
++ novo voo WZP MDZY 10:05
++ novo voo EAF EHI 12:43
++ novo voo LBT PUF 03:09
++ novo voo ROZ OMZB 13:29
++ novo voo GDP LBT 22:38
++ novo voo JRV JDVX 18:35
++ novo voo HXFA RNC 07:39
++ novo voo MWUV INNT 21:55
++ novo voo YWCV RNC 13:10
++ novo voo AAFD JDMB 10:08
++ novo voo EHI NNG 09:46
++ novo voo GWYX DUF 05:56
++ novo voo BYWN NZCC 18:34
++ novo voo YAD FBRS 21:57
++ novo voo LGW XRI 06:00
++ novo voo YPOY XRPO 04:51
++ novo voo JDMB JDVX 22:11
++ novo voo NZCC FGW 23:50
++ novo voo ZJQ JDMB 19:10
++ novo voo AIID TBCT 21:52
++ novo voo ROZ YPOY 08:08
++ novo voo GLH DUF 05:32
++ novo voo JDMB JAI 07:26
++ novo voo DBC NZCC 04:35
++ novo voo CMND VXJD 19:45
++ novo voo ZWF OOKN 19:49
++ novo voo YAD LGW 19:39
++ novo voo YCAF RGOJ 05:36
++ novo voo HXFA GLH 22:20
++ novo voo ZBPD AXB 10:41
++ novo voo XRPO WZW 18:47
++ novo voo JFEV YWCV 12:54
++ novo voo EKQ YLMU 19:36
++ novo voo YAD MWUV 06:04
++ novo voo HATP JKPF 22:16
++ novo voo XRPO AOCT 13:55
++ novo voo NIP BJTQ 21:42
++ novo voo TKUX YSKG 17:17
++ novo voo FZVI MGNJ 20:29
++ novo voo OMKU JDVX 08:26
++ novo voo TBCT AAFD 22:01
++ novo voo AIID BAG 22:21
++ novo voo YPOY PUF 00:14
++ novo voo EEW EAF 14:12
++ novo voo BJTQ MEM 11:17
++ novo voo JPY DUF 15:09
++ novo voo AXB GLH 07:55
++ novo voo AAFD ZJQ 12:13
++ novo voo JKPF XRPO 02:30
++ novo voo IGWB EVX 03:37
++ novo voo GPVX AQZN 04:19
++ novo voo LWK KFI 21:26
++ novo voo QULR QXT 18:51
++ novo voo OOKN MMDB 17:29
++ novo voo YPOY YSKG 18:36
++ novo voo EAF QHJN 07:13
++ novo voo OMZB MMDB 22:29
++ novo voo KFI EKQ 06:15
++ novo voo HXFA NUN 13:34
++ novo voo KFI XRI 09:24
++ novo voo QULR EVX 03:31
++ novo voo YCAF JDVX 01:31
++ novo voo QULR PJL 16:51
++ novo voo HXFA MEM 13:28
++ novo voo EKQ WZP 01:09
++ novo voo TBCT ROZ 09:16
++ novo voo QULR CSOH 03:28
++ novo voo KIS DBC 21:22
++ novo voo ZWF QHJN 13:36
++ novo voo GLH AIID 05:12
++ novo voo NUN QULR 06:59
++ novo voo TJW KBBS 18:46
++ novo voo EEW JDMB 21:07
++ novo voo JPY OMZB 13:15
++ novo voo OJS AFYY 15:11
++ novo voo JDMB HATP 06:19
++ novo voo PJL MDZY 17:59
++ novo voo DBC XHL 04:29
++ novo voo GLH IYT 18:04
++ novo voo VYN IYT 10:56
++ novo voo MGNJ PJL 12:28
++ novo voo CMND JRV 19:01
++ novo voo LWK REL 11:30
++ novo voo GWYX LWK 21:04
++ novo voo MWUV VXJD 16:22
++ novo voo IYT BAG 02:31
++ novo voo DUF BQFG 04:23
++ novo voo INNT MWUV 03:32
++ novo voo HXFA EHI 18:48
++ novo voo NNG PJL 08:04
++ novo voo DWG WZW 07:06
++ novo voo WZP OJS 18:21
++ novo voo XHL KBBS 19:56
++ novo voo HXFA NIP 14:35
++ novo voo EHI YPOY 11:20
++ novo voo HXA YWCV 04:02
++ novo voo NNG WZW 02:24
++ novo voo EAF KBBS 22:18
++ novo voo YAD MEM 01:36
++ novo voo ZBPD PUF 16:03
++ novo voo VYN ZWF 20:37
++ novo voo ZJQ TJW 08:45
++ novo voo AMFU GPVX 17:09
++ novo voo YPOY JDMB 13:47
++ novo voo PUF OMKU 22:59
++ novo voo LKCQ YLMU 08:01
++ novo voo EEW TBCT 00:47
++ novo voo GDP MWUV 15:57
++ novo voo YSKG EEW 14:49
++ novo voo NZCC NIP 15:57
++ novo voo ZJQ MHRU 09:26
++ novo voo NXVJ VFW 03:49
++ novo voo MHRU BYWN 19:23
++ novo voo WZW XRPO 00:02
++ novo voo VYN MHRU 02:03
++ novo voo JPY VFW 05:56
++ novo voo LKCQ MWUV 19:47
++ novo voo WZP IGWB 04:13
++ novo voo DTOD GWYX 14:55
++ novo voo ZWF LWK 15:50
++ novo voo KBBS MGNJ 14:27
++ novo voo NNG JAI 14:39
++ novo voo AXB MMDB 11:34
++ novo voo XRPO NZCC 02:25
++ novo voo NXVJ HXA 12:37
++ novo voo JNJ INNT 04:06
++ novo voo VOT TJW 04:43
++ novo voo EKQ BYWN 22:33
++ novo voo NHAX INNT 22:26
++ novo voo LKCQ LWK 13:46
++ novo voo NIP INNT 22:51
++ novo voo OJS OMKU 18:44
++ novo voo YAD YCAF 23:00
++ novo voo AIID ZWF 12:16
++ novo voo OOKN ZBPD 04:35
++ novo voo BQFG VFW 07:15
++ novo voo JPY EAF 23:38
++ novo voo JFEV NZCC 22:24
++ novo voo OJS BJTQ 11:09
++ novo voo JPY IYT 00:11
++ novo voo NXVJ TKUX 01:05
++ novo voo VXJD ZBPD 19:33
++ novo voo BJTQ EKQ 19:43
++ novo voo YCAF TBCT 10:02
++ novo voo XRI ZWF 10:04
++ novo voo BAG CSOH 09:04
++ novo voo VXJD AXB 13:33
++ novo voo OJS CSOH 20:32
++ novo voo CMND EVX 18:17
++ novo voo BYWN AFYY 13:41
++ novo voo MWUV QXT 19:30
++ novo voo NIP JFEV 04:26
++ novo voo PUF TOZ 18:39
++ novo voo EEW ZJQ 19:01
++ novo voo AFYY KFI 17:06
++ novo voo MHRU NXVJ 20:54
++ novo voo CMND VYN 00:54
++ novo voo BJTQ VXJD 13:18
++ novo voo REL QHJN 07:01
++ novo voo HXFA TBCT 16:57
++ novo voo ZBPD YCAF 14:30
++ novo voo BYWN MEM 17:10
++ novo voo YCAF VFW 03:15
++ novo voo ZWF AOCT 18:17
++ novo voo MMDB DBC 04:10
++ novo voo FBRS TJW 23:52
++ novo voo NXVJ KBBS 20:48
++ novo voo QULR RNC 02:45
++ novo voo KIS HXA 10:11
++ novo voo LGW VFW 20:48
++ novo voo GWYX EKQ 16:03
++ novo voo OJS JNJ 11:09
++ novo voo DWG DUF 21:14
++ novo voo BYWN QXT 14:23
++ novo voo NHAX AIID 15:34
++ novo voo JRV GLH 22:02
++ novo voo CSOH LWK 00:34
++ novo voo JDMB OOKN 04:58
++ novo voo XHL RRP 16:34
++ novo voo RGOJ EVX 08:58
++ novo voo YLMU MMDB 18:10
++ novo voo AIID RGOJ 00:27
++ novo voo NHAX YAD 04:45
++ novo voo RNC HXFA 02:21
++ novo voo MDZY RCDA 07:31
++ novo voo WZW AXB 07:38
++ novo voo JDVX TJW 11:16
++ novo voo GLH NNG 15:35
++ novo voo RNC AXB 15:33
++ novo voo IYT TOZ 10:01
++ novo voo GDP AAFD 06:04
++ novo voo DTOD XRI 14:50
++ novo voo QXT GLH 04:39
++ novo voo EVX MWUV 16:23
++ novo voo CMND DBC 08:14
++ novo voo AOCT BYWN 01:09
++ novo voo RGOJ GPVX 19:23
++ novo voo ZWF AXB 17:45
++ novo voo VXJD REL 12:22
++ novo voo LWK EEW 04:28
++ novo voo JDMB RNC 23:12
++ novo voo OMKU HATP 19:12
++ novo voo GLH FBRS 19:45
++ novo voo JRV AMFU 11:23
++ novo voo VYN YSKG 22:28
++ novo voo YSKG WZW 13:55
++ novo voo EVX VFW 07:37
++ novo voo NNG OJS 06:19
++ novo voo VOT NUN 14:59
++ novo voo EKQ QHJN 11:01
++ novo voo VOT KIS 14:46
++ novo voo AXB LWK 18:34
++ novo voo FZVI JRV 23:06
++ novo voo VXJD MWUV 17:36
++ novo voo BJTQ HXA 16:52
++ novo voo XHL PJL 16:31
++ novo voo GDP VFW 04:30
++ novo voo AAFD KFI 19:40
++ novo voo IGWB MEM 14:54
++ novo voo BJTQ BQFG 03:21
++ novo voo YLMU AXB 00:17
++ novo voo JFEV PJL 02:43
++ novo voo QULR JRV 11:14
++ novo voo RCDA AMFU 10:20
++ novo voo MGNJ YWCV 19:07
++ novo voo JDVX RCDA 05:54
++ novo voo XRPO MHRU 19:50
++ novo voo WZP NZCC 05:06
++ novo voo KBBS RNC 17:43
++ novo voo JNJ NZCC 03:42
++ novo voo MGNJ GWYX 23:18
++ novo voo REL MWUV 05:09
++ novo voo OOKN YAD 12:37
++ novo voo JDMB TJW 22:13
++ novo voo TBCT RCDA 22:24
++ novo voo MHRU AFYY 02:44
++ novo voo EVX FZVI 13:10
++ novo voo KIS TOZ 20:21
++ novo voo EKQ MDZY 15:52
++ novo voo BJTQ NXVJ 00:18
++ novo voo RRP BJTQ 12:09
++ novo voo OJS RCDA 02:00
++ novo voo YAD OMKU 01:45
++ novo voo KFI RCDA 19:27
++ novo voo VXJD RRP 00:18
++ novo voo YCAF QHJN 09:48
++ novo voo ZJQ FGW 14:40
++ novo voo WZW JDVX 21:27
++ novo voo EKQ VYN 05:37
++ novo voo EAF EHI 02:28
++ novo voo HXFA MEM 09:49
++ novo voo HATP YPOY 18:45
++ novo voo OOKN XRI 02:38
++ novo voo TBCT AXB 04:59
++ novo voo XRPO VOT 04:25
++ novo voo INNT AMFU 03:02
++ novo voo OMZB GLH 17:04
++ novo voo VOT KIS 23:04
 De   Para Parte Chega
 ==== ==== ===== =====
-YKM  NWV  21:02 02:35
-NWV  JRUN 00:32 21:58
-JRUN MSL  05:16 00:02
-Tempo de viagem: 5167 minutos
+CSOH VYN  00:40 19:38
+VYN  EVX  21:44 02:56
+EVX  HATP 06:16 19:02
+HATP JKPF 22:16 23:40
+JKPF NHAX 11:08 11:55
+NHAX DWG  08:10 05:18
+Tempo de viagem: 6228 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-TYQC SAX  14:31 20:39
-SAX  KOD  13:56 17:40
-KOD  JOCT 21:36 03:35
-JOCT VQC  16:48 21:23
-VQC  WFA  10:14 10:41
-WFA  GKXF 13:18 02:27
-Tempo de viagem: 5245 minutos
+KFI  JNJ  11:05 00:41
+JNJ  NZCC 03:42 12:11
+NZCC NIP  15:57 17:17
+NIP  JFEV 04:26 08:04
+Tempo de viagem: 3735 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-RJJ  TCD  05:17 23:49
-TCD  VNK  03:47 06:54
-VNK  OJRE 23:39 05:16
-OJRE XLN  08:52 11:37
-XLN  LBEP 16:18 00:20
-LBEP CKU  01:12 01:48
-Tempo de viagem: 4230 minutos
+JNJ  ZJQ  10:36 16:26
+ZJQ  JDMB 19:10 22:41
+JDMB OOKN 04:58 02:31
+OOKN YCAF 04:25 15:09
+Tempo de viagem: 3960 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-UHHY HOLD 02:26 08:24
-HOLD IZWS 00:03 07:22
-IZWS YUCG 10:28 20:11
-YUCG AUBK 02:42 07:21
-AUBK XCRM 11:30 14:49
-XCRM CENM 12:35 21:28
-CENM JXIO 00:09 14:07
-Tempo de viagem: 7165 minutos
+XRPO VOT  04:25 23:06
+VOT  TJW  04:43 17:44
+Tempo de viagem: 2986 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-BGWH KQSE 04:35 11:31
-KQSE IUIO 09:11 16:18
-IUIO TMSP 08:24 19:51
-TMSP AYH  05:09 12:10
-AYH  FDDI 22:59 13:16
-Tempo de viagem: 6654 minutos
+RGOJ EVX  08:58 10:31
+EVX  VFW  07:37 03:37
+Tempo de viagem: 2919 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-PHP  PLM  11:17 14:36
-PLM  XECW 02:27 18:15
-XECW APX  20:03 21:13
-APX  HRE  07:46 00:39
-HRE  LJO  10:48 20:30
-LJO  MGV  14:40 01:11
-MGV  TRFF 09:49 18:11
-TRFF UPL  18:52 23:48
-Tempo de viagem: 8216 minutos
+IGWB EVX  03:37 06:20
+EVX  VFW  07:37 03:37
+VFW  MDZY 20:54 19:41
+Tempo de viagem: 4549 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-GXKN RRC  16:51 17:20
-RRC  IWNA 02:09 12:40
-IWNA BDN  16:48 18:51
-BDN  PPJ  09:30 23:18
-PPJ  BQGR 20:19 04:34
-BQGR YTIR 05:12 13:58
-YTIR WJO  20:24 01:20
-WJO  VBEZ 06:04 14:32
-Tempo de viagem: 8277 minutos
+ZBPD PUF  16:03 04:59
+PUF  HXFA 07:05 01:31
+Tempo de viagem: 3210 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ENQV SVL  02:22 10:52
-SVL  OUK  12:27 21:04
-OUK  LMC  22:46 23:58
-LMC  FKK  05:43 13:07
-FKK  CLJF 09:36 21:26
-CLJF JKA  01:04 04:26
-JKA  CQL  12:28 22:40
-Tempo de viagem: 6299 minutos
+CMND DBC  08:14 19:53
+DBC  XHL  04:29 02:28
+XHL  PJL  16:31 05:31
+Tempo de viagem: 4301 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-PRO  JYBX 03:49 12:44
-JYBX QXJ  16:31 16:53
-QXJ  WAMX 07:48 16:54
-WAMX UNH  09:26 09:44
-UNH  NFWA 10:33 21:28
-NFWA UCT  13:42 01:17
-UCT  NCM  09:48 22:35
-Tempo de viagem: 6897 minutos
+LWK  VYN  06:43 11:43
+VYN  YSKG 22:28 02:56
+YSKG JAI  07:37 23:57
+JAI  GDP  02:21 02:21
+Tempo de viagem: 4974 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-XBNU UJVR 00:15 13:28
-UJVR MAF  18:51 18:00
-MAF  XCC  04:17 15:24
-Tempo de viagem: 3833 minutos
+GLH  NNG  15:35 02:57
+NNG  QXT  05:09 07:45
+Tempo de viagem: 1452 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-NGR  YQCB 18:49 15:30
-YQCB YGOY 02:46 20:05
-YGOY MOLZ 22:46 03:12
-MOLZ LWEX 04:23 13:49
-LWEX XOVA 23:39 01:21
-XOVA JYE  16:50 10:12
-Tempo de viagem: 7078 minutos
+GPVX LGW  03:56 05:23
+LGW  NUN  01:14 14:17
+NUN  NHAX 19:00 00:39
+NHAX DWG  08:10 05:18
+Tempo de viagem: 5378 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-SXYT JMBV 17:18 07:50
-JMBV QJCQ 12:07 08:42
-QJCQ ZQJB 19:26 23:29
-ZQJB QJL  01:12 12:29
-QJL  XBM  19:27 03:40
-XBM  AEH  15:58 19:33
-AEH  HIL  12:14 08:20
-Tempo de viagem: 8801 minutos
+MWUV ZJQ  23:48 04:05
+ZJQ  JDMB 19:10 22:41
+JDMB RNC  23:12 03:34
+RNC  IGWB 10:11 18:41
+IGWB LWK  00:03 10:25
+Tempo de viagem: 4027 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-IEQT JPT  07:12 01:19
-JPT  CDC  00:36 03:16
-CDC  DQUK 18:15 23:25
-DQUK AICR 08:06 09:43
-AICR DKUC 11:31 20:22
-DKUC GMWU 06:03 01:05
-Tempo de viagem: 7534 minutos
+XHL  BAG  21:04 07:13
+BAG  GLH  17:38 09:15
+Tempo de viagem: 3138 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-GOJ  DRCM 10:44 03:49
-DRCM LUQ  03:48 11:14
-LUQ  KQOC 15:12 17:50
-Tempo de viagem: 3361 minutos
-+ aeroporto FEND desconhecido
+MHRU YWCV 00:42 08:54
+YWCV RNC  13:10 09:11
+RNC  NUN  23:26 07:10
+NUN  OJS  08:19 10:05
+Tempo de viagem: 3618 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-QCIU RNTT 15:38 02:49
-RNTT DJV  10:42 13:40
-DJV  VAU  17:12 01:58
-VAU  OHU  16:46 17:12
-OHU  LCWT 19:06 23:37
-LCWT CAF  06:03 17:21
-CAF  YDPW 04:50 07:51
-Tempo de viagem: 6022 minutos
+TKUX YSKG 17:17 05:43
+YSKG EEW  14:49 07:16
+EEW  JDMB 21:07 01:38
+JDMB RGOJ 03:59 02:02
+RGOJ EVX  08:58 10:31
+Tempo de viagem: 6308 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-JTQ  MJFQ 20:41 02:13
-MJFQ ABC  14:49 22:23
-ABC  VGLF 18:54 22:38
-VGLF FQNC 05:47 11:45
-FQNC TPDC 14:51 00:34
-Tempo de viagem: 5847 minutos
+AAFD KFI  19:40 14:21
+KFI  HXA  23:58 23:44
+Tempo de viagem: 3640 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-MTMI TPE  15:25 21:07
-TPE  OVX  04:24 00:35
-OVX  MTPO 19:54 15:42
-MTPO UZG  03:52 07:31
-UZG  QBPW 08:13 16:56
-Tempo de viagem: 6754 minutos
+KIS  DBC  21:22 13:09
+DBC  NZCC 04:35 05:10
+NZCC NIP  15:57 17:17
+Tempo de viagem: 2635 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-PQZ  OPO  23:43 05:12
-Tempo de viagem: 575 minutos
+PJL  VOT  11:42 19:06
+VOT  XHL  05:17 11:15
+XHL  HXA  16:46 19:26
+HXA  VXJD 23:49 02:02
+VXJD MWUV 17:36 19:37
+MWUV ZJQ  23:48 04:05
+Tempo de viagem: 4702 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-OJHQ WVOG 13:42 15:57
-Tempo de viagem: 581 minutos
+AXB  GLH  07:55 18:32
+GLH  NNG  15:35 02:57
+Tempo de viagem: 2617 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-HTIC SME  13:29 23:27
-SME  VNF  06:48 09:54
-VNF  JRU  16:51 13:37
-JRU  XKVF 01:13 09:09
-XKVF MPP  10:23 13:45
-MPP  JZWX 18:12 01:48
-JZWX GLU  17:53 05:33
-GLU  MZP  14:32 01:44
-Tempo de viagem: 8223 minutos
+EVX  HATP 06:16 19:02
+HATP XRI  11:27 18:57
+XRI  XHL  02:24 15:28
+Tempo de viagem: 4370 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-DZFC EKFT 01:11 23:40
-EKFT IGWH 04:52 12:00
-IGWH ZOI  17:30 22:53
-Tempo de viagem: 3552 minutos
+FZVI MGNJ 20:29 14:28
+MGNJ ROZ  10:34 05:50
+Tempo de viagem: 3523 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-JIFY VDOB 04:48 07:46
-VDOB FPMT 19:00 00:24
-FPMT SWSU 21:55 16:40
-Tempo de viagem: 3593 minutos
+MGNJ JKPF 09:46 06:25
+JKPF NHAX 11:08 11:55
+NHAX YAD  04:45 19:25
+Tempo de viagem: 4021 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-EJX  MVA  06:31 15:09
-MVA  ENMH 06:14 11:12
-ENMH CSR  13:46 21:23
-CSR  WJQU 21:52 10:32
-WJQU TZAP 14:44 20:48
-Tempo de viagem: 5260 minutos
+NZCC NIP  15:57 17:17
+NIP  BJTQ 21:42 22:11
+BJTQ NUN  06:50 20:52
+NUN  NHAX 19:00 00:39
+Tempo de viagem: 3443 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-YNM  HEW  18:45 19:04
-HEW  IPNG 06:47 07:20
-IPNG HDDP 14:26 18:22
-HDDP HLF  14:28 04:10
-HLF  KFTL 17:22 22:21
-KFTL BNSR 05:03 05:31
-BNSR OADX 11:05 07:34
-Tempo de viagem: 7082 minutos
+YSKG JAI  07:37 23:57
+JAI  GDP  02:21 02:21
+GDP  VFW  04:30 00:29
+Tempo de viagem: 4658 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-LGIO ITY  17:11 02:06
-ITY  MENB 06:27 17:27
-MENB AJH  21:47 06:32
-AJH  YSL  17:06 01:25
-YSL  ZOG  10:48 08:49
-ZOG  UBO  07:59 09:13
-UBO  ONU  06:12 06:35
-Tempo de viagem: 8257 minutos
+NNG  OJS  06:19 20:59
+OJS  RCDA 02:00 19:23
+Tempo de viagem: 3376 minutos
++ voo XHL VOT 03:56 removido
++ voo NHAX ZBPD 06:43 removido
++ voo NHAX NUN 06:35 removido
++ voo XHL HXA 16:46 removido
++ voo NUN OJS 08:19 removido
++ voo XHL VOT 03:56 inexistente
 De   Para Parte Chega
 ==== ==== ===== =====
-KBIL OXC  20:16 13:30
-OXC  BNC  10:58 21:58
-BNC  LMAM 06:32 12:09
-Tempo de viagem: 4798 minutos
+JPY  EAF  23:38 07:21
+EAF  YAD  14:07 17:31
+YAD  FBRS 21:57 00:21
+Tempo de viagem: 2616 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-LLK  KHHB 18:48 17:36
-KHHB HPGK 00:03 07:19
-HPGK XCJZ 09:26 16:39
-XCJZ ZLCV 23:28 02:58
-ZLCV AGU  06:25 12:09
-AGU  IMG  02:23 18:43
-IMG  RVMN 08:45 12:31
-RVMN DWPD 17:34 06:21
-Tempo de viagem: 8275 minutos
+ZWF  AOCT 18:17 15:37
+AOCT BYWN 01:09 08:35
+BYWN DTOD 16:32 17:12
+Tempo de viagem: 2823 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-STU  WFC  17:13 02:46
-WFC  LQC  16:20 11:08
-LQC  IEOB 20:10 02:59
-IEOB RMLY 04:17 11:36
-RMLY BFRU 20:51 11:08
-Tempo de viagem: 6660 minutos
+AIID YLMU 19:56 20:49
+YLMU AXB  00:17 04:58
+AXB  GLH  07:55 18:32
+GLH  FBRS 19:45 01:00
+FBRS QXT  06:12 11:43
+QXT  DTOD 15:29 20:04
+Tempo de viagem: 3044 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-MSA  ULI  06:38 03:48
-ULI  MCZK 12:42 15:11
-MCZK YBTZ 16:16 05:42
-YBTZ LDFW 10:21 18:12
-Tempo de viagem: 4468 minutos
+QXT  QULR 20:15 00:43
+QULR EVX  03:31 22:50
+EVX  VFW  07:37 03:37
+Tempo de viagem: 3865 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-UPM  LGR  23:49 03:58
-LGR  NNC  08:11 05:11
-NNC  RGY  10:13 10:32
-RGY  UBUO 03:21 21:55
-UBUO DLSQ 02:47 06:32
-DLSQ AFT  18:04 23:20
-AFT  RTYW 02:41 03:03
-Tempo de viagem: 7279 minutos
+ZJQ  JDMB 19:10 22:41
+JDMB GWYX 04:19 13:59
+GWYX VXJD 19:24 20:23
+Tempo de viagem: 1736 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-PWL  PQYW 16:19 11:25
-PQYW PMD  16:30 17:11
-PMD  NPWT 19:24 23:16
-NPWT YZWA 17:56 00:43
-YZWA TISI 09:02 13:04
-TISI QYLB 14:50 20:11
-Tempo de viagem: 5909 minutos
+RCDA NHAX 21:13 20:50
+NHAX VOT  11:07 19:29
+VOT  EKQ  05:25 21:35
+EKQ  BYWN 22:33 23:30
+Tempo de viagem: 5480 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ENMH MVA  13:15 19:03
-MVA  JVBL 10:18 08:50
-JVBL EWQ  23:54 04:34
-EWQ  ODBD 13:17 19:55
-Tempo de viagem: 4996 minutos
+XRPO VOT  04:25 23:06
+VOT  NHAX 07:41 09:04
+Tempo de viagem: 3014 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-OQLF EJU  01:26 10:17
-EJU  STCH 11:40 05:00
-STCH MZZ  10:54 13:48
-MZZ  ITSU 20:48 10:33
-ITSU UVQ  13:14 15:35
-UVQ  DRV  07:00 14:53
-DRV  YPVW 15:22 20:59
-Tempo de viagem: 6951 minutos
+OOKN YCAF 04:25 15:09
+YCAF GLH  21:02 09:49
+GLH  JAI  13:42 17:35
+Tempo de viagem: 2850 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-EVSO DRCJ 15:48 11:16
-DRCJ CKG  08:00 13:32
-CKG  XKFA 05:29 04:48
-Tempo de viagem: 5811 minutos
+KBBS RNC  17:43 22:32
+RNC  NUN  23:26 07:10
+NUN  NHAX 19:00 00:39
+NHAX RCDA 05:36 08:51
+Tempo de viagem: 2953 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ERGE BORD 21:02 22:36
-BORD BES  01:35 04:17
-BES  DQV  07:24 03:45
-DQV  BQVJ 05:03 08:39
-BQVJ AJH  02:29 10:00
-Tempo de viagem: 5033 minutos
+VFW  FGW  10:25 13:31
+FGW  TKUX 22:14 20:04
+Tempo de viagem: 2535 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-BRW  VBH  13:02 21:49
-VBH  KBB  09:02 06:26
-KBB  QMZ  12:53 22:31
-QMZ  BWW  03:32 05:00
-BWW  MLZ  20:33 03:56
-Tempo de viagem: 6002 minutos
+NUN  NHAX 19:00 00:39
+NHAX JKPF 08:05 14:11
+Tempo de viagem: 1537 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-NAV  ZBT  02:20 04:33
-ZBT  WFUP 16:27 21:46
-WFUP EPYG 07:49 15:21
-EPYG ITR  16:37 02:15
-ITR  QEEE 17:54 05:26
-Tempo de viagem: 4819 minutos
+JPY  EAF  23:38 07:21
+EAF  EHI  12:43 14:54
+EHI  BJTQ 20:50 21:25
+BJTQ NXVJ 00:18 22:15
+Tempo de viagem: 3820 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-XDW  NFT  18:22 19:16
-NFT  FZWR 20:24 19:23
-FZWR WITK 20:52 23:55
-WITK BPWL 07:34 23:13
-Tempo de viagem: 4130 minutos
+HXFA RNC  07:39 03:40
+RNC  IGWB 10:11 18:41
+IGWB LWK  00:03 10:25
+Tempo de viagem: 3396 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-KSTZ PIOR 21:11 14:37
-PIOR RHWU 15:46 02:54
-RHWU EVX  08:28 11:43
-EVX  PDE  05:36 15:15
-PDE  TNW  16:41 11:14
-TNW  PWVZ 16:06 23:21
-Tempo de viagem: 6073 minutos
+JDVX TJW  11:16 16:34
+TJW  KBBS 18:46 08:26
+KBBS EKQ  18:03 22:07
+EKQ  WZP  01:09 16:50
+Tempo de viagem: 4349 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-IAU  KDDU 00:08 07:38
-KDDU HSGI 11:12 11:54
-HSGI ETW  21:37 16:53
-Tempo de viagem: 3023 minutos
+JNJ  ZJQ  10:36 16:26
+ZJQ  TJW  08:45 15:49
+TJW  KBBS 18:46 08:26
+Tempo de viagem: 3772 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-TXW  HZUB 15:32 07:11
-HZUB PWZ  11:25 14:27
-PWZ  XZZ  10:40 11:13
-XZZ  VWY  11:09 11:30
-VWY  WJSI 11:29 17:59
-Tempo de viagem: 6807 minutos
+AAFD NHAX 19:28 09:32
+NHAX YAD  04:45 19:25
+YAD  YCAF 23:00 04:06
+Tempo de viagem: 3879 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-BUJD URYY 21:00 05:33
-URYY AHSV 15:50 12:49
-AHSV KBDP 16:50 23:14
-KBDP WPRS 06:11 14:36
-WPRS NLC  20:48 02:05
-NLC  RUBA 14:27 01:40
-RUBA LWQN 04:34 23:34
-Tempo de viagem: 8211 minutos
+JPY  EAF  23:38 07:21
+EAF  KBBS 22:18 11:16
+KBBS RNC  17:43 22:32
+RNC  IGWB 10:11 18:41
+Tempo de viagem: 4343 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-YWQM PNJ  22:39 23:07
-PNJ  VZFB 09:54 12:09
-VZFB OEIR 13:32 21:10
-OEIR MFMI 07:19 11:02
-MFMI TSOM 09:15 18:40
-TSOM RFS  03:21 08:28
-RFS  XGUN 11:30 00:21
-XGUN AGJI 06:57 12:44
-Tempo de viagem: 7048 minutos
+BAG  XHL  06:22 06:51
+XHL  PJL  16:31 05:31
+PJL  VOT  11:42 19:06
+VOT  NHAX 07:41 09:04
+NHAX AAFD 17:18 22:44
+Tempo de viagem: 4005 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-GTYA OCL  20:58 08:32
-OCL  VTAQ 09:15 14:32
-VTAQ MNCT 18:23 18:49
-MNCT TWPB 20:16 23:25
-TWPB SGI  21:09 01:30
-SGI  QEEE 22:20 12:52
-QEEE VAI  13:22 07:18
-Tempo de viagem: 7631 minutos
+YSKG EEW  14:49 07:16
+EEW  JDMB 21:07 01:38
+JDMB HATP 06:19 05:17
+Tempo de viagem: 4360 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-QMPF SEED 14:49 18:16
-SEED AULO 19:27 00:12
-AULO VRUG 01:38 05:25
-VRUG YQL  11:44 14:21
-YQL  WHKU 21:57 06:28
-WHKU GFE  15:50 07:39
-GFE  OQF  09:01 12:33
-OQF  HGOB 18:48 23:12
-HGOB NVN  05:07 19:08
-NVN  TLPF 23:47 14:44
-Tempo de viagem: 7411 minutos
+DBC  NZCC 04:35 05:10
+NZCC NIP  15:57 17:17
+NIP  BJTQ 21:42 22:11
+Tempo de viagem: 2313 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-RYEV KBKJ 04:44 21:14
-KBKJ FTA  21:50 23:34
-FTA  EJMX 15:51 20:29
-EJMX AVKG 01:14 04:06
-AVKG VTEC 15:24 16:38
-VTEC TJKU 15:04 17:36
-TJKU QGBO 23:43 07:21
-QGBO VJO  11:58 12:26
-VJO  WJDC 16:54 06:55
-Tempo de viagem: 8094 minutos
+AXB  MMDB 11:34 13:52
+MMDB VXJD 22:35 22:15
+VXJD MWUV 17:36 19:37
+MWUV INNT 21:55 02:47
+Tempo de viagem: 4019 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-IZTK EYZK 15:58 02:05
-EYZK GBIH 15:16 18:47
-GBIH VRF  05:20 07:01
-VRF  RYL  07:50 11:11
-RYL  ITSU 16:54 00:16
-ITSU WHDH 14:40 01:15
-WHDH LUR  19:35 21:14
-LUR  GQSV 22:46 17:22
-GQSV TKH  19:21 01:14
-Tempo de viagem: 9048 minutos
+BJTQ EHI  00:15 05:05
+EHI  NNG  09:46 15:05
+NNG  QXT  05:09 07:45
+QXT  JDVX 21:47 07:06
+Tempo de viagem: 3339 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-FEJ  SUYD 21:54 19:44
-SUYD VFOK 01:32 08:06
-VFOK ZLWW 16:45 01:10
-ZLWW FWG  09:10 09:39
-FWG  JAVP 12:51 18:08
-JAVP OLS  21:03 07:59
-OLS  MJD  12:16 01:53
-MJD  SLJ  03:17 06:05
-SLJ  AZL  13:53 18:18
-AZL  ZQQ  23:24 02:29
-Tempo de viagem: 7544 minutos
+GDP  MWUV 15:57 11:55
+MWUV QXT  19:30 20:05
+QXT  JDVX 21:47 07:06
+JDVX AQZN 08:42 14:18
+AQZN EHI  01:28 02:40
+Tempo de viagem: 3540 minutos
 De   Para Parte Chega
 ==== ==== ===== =====
-ACV  PUBD 12:36 13:45
-PUBD TRVD 15:51 19:28
-TRVD ZUU  21:19 10:38
-ZUU  YTQQ 22:46 02:24
-YTQQ ALRX 01:18 00:45
-Tempo de viagem: 5977 minutos
+VYN  LWK  01:22 09:56
+LWK  KFI  21:26 09:13
+KFI  JNJ  11:05 00:41
+JNJ  INNT 04:06 20:18
+Tempo de viagem: 4071 minutos
+De   Para Parte Chega
+==== ==== ===== =====
+GLH  JAI  13:42 17:35
+JAI  YSKG 18:11 22:14
+YSKG WZW  13:55 02:02
+Tempo de viagem: 2847 minutos
+De   Para Parte Chega
+==== ==== ===== =====
+AAFD KFI  19:40 14:21
+KFI  HXA  23:58 23:44
+Tempo de viagem: 3640 minutos
++ novo voo XHL HXA 16:46
++ voo XHL HXA 16:46 existe
+De   Para Parte Chega
+==== ==== ===== =====
+AAFD KFI  19:40 14:21
+KFI  HXA  23:58 23:44
+Tempo de viagem: 3640 minutos
++ sem voos de NQU para AIID
++ sem voos de JDMB para NQU

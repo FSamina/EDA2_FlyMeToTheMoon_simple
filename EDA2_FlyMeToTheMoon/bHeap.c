@@ -14,7 +14,6 @@ Min Heap implementation in c
 
 
 
-
 // int main(){
 //     int i;
 //     CreateHeap(); //Min Heap
@@ -193,14 +192,10 @@ bool  popCheck()
 struct air PopMin(){
     struct air pop;
   
-      
-    
     // replace first node by last and delete last
-    pop = h->arr[0];
+    pop = h->arr[0];    
     h->arr[0] = h->arr[h->count-1];
     h->count--;
-    
-
     heapify_top_bottom(0);
     return *hashArray[search(pop.Id)];
 
